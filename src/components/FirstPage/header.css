@@ -1,0 +1,38 @@
+.navbar  {
+    background-image: -webkit-linear-gradient(top,#dacdcd 0,rgb(255, 255, 255) 100%) !important;
+    text-transform: lowercase;
+    font-size: .55rem;
+    letter-spacing: .02rem;
+    border: none !important;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: black;
+    text-shadow:none !important;
+}
+
+.logo {
+    width:15vw;
+    height:auto;
+}
+
+.navbar-brand {
+    float: left;
+    height: auto !important;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;  
+}    
+
+.navbar-nav {
+    margin:5vh;
+}
+
+hr {
+    border-top: 2px solid #eee !important;
+}
+
+.sliderImg {
+    width:100vw;
+    height:50vh;
+}
