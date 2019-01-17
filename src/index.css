@@ -15,3 +15,64 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.h1, h1, .h2, h2, .mainheader {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.66667rem;
+  text-transform: lowercase;
+  line-height: 1em;
+  color:#31315f;
+}
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-pad-3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left:1rem;
+  padding-right:1rem;
+}
+
+.add-pad-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left:1rem;
+  padding-right:1rem;
+}
+
+
+.bg-beige-20 {
+  background-color: #FBF9F8;
+}
+
+.center .mainheader:after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center .mainheader:after {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 3px;
+  background: #6F1000;
+  margin-top: 20px;
+}
+
+.header .mainheader {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  padding: 0 2px;
+}
+
+.inside-para {
+  font-size: 20px;
+}
+
+.inside-list {
+  list-style: none;
+  font-size:20px;
+}
