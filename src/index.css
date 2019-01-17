@@ -48,6 +48,10 @@ code {
   background-color: #FBF9F8;
 }
 
+.bg-kurinjini-flower {
+  background-color: #f8f8fe;
+}
+
 .center .mainheader:after {
   margin-left: auto;
   margin-right: auto;

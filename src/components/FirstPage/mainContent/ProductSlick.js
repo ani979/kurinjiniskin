@@ -3,10 +3,9 @@ import "slick-carousel/slick/slick-theme.css";
 import React from 'react'
 import Slider from 'react-slick'
 import './productSlider.css'
-import product1 from '../../../assets/img/FootScrubber.jpg'
-import product2 from '../../../assets/img/Cream_1.jpg'
-import product3 from '../../../assets/img/Cream_2.jpg'
-import product4 from '../../../assets/img/lipbalm.jpg'
+import bgImage from '../../../assets/img/Oils.jpg'
+
+
 
 function ProductSlick() {
     const settings = {
@@ -46,25 +45,55 @@ function ProductSlick() {
         ]
       };
       return (
-        <div>
+        <div className = "add-pad-1 bg-kurinjini-flower">
           <Slider {...settings}>
           <div>
-              <img className = "sliderProduct" src = {product1}/>
+            <div className="card card--image card--link">
+
+              {/* <a href="https://store.nutiva.com/collections/body-care" target="" tabindex="0"> */}
+    
+                <div className="image">
+                  <div className="overlay bg-image" ></div>
+                </div>
+    
+              {/* </a> */}
+            </div>  
+            <div className="content">
+
+              <div>
+
+                <h2 className="title red">Body Care</h2>
+          
+                <div className="excerpt">
+                  <p><span>Our organic body care products aid in skin hydration and vibrancy for a natural, clean glow. </span></p>
+                </div>  
+              </div>
+            </div>
+            <span href="https://store.nutiva.com/collections/body-care" className="cta cta--line">Shop Now</span>
+          </div>      
+            
+                            
+          <div>
+              <img className = "sliderProduct" src = "./assets/img/Cream_1.jpg"/>
           </div>
           <div>
-              <img className = "sliderProduct" src = {product2}/>
+              <img className = "sliderProduct" src = "./assets/img/Cream_1.jpg"/>
           </div>
           <div>
-              <img className = "sliderProduct" src = {product3}/>
+              <img className = "sliderProduct" src = "./assets/img/Cream_1.jpg"/>
           </div>
           <div>
-              <img className = "sliderProduct" src = {product4}/>
+              <img className = "sliderProduct" src = "./assets/img/Cream_1.jpg"/>
           </div>
             
             
           </Slider>
         </div>
       );
+}
+
+function lContentStyle(){
+  return {backgroundImage: `url(${bgImage})`}
 }
 
 

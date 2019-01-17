@@ -1,3 +1,59 @@
 .sliderProduct {
     height:70vh;
 }
+
+.card {
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    /* width: 25%; */
+}
+
+.slick-slide .card {
+    height: 100%;
+}
+
+.card .image {
+    height: 0;
+    padding-bottom: 80%;
+    background-color: #F2EEEA;
+    position: relative;
+    overflow: hidden;
+}
+
+.card .bg-image {
+
+    background-image: url("../../../assets/img/Oils.jpg");
+
+}
+
+
+.card .content {
+    background-color: #F6F4F1;
+    padding: 1rem .5rem;
+}
+
+.card .image-src {
+    transition: 0.5s all cubic-bezier(0.2, 0.9, 0.4, 0.75);
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s all cubic-bezier(0.2, 0.9, 0.4, 0.75); 
+}
+
+.bg-image:hover {
+    background-position:left;
+}
