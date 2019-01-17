@@ -3,8 +3,10 @@ import Slider from 'react-slick'
 import image1 from '../../assets/img/image1.jpg'
 import image2 from '../../assets/img/image2.jpg'
 import image3 from '../../assets/img/image3.jpg'
-import "../../../node_modules/slick-carousel/slick/slick.css"; 
-import "../../../node_modules/slick-carousel/slick/slick-theme.css";
+import './Main-Carousel.css'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 
 function MainCarousel() {
     const settings = {
@@ -16,7 +18,8 @@ function MainCarousel() {
         speed: 3000,
         autoplaySpeed: 5000,
         cssEase: "linear",
-        arrows:true
+        arrows:true,
+        className: 'slides'
       };
       return (
         <div>

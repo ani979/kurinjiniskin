@@ -1,0 +1,46 @@
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social--footer {
+    padding: 1rem;
+}
+
+.social--footer ul {
+    display: inline-block;
+}
+
+.list--inline {
+    list-style: none;
+}
+
+.list--inline li {
+    display: inline-block;
+}
+
+.social--footer li {
+    margin: 0 3px;
+    transition: .3s opacity ease-in-out;
+    vertical-align: middle;
+}
+
+.list--inline li:first-of-type {
+    margin-left: 0;
+}
+
+.add-pad {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.small {
+    font-size: .36667rem;
+    line-height: 1.5em;
+}
+
+.icon-dims {
+    width:52px;
+    height:52px;
+}

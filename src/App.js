@@ -12,17 +12,21 @@ class App extends Component {
     return (
       <div>
         <Header></Header>
-        <div className= "slider-window">
+        <div className= "row slider-window">
         <MainCarousel></MainCarousel>
         </div>
-        <div className = "col-md-12">
+        <div className = "row col-md-12">
         <SellingText></SellingText>
         </div>
-        <div className = "col-md-12">
+        <div className = "row col-md-12">
         <ProductSlick></ProductSlick>
         </div>
+        <div className = "row col-md-12">
         <WhyKurinjini></WhyKurinjini>
+        </div>
+        <div className = "row col-md-12">
         <Footer></Footer>
+        </div>
       </div>
     );
   }
