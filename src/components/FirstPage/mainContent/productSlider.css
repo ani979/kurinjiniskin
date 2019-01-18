@@ -29,6 +29,12 @@
     
 }
 
+
+
+.slick-prev, .slick-next {
+    top:10% !important;
+}
+
 .card .bg-image-face {
     background-image: url("../../../assets/img/FaceCare/faceCare.jpg");
 }

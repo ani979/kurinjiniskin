@@ -75,7 +75,7 @@ function ProductSlick() {
                 </div>  
               </div>
             </div>
-            <span href="https://store.nutiva.com/collections/body-care" className="cta cta--line">Shop Now</span>
+            <a href="http://bit.ly/kurinjini" className="cta cta--line" target="_blank">Shop Now</a>
           </div>      
             
                             
@@ -101,7 +101,7 @@ function ProductSlick() {
                 </div>  
               </div>
             </div>
-            <span href="https://store.nutiva.com/collections/body-care" className="cta cta--line">Shop Now</span>
+            <a href="http://bit.ly/kurinjini" className="cta cta--line"  target="_blank">Shop Now</a>
           </div>      
           
           <div>
@@ -126,7 +126,7 @@ function ProductSlick() {
                 </div>  
               </div>
             </div>
-            <span href="https://store.nutiva.com/collections/body-care" className="cta cta--line">Shop Now</span>
+            <a href="http://bit.ly/kurinjini" className="cta cta--line" target="_blank">Shop Now</a>
           </div>      
           
           <div>
@@ -151,7 +151,7 @@ function ProductSlick() {
                 </div>  
               </div>
             </div>
-            <span href="https://store.nutiva.com/collections/body-care" className="cta cta--line">Shop Now</span>
+            <a href="http://bit.ly/kurinjini" className="cta cta--line" target="_blank">Shop Now</a>
           </div>      
 
           <div>
@@ -176,7 +176,7 @@ function ProductSlick() {
                 </div>  
               </div>
             </div>
-            <span href="https://store.nutiva.com/collections/body-care" className="cta cta--line">Shop Now</span>
+            <a href="http://bit.ly/kurinjini" className="cta cta--line" target="_blank">Shop Now</a>
           </div>
 
           <div>
@@ -201,7 +201,7 @@ function ProductSlick() {
                 </div>  
               </div>
             </div>
-            <span href="https://store.nutiva.com/collections/body-care" className="cta cta--line">Shop Now</span>
+            <a href="http://bit.ly/kurinjini" className="cta cta--line" target="_blank">Shop Now</a>
           </div>      
             
             
