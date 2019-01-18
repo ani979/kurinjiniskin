@@ -4,7 +4,7 @@ import './sellingText.css'
 function SellingText() {
     return (
         <div className = "add-pad-1 header">
-        <h2 className = "selling-text">Lend us your skin and relax</h2>
+        <h1 className = "selling-text">Lend us your skin and relax</h1>
         {/* <p style={{textAlign:"center"}} className="inside-para"> At Kurinjini, our main aim is to keep your skin healthy and nourished. 
         We specialise in these home made organic products:</p>
         <ul className="inside-list">

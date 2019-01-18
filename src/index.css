@@ -16,13 +16,22 @@ code {
     monospace;
 }
 
-.h1, h1, .h2, h2, .mainheader {
+.h1, h1, .mainheader {
   font-family: 'Indie Flower', cursive;
   font-size: 1.66667rem;
   text-transform: lowercase;
   line-height: 1em;
   color:#31315f;
 }
+
+.h2, h2  {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1rem;
+  text-transform: lowercase;
+  line-height: 1em;
+  color:#31315f;
+}
+
 .center {
   text-align: center;
   margin-left: auto;
@@ -74,6 +83,11 @@ code {
 
 .inside-para {
   font-size: 20px;
+}
+
+.excerpt {
+  font-size: 20px;
+  padding: 0 5px;
 }
 
 .inside-list {
