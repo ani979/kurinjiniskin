@@ -36,3 +36,7 @@ hr {
     width:100vw;
     height:50vh;
 }
+
+.navbar-nav li {
+    font-size:20px;
+}

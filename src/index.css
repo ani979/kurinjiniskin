@@ -1,7 +1,8 @@
+html, body { height: 100%; }
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Avenir';
+  font-family: 'Crimson Text', serif;
   letter-spacing: .015rem;
   line-height: 1;
   font-size:30px;
@@ -17,7 +18,7 @@ code {
 }
 
 .h1, h1, .mainheader {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Lobster', cursive;
   font-size: 1.66667rem;
   text-transform: lowercase;
   line-height: 1em;
@@ -25,7 +26,7 @@ code {
 }
 
 .h2, h2  {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Niconne', cursive;
   font-size: 1rem;
   text-transform: lowercase;
   line-height: 1em;
@@ -93,4 +94,16 @@ code {
 .inside-list {
   list-style: none;
   font-size:20px;
+}
+
+.offer {
+  padding: 6px 10px 7px;
+}
+
+.bg-red {
+  background-color: #31315f;
+}
+
+.white {
+  color:white;
 }

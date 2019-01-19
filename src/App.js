@@ -1,30 +1,32 @@
 import React, { Component } from 'react';
 import './App.css';
 import Footer from './components/FirstPage/Footer'
-import ProductSlick from './components/FirstPage/mainContent/ProductSlick'
+import ProductSlick from './components/FirstPage/mainContent/ProductSlick/ProductSlick'
 import Header from './components/FirstPage/Header'
 import WhyKurinjini from './components/FirstPage/mainContent/WhyKurinjini'
 import MainCarousel from './components/FirstPage/Main-Carousel';
 import SellingText from './components/FirstPage/SellingText';
+import TopBar from './components/FirstPage/TopBar';
 
 class App extends Component {
   render() {
     return (
       <div>
+        <TopBar></TopBar>
         <Header></Header>
-        <div className= "row slider-window">
+        <div className= "slider-window">
         <MainCarousel></MainCarousel>
         </div>
-        <div className = "row col-md-12">
+        <div className = "col-md-12">
         <SellingText></SellingText>
         </div>
-        <div className = "row col-md-12">
+        <div className = "col-md-12">
         <ProductSlick></ProductSlick>
         </div>
-        <div className = "row col-md-12">
+        <div className = "col-md-12">
         <WhyKurinjini></WhyKurinjini>
         </div>
-        <div className = "row col-md-12">
+        <div className = "col-md-12">
         <Footer></Footer>
         </div>
       </div>

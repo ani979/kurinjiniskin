@@ -11,23 +11,23 @@ function Header() {
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>
-    {/* <Navbar.Collapse>
+    <Navbar.Collapse>
       <Nav>
         <NavItem eventKey={1} href="#">
-          Shop
+          How to Shop
         </NavItem>
         <NavItem eventKey={2} href="#">
-          About us
+          Products
         </NavItem>
       </Nav>
-      <Nav pullRight>
+      {/* <Nav pullRight>
         <NavItem eventKey={1} href="#">
           Cart
         </NavItem>
         
-      </Nav>
-    </Navbar.Collapse> */}
-    {/* <hr/> */}
+      </Nav> */}
+    </Navbar.Collapse>
+    <hr/>
   </Navbar>;
 }
 

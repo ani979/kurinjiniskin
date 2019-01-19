@@ -25,7 +25,7 @@
 
 .card .bg-image-body {
 
-    background-image: url("../../../assets/img/BodyCare/bodyCare.jpg");
+    background-image: url("../../../../assets/img/BodyCare/bodyCare.jpg");
     
 }
 
@@ -36,23 +36,23 @@
 }
 
 .card .bg-image-face {
-    background-image: url("../../../assets/img/FaceCare/faceCare.jpg");
+    background-image: url("../../../../assets/img/FaceCare/faceCare.jpg");
 }
 
 .card .bg-image-lip {
-    background-image: url("../../../assets/img/LipCare/lipbalm.jpg");
+    background-image: url("../../../../assets/img/LipCare/lipbalm.jpg");
 }
 
 .card .bg-image-foot {
-    background-image: url("../../../assets/img/FootCare/footcare.jpg");
+    background-image: url("../../../../assets/img/FootCare/footcare.jpg");
 }
 
 .card .bg-image-soaps {
-    background-image: url("../../../assets/img/Soaps/soaps.jpg");
+    background-image: url("../../../../assets/img/Soaps/soaps.jpg");
 }
 
 .card .bg-image-oils {
-    background-image: url("../../../assets/img/Oils/oils.jpg");
+    background-image: url("../../../../assets/img/Oils/oils.jpg");
 }
 
 
