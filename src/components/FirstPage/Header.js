@@ -12,20 +12,22 @@ function Header() {
       <Navbar.Toggle />
     </Navbar.Header>
     <Navbar.Collapse>
-      <Nav>
-        <NavItem eventKey={1} href="#">
-          How to Shop
-        </NavItem>
-        <NavItem eventKey={2} href="#">
-          Products
-        </NavItem>
-      </Nav>
-      {/* <Nav pullRight>
-        <NavItem eventKey={1} href="#">
-          Cart
-        </NavItem>
+      
+        <Nav>
+          <NavItem eventKey={1} href="/howtoorder">
+            How to Order
+          </NavItem>
+          <NavItem eventKey={2} href="/shop">
+            Products
+          </NavItem>
+        </Nav>
+        {/* <Nav pullRight>
+          <NavItem eventKey={1} href="#">
+            Cart
+          </NavItem>
+          
+        </Nav> */}
         
-      </Nav> */}
     </Navbar.Collapse>
     <hr/>
   </Navbar>;
