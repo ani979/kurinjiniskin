@@ -17,7 +17,7 @@ function MainCarousel() {
         autoplay: true,
         speed: 1700,
         autoplaySpeed: 5000,
-        cssEase: "linear",
+        cssEase: "appear",
         arrows:true,
         className: 'slides'
       };

@@ -16,7 +16,8 @@
     "start": "PORT=8000 react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build": "webpack --mode development"
+    "deploy": "aws s3 sync build/ s3://kurinjiniskincare.com",
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -26,5 +27,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "webpack-cli": "^3.2.1"
+  }
 }
