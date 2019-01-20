@@ -7,7 +7,7 @@ const productsData =
         },
         {
         'name': 'Face Care',
-        'desc':'Our moisturizing creams range from anti-ageing to kids special. For dry skin to sensitive skin, we have products ',
+        'desc':'Our moisturizing creams range from anti-ageing to kids special. Helping in prevention of acne, hyper pigmentation, the creams are available in different ranges',
         'classname': 'bg-image-face'
         },
         {
