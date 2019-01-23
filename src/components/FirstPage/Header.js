@@ -7,7 +7,7 @@ function Header() {
     return <Navbar inverse collapseOnSelect>
     <Navbar.Header>
       <Navbar.Brand>
-        <a href="#brand"><img src = {logo} className = "logo"/></a>
+        <a href="/"><img src = {logo} className = "logo"/></a>
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>

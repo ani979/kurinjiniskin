@@ -2,21 +2,18 @@ import React from 'react'
 import './Item.css'
 
 function Item(props) {
+if(!props.title) return(<div></div>);
     return (<div> 
                 <div className = "col-md-12">
                     <div className = "col-md-3 col-sm-12 col-lg-3">
                         {props.imagePath}
                     </div>
-                    <div className = "col-md-2 col-sm-12 col-lg-3">
+                    <div className = "col-md-3 col-sm-12 col-lg-3">
                         {props.title}
-                    </div>
-                    <div className = "col-md-2 col-sm-12 col-lg-3">
                         {props.type}
                     </div>
-                    <div className = "col-md-3 col-sm-12 col-lg-3">
+                    <div className = "col-md-6 col-sm-12 col-lg-6">
                         {props.desc}
-                    </div>
-                    <div className = "col-md-2 col-sm-12 col-lg-3">
                         {props.goodFor}
                     </div>
                 </div>
@@ -31,7 +28,17 @@ function Item(props) {
                         {props.ingredients}
                     </div>
                 </div>
+                <div className = "col-md-12">
+                    <div className = "col-md-6 col-sm-12 col-lg-6">
+                     {props.price}
+                    </div> 
+                    <div className = "col-md-6 col-sm-12 col-lg-6">
+                     
+                    </div>
+                </div>
+                <div className = "col-md-12">
                 <hr></hr>
+                </div>
             </div>)
 }
 

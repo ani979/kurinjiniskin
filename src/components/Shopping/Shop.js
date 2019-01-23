@@ -2,6 +2,8 @@ import React from 'react'
 import Collapsible from 'react-collapsible';
 import './Shop.css'
 import Item from './Item'
+import TopBar from '../FirstPage/TopBar';
+import Header from '../FirstPage/Header'
 
 import allItems from './AllItems'
 
@@ -13,6 +15,8 @@ function Shop() {
     
     return (
     <div>
+        <TopBar></TopBar>
+        <Header></Header>
         <h1 className="center" > Our products </h1>
         {allItemsData}
     </div>);
@@ -29,7 +33,7 @@ function parseItems(arrayOfitems) {
         } else {
             //console.log("eachItem child", eachItem);
             
-            return collapsibleArray.push(<Item title={eachItem.title} type={eachItem.type} imagePath={eachItem.imagePath} desc={eachItem.desc} goodFor={eachItem.goodFor} quantity={eachItem.quantity} flavours={eachItem.flavours} ingredients={eachItem.ingredients}></Item>);
+            return collapsibleArray.push(<Item price = {eachItem.price} title={eachItem.title} type={eachItem.type} imagePath={eachItem.imagePath} desc={eachItem.desc} goodFor={eachItem.goodFor} quantity={eachItem.quantity} flavours={eachItem.flavours} ingredients={eachItem.ingredients}></Item>);
             
         }
         

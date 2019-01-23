@@ -25,7 +25,7 @@ function EachProduct(props) {
           </div>  
         </div>
       </div>
-      <a href="http://bit.ly/kurinjini" className="cta cta--line" target="_blank">Shop Now</a>
+      <a href="/shop" className="cta cta--line">Shop Now</a>
     </div>   )   
 }
 

@@ -4,39 +4,18 @@ import React from 'react'
 import './image-slick.css'
 
 function ImageItem (props) {
-    const dataSource = [
-        {
-            small: props.smallImageOne,
-            large: props.bigImageOne
-        },
-        {
-            small: props.smallImageTwo,
-            large: props.bigImageTwo
-        }
-    ];
     
     return (
-        <ReactSlick
-            {...{
-                dots: true,
-                infinite: true,
-                speed: 500,
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }}
-            
-        >
-            {dataSource.map((src, index) => (
-                <div key={index}>
+                <div>
                     <ReactImageMagnify
                         {...{
                             smallImage: {
                                 alt: 'Wristwatch by Versace',
                                 isFluidWidth: true,
-                                src: src.small
+                                src: props.smallImageOne
                             },
                             largeImage: {
-                                src: src.large,
+                                src: props.bigImageOne,
                                 width: 1280,
                                 height: 854
                             },
@@ -50,8 +29,8 @@ function ImageItem (props) {
                         
                     />
                 </div>
-            ))}
-        </ReactSlick>
+            
+
     );
 }
 
