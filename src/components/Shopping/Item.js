@@ -33,7 +33,7 @@ if(!props.title) return(<div></div>);
                      {props.price}
                     </div> 
                     <div className = "col-md-6 col-sm-12 col-lg-6">
-                     
+                    {props.howtouse}
                     </div>
                 </div>
                 <div className = "col-md-12">

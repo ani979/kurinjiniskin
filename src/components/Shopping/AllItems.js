@@ -13,10 +13,23 @@ import pacificBigCream from '../../assets/img/FaceCare/SpecialNeeds/pacific_big.
 import pacificSmallCream from '../../assets/img/FaceCare/SpecialNeeds/pacific_small.jpg'
 import fluffySmallCream from '../../assets/img/FaceCare/SpecialNeeds/Fluffy_small.jpg'
 import fluffyBigCream from '../../assets/img/FaceCare/SpecialNeeds/Fluffy_big.jpg'
+import lipbalmSmallOne from '../../assets/img/LipCare/lipbalm1_small.jpg'
+import lipbalmBigOne from '../../assets/img/LipCare/lipbalm1_big.jpg'
+import lipbalmSmallTwo from '../../assets/img/LipCare/lipbalm2_small.jpg'
+import lipbalmBigTwo from '../../assets/img/LipCare/lipbalm2_big.jpg'
+import lipbalmSmallThree from '../../assets/img/LipCare/lipbalm3_small.jpg'
+import lipbalmBigThree from '../../assets/img/LipCare/lipbalm3_big.jpg'
+import lipScrubSmallOne from '../../assets/img/LipCare/lipScrub1_small.jpg'
+import lipScrubBigOne from '../../assets/img/LipCare/lipScrub1_big.jpg'
+import lipScrubSmallTwo from '../../assets/img/LipCare/lipScrub2_small.jpg'
+import lipScrubBigTwo from '../../assets/img/LipCare/lipScrub2_big.jpg'
+import lipScrubSmallThree from '../../assets/img/LipCare/lipScrub3_small.jpg'
+import lipScrubBigThree from '../../assets/img/LipCare/lipScrub3_big.jpg'
+
 
 const allItems = [
     {
-        childId: "Face cream",
+        childId: allProducts.faceCreams,
         parent: "parent"
     },
     {
@@ -40,21 +53,21 @@ const allItems = [
         parent: "parent"
     },
     {
-        childId: "Moisturizing Creams",
-        parent: "Face cream"
+        childId: allProducts.moisturizingCreams,
+        parent: allProducts.faceCreams
     },
     {
         childId: allProducts.specialNeeds,
-        parent: "Face cream"
+        parent: allProducts.faceCreams
     },
     {
-        childId: "Anti-ageing Creams",
-        parent: "Face cream"
+        childId: allProducts.antiageing,
+        parent: allProducts.faceCreams
     },
 
     {
         
-        title:<h3>Moisturizing Creams</h3>,
+        title:<h3>{allProducts.moisturizingCreams}</h3>,
         desc : <p>Daily moisturizing is vital for a healthy skin.
          Leaving skin without a moisturizer means compromising the protective skin barrier.
          Kurinjini brings to you a Shea, Mango butter based moisturizer that also has the anti-oxidant properties brought by Vitamin-E.
@@ -68,7 +81,7 @@ const allItems = [
         ingredients : <p><b> Ingredients:</b>Jojoba, Sweet Almond, Vitamin-E,
         Mango butter, Tea Tree, Rosemary,
         Coconut, Virgin Olive, Beeswax</p>,
-        parent: "Moisturizing Creams",
+        parent: allProducts.moisturizingCreams,
         price: <p>Rs.250/-</p>
     },
     {
@@ -126,7 +139,36 @@ const allItems = [
         Virgin Olive, Cocoa Butter</p>,
         parent: allProducts.specialNeeds,
         price: <p>Rs. 300/-</p>
-    }
+    },
+    {
+        
+        title:<h3>{allProducts.lipbalm}</h3>,
+        desc : <p> Cocoa butter is a natural, meltable oil extracted from the cocoa bean. Cocoa butter is great for naturally healing dry, sensitive skin. it has a mild fragrance, a smooth texture and is ultra-hydrating</p>,
+        imagePath : <ImageSlickItem count = {3} smallImage0 = {lipbalmSmallOne} bigImage0={lipbalmBigOne}
+        smallImage1 = {lipbalmSmallTwo} bigImage1={lipbalmBigTwo} smallImage2 = {lipbalmSmallThree} bigImage2={lipbalmBigThree}></ImageSlickItem>,
+        quantity : <p><b> Quantity:</b> 5mg </p>,
+        flavours : <p><b> Available in flavours:</b> Chocolate, Strawberry, Spearmint, Vanilla & Orange - Available in round and stick containers</p>,
+        ingredients :<p><b> Ingredients:</b>Unrefined Beeswax and Cocoa Butter, Jojoba, Sweet Almonds, Vitamin-E, Avocado</p>,
+        parent: allProducts.lipBalmParent,
+        price: <p>Rs. 100/-</p>
+    },
+    {
+        
+        title:<h3>{allProducts.lipScrubs}</h3>,
+        desc : <p> Sugar-based exfoliator that peels off dry and flaky skin from your lips along with providing the needed hydration and nourishment</p>,
+        imagePath : <ImageSlickItem count = {3} smallImage0 = {lipScrubSmallOne} bigImage0={lipScrubBigOne}
+        smallImage1 = {lipScrubSmallTwo} bigImage1={lipScrubBigTwo} smallImage2 = {lipScrubSmallThree} bigImage2={lipScrubBigThree}></ImageSlickItem>,
+        quantity : <p><b> Quantity:</b> 5mg </p>,
+        flavours : <p><b> Available in flavours:</b>Chocolate, Orange(essential oil) - Available in round containers</p>,
+        howtouse : <p><b> How to Use: </b> Rub gently on the lips and after a while wipe off or rinse with water</p>,
+        ingredients :<p><b> Ingredients:</b>It has a sweet sugary flavour through caster sugar blended with raw unbleached beeswax and Cocoa butter. The nourishing oils used are Sweet Almond, Jojoba and Vitamin-E</p>,
+        parent: allProducts.lipBalmParent,
+        price: <p> <b>Cost:</b> <ul> 
+                    <li>5gm - Rs. 100/-</li>
+                    <li>~10gm - 150/-</li>
+                   </ul>
+               </p>     
+    },
     // ,
     
     
