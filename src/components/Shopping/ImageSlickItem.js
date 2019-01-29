@@ -43,7 +43,6 @@ function ImageSlickItem (props) {
                     <ReactImageMagnify
                         {...{
                             smallImage: {
-                                alt: 'Wristwatch by Versace',
                                 isFluidWidth: true,
                                 src: src.small
                             },

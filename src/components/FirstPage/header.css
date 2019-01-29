@@ -11,10 +11,22 @@
     text-shadow:none !important;
 }
 
-.logo {
-    width:15vw;
-    height:auto;
+@media (min-width:770px) {
+    .logo {
+        width:20vw;
+        height:auto;
+    }
+    /* some think */
 }
+
+@media (min-width:200px) and (max-width:770px) {
+    .logo {
+        width:30vw;
+        height:auto;
+    }
+    /* some think */
+}
+
 
 .navbar-brand {
     float: left;
