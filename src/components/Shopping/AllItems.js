@@ -38,7 +38,7 @@ import faceOil from '../../assets/img/Oils/hairandface/faceOil_One.jpg'
 
 const allItems = [
     {
-        childId: allProducts.faceCreams,
+        childId: allProducts.faceCare,
         parent: "parent"
     },
     {
@@ -51,6 +51,10 @@ const allItems = [
     },
     {
         childId: allProducts.soaps,
+        parent: "parent"
+    },
+    {
+        childId: allProducts.hairCare,
         parent: "parent"
     },
     {
@@ -71,23 +75,32 @@ const allItems = [
     },
     {
         childId: allProducts.moisturizingCreams,
-        parent: allProducts.faceCreams
+        parent: allProducts.faceCare
+    },
+    
+    {
+        childId: allProducts.kidsFriendly,
+        parent: allProducts.faceCare
+    },
+    {
+        childId: allProducts.sensitiveSkin,
+        parent: allProducts.faceCare
     },
     {
         childId: allProducts.specialNeeds,
-        parent: allProducts.faceCreams
+        parent: allProducts.faceCare
     },
     {
         childId: allProducts.antiageing,
-        parent: allProducts.faceCreams
+        parent: allProducts.faceCare
     },
     {
         childId: allProducts.serums,
-        parent: allProducts.oilsAndSerums
+        parent: allProducts.faceCare
     },
     {
         childId: allProducts.oils,
-        parent: allProducts.oilsAndSerums
+        parent: allProducts.hairCare
     },
     {
         
@@ -124,7 +137,7 @@ const allItems = [
         seed,  Coconut, beeswax, Sweet 
         Almond,  Vitamin-E, Mango and 
         African Shea butter, Apricot oil</p>,
-        parent: allProducts.specialNeeds,
+        parent: allProducts.antiageing,
         price: <p>Rs.300/-</p>
     },
     {
@@ -146,7 +159,7 @@ const allItems = [
         Moringa, Argan, Jojoba, Grapeseed, 
         beeswax, Mango and African Shea butter, 
         Apricot oil</p>,
-        parent: allProducts.specialNeeds,
+        parent: allProducts.sensitiveSkin,
         goodFor:<p><b> Suitable for:</b>Acne prone skin</p>,
         price: <p>Rs.300/-</p>
     },
@@ -154,14 +167,14 @@ const allItems = [
         
         title:<h3>Fluffy</h3>,
         type:<h6><b>Especially For Kids</b></h6>,
-        desc : <p>Very mild with combination of kids skin friendly oil like Jojoba, Argan and Almond.</p>,
+        desc : <p>Very mild cream with combination of kids skin friendly oil like Jojoba, Argan and Almond. The essential oisl fight infection and promote healing thus providing parents some relaxation in caring for their child.</p>,
         imagePath : <ImageItem smallImageOne = {fluffySmallCream} bigImageOne={fluffyBigCream}></ImageItem>,
         SuitableFor:"Excellent for Kids",
         quantity : <p><b> Quantity:</b> 60 ml</p>,
         ingredients : <p><b> Ingredients:</b>Jojoba, Vitamin-E, Sweet Almond,
         Argan, Avocado, Virgin Coconut,
         Virgin Olive, Cocoa Butter</p>,
-        parent: allProducts.specialNeeds,
+        parent: allProducts.kidsFriendly,
         price: <p>Rs. 300/-</p>
     },
     {
@@ -261,88 +274,102 @@ const allItems = [
     {
         
         title:<h3>Loofah based</h3>,
-        desc : <p> Extra-hydrating serum that has quick absorption quality. Its a combination of oils and essential oils having properties of skin brightening, removal of hyper-pigmentation, even removing blemishes. The basic component is Vitamin-E oil and along with carrier oils as Sweet Almond oil</p>,
-        imagePath : <ImageSlickItem count = {3} smallImage0 = {lipScrubSmallOne} bigImage0={lipScrubBigOne}
-        smallImage1 = {lipScrubSmallTwo} bigImage1={lipScrubBigTwo} smallImage2 = {lipScrubSmallThree} bigImage2={lipScrubBigThree}></ImageSlickItem>,
-        quantity : <p><b> Quantity:</b> 5mg </p>,
-        flavours : <p><b> Available in flavours:</b>Chocolate, Orange(essential oil) - Available in round containers</p>,
-        howtouse : <p><b> How to Use: </b> Rub gently on the lips and after a while wipe off or rinse with water</p>,
+        desc : <p> Loofahs are made from the dried fruit of a tropical plant called Loofah. Loofah is strong and suitable for hard heels. Extra-hydrating serum that has quick absorption quality. Its a combination of oils and essential oils having properties of skin brightening, removal of hyper-pigmentation, even removing blemishes. The basic component is Vitamin-E oil and along with carrier oils as Sweet Almond oil.
+            Available with addition of some essential oils or fragrance that are proven to be not only beneficial on your skin but also your life. They have properties to reducing stress, anxiety, bringing calmness and soothing on skin too.</p>,
+        imagePath : "",
+        quantity : <p><b> Quantity:</b> 100gm </p>,
+        flavours : <p><b> Available in flavours:</b>Ylang-Ylang, Basil, Lavender, Orange, Fruit Medley, Mango Mandarian, Rosewood, Chamomile</p>,
         ingredients :<p><b> Ingredients:</b>It has a sweet sugary flavour through caster sugar blended with raw unbleached beeswax and Cocoa butter. The nourishing oils used are Sweet Almond, Jojoba and Vitamin-E</p>,
         parent: allProducts.scrubbers,
-        price: <p> <b>Cost:</b> <ul> 
-                    <li>5gm - Rs. 100/-</li>
-                    <li>~10gm - 150/-</li>
-                   </ul>
+        price: <p> <b>Cost:</b> Rs. 100
                </p>     
     },
     {
         
         title:<h3>Caster Sugar based</h3>,
-        desc : <p> Extra-hydrating serum that has quick absorption quality. Its a combination of oils and essential oils having properties of skin brightening, removal of hyper-pigmentation, even removing blemishes. The basic component is Vitamin-E oil and along with carrier oils as Sweet Almond oil</p>,
-        imagePath : <ImageSlickItem count = {3} smallImage0 = {lipScrubSmallOne} bigImage0={lipScrubBigOne}
-        smallImage1 = {lipScrubSmallTwo} bigImage1={lipScrubBigTwo} smallImage2 = {lipScrubSmallThree} bigImage2={lipScrubBigThree}></ImageSlickItem>,
-        quantity : <p><b> Quantity:</b> 5mg </p>,
-        flavours : <p><b> Available in flavours:</b>Chocolate, Orange(essential oil) - Available in round containers</p>,
-        howtouse : <p><b> How to Use: </b> Rub gently on the lips and after a while wipe off or rinse with water</p>,
-        ingredients :<p><b> Ingredients:</b>It has a sweet sugary flavour through caster sugar blended with raw unbleached beeswax and Cocoa butter. The nourishing oils used are Sweet Almond, Jojoba and Vitamin-E</p>,
+        desc : <p> A soap that removes dry skin from your feet making it smooth and clean. Currently in two variants, caster sugar is fine-grained sugar that helps to maintain moisture in the skin and makes a gentle scrub, removing dead cells to brighten, smooth and moisturise the skin.
+            Available with addition of some essential oils or fragrance that are proven to be not only beneficial on your skin but also your life. They have properties to reducing stress, anxiety, bringing calmness and soothing on skin too.
+        </p>,
+        imagePath : "",
+        quantity : <p><b> Quantity:</b> ~80gm </p>,
+        flavours : <p><b> Available in flavours:</b>Ylang-Ylang, Basil, Lavender, Orange, Fruit Medley, Mango Mandarian, Rosewood, Chamomile</p>,
+        ingredients :<p><b> Ingredients:</b>Caster sugar blended with Vitamin-E and Sweet Almond. Essential oils are added depending on flavour</p>,
         parent: allProducts.scrubbers,
-        price: <p> <b>Cost:</b> <ul> 
-                    <li>5gm - Rs. 100/-</li>
-                    <li>~10gm - 150/-</li>
-                   </ul>
-               </p>     
+        price: <p> <b>Cost:</b> Rs.70</p>     
     },
     {
         
-        title:<h3>Aromatic soaps</h3>,
-        desc : <p> Extra-hydrating serum that has quick absorption quality. Its a combination of oils and essential oils having properties of skin brightening, removal of hyper-pigmentation, even removing blemishes. The basic component is Vitamin-E oil and along with carrier oils as Sweet Almond oil</p>,
-        imagePath : <ImageSlickItem count = {3} smallImage0 = {lipScrubSmallOne} bigImage0={lipScrubBigOne}
-        smallImage1 = {lipScrubSmallTwo} bigImage1={lipScrubBigTwo} smallImage2 = {lipScrubSmallThree} bigImage2={lipScrubBigThree}></ImageSlickItem>,
-        quantity : <p><b> Quantity:</b> 5mg </p>,
-        flavours : <p><b> Available in flavours:</b>Chocolate, Orange(essential oil) - Available in round containers</p>,
-        howtouse : <p><b> How to Use: </b> Rub gently on the lips and after a while wipe off or rinse with water</p>,
-        ingredients :<p><b> Ingredients:</b>It has a sweet sugary flavour through caster sugar blended with raw unbleached beeswax and Cocoa butter. The nourishing oils used are Sweet Almond, Jojoba and Vitamin-E</p>,
+        title:<h3>Mild scrubbers</h3>,
+        desc : <p> Mild scrubbers that gently exfoliate the dead skin. These scrubbers are required for gentle body scrubbing and along with these provide skin nourishment too. Loofahs are made from the dried fruit of a tropical plant called Loofah. Loofah is strong and suitable for hard heels. Extra-hydrating serum that has quick absorption quality. Its a combination of oils and essential oils having properties of skin brightening, removal of hyper-pigmentation, even removing blemishes. The basic component is Vitamin-E oil and along with carrier oils as Sweet Almond oil.
+            Available with addition of some essential oils or fragrance that are proven to be not only beneficial on your skin but also your life. They have properties to reducing stress, anxiety, bringing calmness and soothing on skin too.</p>,
+        imagePath : "",
+        quantity : <p><b> Quantity:</b> 100gm </p>,
+        flavours : <p><b> Available in flavours:</b>Oatmeal, Chia seeds, Flax seeds, Poppy seeds</p>,
+        ingredients :<p><b> Ingredients:</b>Coconute, Glycerine and dpeneding on the flavour the respective ingredient is added</p>,
+        parent: allProducts.scrubbers,
+        price: <p> <b>Cost:</b> Rs. 100
+               </p>     
+    },
+    {  
+        title:<h3>Vanilla Chocolate</h3>,
+        desc : <p>"mmmmm" is the first of the few expressions get out when taking a bath with such a soap. Imagine starting your day with such a scent every morning under a shower. Good for kids and everyone else out there who just love chocolate</p>,
+        imagePath : "",
+        quantity : <p><b> Quantity:</b> 80-90gm </p>,
+        ingredients :<p><b> Ingredients:</b>Coconut, Shea Butter, Glycerine, Cocoa powder, Warm Vanilla fragrance</p>,
         parent: allProducts.normalSoaps,
-        price: <p> <b>Cost:</b> <ul> 
-                    <li>5gm - Rs. 100/-</li>
-                    <li>~10gm - 150/-</li>
-                   </ul>
-               </p>     
+        goodFor:<p>Especially for Kids</p>,
+        price: <p> <b>Cost:</b>80/-</p>     
+    },
+    {  
+        title:<h3>Shea Cherry Blossom</h3>,
+        desc : <p>A pink and carrying less fruity, more floral smell, this soap is for everyone who lives in the moment. Imagine a smell that is exotic and soothing both in and out of your skin.</p>,
+        imagePath : "",
+        quantity : <p><b> Quantity:</b> 100gm </p>,
+        ingredients :<p><b> Ingredients:</b>Coconut, Shea Butter, Glycerine, Cherry Blossom fragrance</p>,
+        parent: allProducts.normalSoaps,
+        price: <p> <b>Cost:</b>100/-</p>     
+    },
+    {  
+        title:<h3>Basil Thyme</h3>,
+        desc : <p>Basil essential oil is calming in nature and a natural relaxant oil. Inhaling this essential oil may help ease nervous tension, anxiety, depression, fatigue, mental strain, and other mental conditions. 
+            Imagine inhaling daily during your bath. This can not only do wonders on your skin but also calms your heart and mind.</p>,
+        imagePath : "",
+        quantity : <p><b> Quantity:</b> 80gm </p>,
+        ingredients :<p><b> Ingredients:</b>Coconut, Shea Butter, Coconut, Glycerine, Basil essentials, Thyme leaves</p>,
+        parent: allProducts.normalSoaps,
+        price: <p> <b>Cost:</b>100/-</p>     
     },
     {
         
-        title:<h3>Foot healer</h3>,
-        desc : <p> Extra-hydrating serum that has quick absorption quality. Its a combination of oils and essential oils having properties of skin brightening, removal of hyper-pigmentation, even removing blemishes. The basic component is Vitamin-E oil and along with carrier oils as Sweet Almond oil</p>,
-        imagePath : <ImageSlickItem count = {3} smallImage0 = {lipScrubSmallOne} bigImage0={lipScrubBigOne}
-        smallImage1 = {lipScrubSmallTwo} bigImage1={lipScrubBigTwo} smallImage2 = {lipScrubSmallThree} bigImage2={lipScrubBigThree}></ImageSlickItem>,
-        quantity : <p><b> Quantity:</b> 5mg </p>,
+        title:<h3>Silk Route</h3>,
+        type: <h6><b>{allProducts.footHealer}</b></h6>,
+        desc : <p> One of the most common foot issues found in most of us is the issue of “cracked heels”. And, do we pay attention to it!  think its even one of the most neglected skin problem. But it does matter, these skin cracks apart from being painful, can allow bacteria and viruses to enter the body, leading to infection and illness. And, if you are diabetic, it is important to examine your feet frequently for signs of cracks or infection.</p>,
+        imagePath : "",
+        quantity : <p><b> Quantity:</b> ~40ml </p>,
         flavours : <p><b> Available in flavours:</b>Chocolate, Orange(essential oil) - Available in round containers</p>,
         howtouse : <p><b> How to Use: </b> Rub gently on the lips and after a while wipe off or rinse with water</p>,
-        ingredients :<p><b> Ingredients:</b>It has a sweet sugary flavour through caster sugar blended with raw unbleached beeswax and Cocoa butter. The nourishing oils used are Sweet Almond, Jojoba and Vitamin-E</p>,
+        ingredients :<p><b> Ingredients:</b>Bringing you, Silk Route, a foot healer that is made especially for that purpose. Cucumber seed oil along with grapeseed oil provides the healing capabilities for a dry and cracked skin. Also including other essential oils that encourages skin growth and cell regeneration</p>,
         parent: allProducts.footCare,
-        price: <p> <b>Cost:</b> <ul> 
-                    <li>5gm - Rs. 100/-</li>
-                    <li>~10gm - 150/-</li>
-                   </ul>
-               </p>     
-    },
-    {
-        
-        title:<h3>Butterfly</h3>,
-        desc : <p> Extra-hydrating serum that has quick absorption quality. Its a combination of oils and essential oils having properties of skin brightening, removal of hyper-pigmentation, even removing blemishes. The basic component is Vitamin-E oil and along with carrier oils as Sweet Almond oil</p>,
-        imagePath : <ImageSlickItem count = {3} smallImage0 = {lipScrubSmallOne} bigImage0={lipScrubBigOne}
-        smallImage1 = {lipScrubSmallTwo} bigImage1={lipScrubBigTwo} smallImage2 = {lipScrubSmallThree} bigImage2={lipScrubBigThree}></ImageSlickItem>,
-        quantity : <p><b> Quantity:</b> 5mg </p>,
-        flavours : <p><b> Available in flavours:</b>Chocolate, Orange(essential oil) - Available in round containers</p>,
-        howtouse : <p><b> How to Use: </b> Rub gently on the lips and after a while wipe off or rinse with water</p>,
-        ingredients :<p><b> Ingredients:</b>It has a sweet sugary flavour through caster sugar blended with raw unbleached beeswax and Cocoa butter. The nourishing oils used are Sweet Almond, Jojoba and Vitamin-E</p>,
-        parent: allProducts.bodyButter,
-        price: <p> <b>Cost:</b> <ul> 
-                    <li>5gm - Rs. 100/-</li>
-                    <li>~10gm - 150/-</li>
-                   </ul>
+        price: <p> <b>Cost:</b> 200
                </p>     
     }
+    // ,
+    // {
+        
+    //     title:<h3>Satin</h3>,
+    //     desc : <p> Extra-hydrating serum that has quick absorption quality. Its a combination of oils and essential oils having properties of skin brightening, removal of hyper-pigmentation, even removing blemishes. The basic component is Vitamin-E oil and along with carrier oils as Sweet Almond oil</p>,
+    //     imagePath : <ImageItem smallImageOne = "Not Available"></ImageItem>,
+    //     quantity : <p><b> Quantity:</b> 5mg </p>,
+    //     flavours : <p><b> Available in flavours:</b>Chocolate, Orange(essential oil) - Available in round containers</p>,
+    //     howtouse : <p><b> How to Use: </b> Rub gently on the lips and after a while wipe off or rinse with water</p>,
+    //     ingredients :<p><b> Ingredients:</b>It has a sweet sugary flavour through caster sugar blended with raw unbleached beeswax and Cocoa butter. The nourishing oils used are Sweet Almond, Jojoba and Vitamin-E</p>,
+    //     parent: allProducts.bodyButter,
+    //     price: <p> <b>Cost:</b> <ul> 
+    //                 <li>5gm - Rs. 100/-</li>
+    //                 <li>~10gm - 150/-</li>
+    //                </ul>
+    //            </p>     
+    // }
     // ,
     
     

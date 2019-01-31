@@ -10,7 +10,7 @@ function ImageItem (props) {
                     <ReactImageMagnify
                         {...{
                             smallImage: {
-                                alt: 'Wristwatch by Versace',
+                                alt: 'Not available',
                                 isFluidWidth: true,
                                 src: props.smallImageOne
                             },

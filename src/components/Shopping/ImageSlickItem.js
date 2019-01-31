@@ -43,6 +43,7 @@ function ImageSlickItem (props) {
                     <ReactImageMagnify
                         {...{
                             smallImage: {
+                                alt:"Not available",
                                 isFluidWidth: true,
                                 src: src.small
                             },

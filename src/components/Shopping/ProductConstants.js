@@ -1,11 +1,11 @@
 
 
 const allProducts = {
-    lipBalmParent : "Lip Balms and Scrubbers",
+    lipBalmParent : "Lip Care",
     specialNeeds: "Special needs",
-    moisturizingCreams:"Moisturizing Creams",
-    faceCreams:"Face Cream",
-    antiageing:"Anti-ageing Creams",
+    moisturizingCreams:"Moisturizing cream",
+    faceCare:"Face Care",
+    antiageing:"Anti-ageing cream",
     lipbalm:"Lip Balm",
     lipScrubs:"Lip Scrubs",
     oilsAndSerums:"Oils and Serums",
@@ -16,12 +16,17 @@ const allProducts = {
     soaps: "Soaping bars",
     bodyScrub:"Body Scrubbers",
     footScrub:"Foot Scrubbers",
-    normalSoaps: "Normal",
+    normalSoaps: "Aromatic Soaps",
     scrubbers:"Scrubbers",
     footCare: "Foot care",
     bodyButter:"Body Butter",
     oils:"Oils",
-    serums:"Serums"
+    serums:"Serums",
+    hairCare:"Hair Care",
+    kidsFriendly:"Kids cream",
+    sensitiveSkin:"Cream for sensitive Skin",
+    footHealer:"Foot Healer",
+    kidSoap:"Kids friendly Soap"
 }
 
 export default allProducts

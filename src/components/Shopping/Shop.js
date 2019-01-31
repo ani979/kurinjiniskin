@@ -17,7 +17,8 @@ function Shop() {
     <div>
         <TopBar></TopBar>
         <Header></Header>
-        <h1 className="center" > Our products </h1>
+        <h2 className="center shopping-header" > Our Products </h2>
+        <p className="inside-para"> Click to collapse and view the products</p>
         {allItemsData}
     </div>);
 }

@@ -1,5 +1,18 @@
-.selling-text {
-    text-align: center;
-    margin-top:50px;
-    margin-bottom: 50px;
-}
+
+@media (min-width: 200px) and (max-width:500px) {
+    .selling-text {
+        text-align: center;
+        margin-top:50px;
+        margin-bottom: 50px;
+        font-size:30px;
+    }
+} 
+
+@media (min-width: 1000px) {
+    .selling-text {
+        text-align: center;
+        margin-top:50px;
+        margin-bottom: 50px;
+    }
+}   
+ 
