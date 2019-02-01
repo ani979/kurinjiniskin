@@ -200,11 +200,12 @@ const allItems = [
         howtouse : <p><b> How to Use: </b> Rub gently on the lips and after a while wipe off or rinse with water</p>,
         ingredients :<p><b> Ingredients:</b>It has a sweet sugary flavour through caster sugar blended with raw unbleached beeswax and Cocoa butter. The nourishing oils used are Sweet Almond, Jojoba and Vitamin-E</p>,
         parent: allProducts.lipBalmParent,
-        price: <p> <b>Cost:</b> <ul> 
+        price: <div> <b>Cost:</b> 
+                    <ul> 
                     <li>5gm - Rs. 100/-</li>
                     <li>~10gm - 150/-</li>
                    </ul>
-               </p>     
+               </div>     
     },
     {
         
@@ -247,11 +248,11 @@ const allItems = [
         howtouse : <p><b> How to Use: </b> Rub gently on the lips and after a while wipe off or rinse with water</p>,
         ingredients :<p><b> Ingredients:</b>It has a sweet sugary flavour through caster sugar blended with raw unbleached beeswax and Cocoa butter. The nourishing oils used are Sweet Almond, Jojoba and Vitamin-E</p>,
         parent: allProducts.oils,
-        price: <p> <b>Cost:</b> <ul> 
+        price: <div> <b>Cost:</b> <ul> 
                     <li>5gm - Rs. 100/-</li>
                     <li>~10gm - 150/-</li>
                    </ul>
-               </p>     
+               </div>     
     },
     {
         
@@ -265,11 +266,11 @@ const allItems = [
         howtouse : <p><b> How to Use: </b> Rub gently on the lips and after a while wipe off or rinse with water</p>,
         ingredients :<p><b> Ingredients:</b>It has a sweet sugary flavour through caster sugar blended with raw unbleached beeswax and Cocoa butter. The nourishing oils used are Sweet Almond, Jojoba and Vitamin-E</p>,
         parent: allProducts.oils,
-        price: <p> <b>Cost:</b> <ul> 
+        price: <div> <b>Cost:</b> <ul> 
                     <li>5gm - Rs. 100/-</li>
                     <li>~10gm - 150/-</li>
                    </ul>
-               </p>     
+               </div>     
     },
     {
         
