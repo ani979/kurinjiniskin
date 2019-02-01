@@ -13,7 +13,11 @@ const allquestions = [
     },
     {
         header: "Can you customize for my kind of skin?",
-        content: "Yes definitely, even though it may take sometime but i will be very happy to work with you personally and get you based on your skin requirements."
+        content: "Yes definitely, even though it may take sometime but i will be very happy to work with you personally and get you something based on your skin requirements."
+    },
+    {
+        header: "How do you claim your ingrendients are 100% organic",
+        content: "We have chosen our suppliers very carefully and after a discussion with known people in this field. All these suppliers have got accredition from Govt. of India on their purety and organic nature. We only take the supplies from three renowned suppliers in Bangalore. Details can be furnished if requested."
     },
 ]
 

@@ -344,12 +344,10 @@ const allItems = [
         
         title:<h3>Silk Route</h3>,
         type: <h6><b>{allProducts.footHealer}</b></h6>,
-        desc : <p> One of the most common foot issues found in most of us is the issue of “cracked heels”. And, do we pay attention to it!  think its even one of the most neglected skin problem. But it does matter, these skin cracks apart from being painful, can allow bacteria and viruses to enter the body, leading to infection and illness. And, if you are diabetic, it is important to examine your feet frequently for signs of cracks or infection.</p>,
+        desc : <p> One of the most common foot issues found in most of us is the issue of “cracked heels”. And, do we pay attention to it!  think its even one of the most neglected skin problem. But it does matter, these skin cracks apart from being painful, can allow bacteria and viruses to enter the body, leading to infection and illness. And, if you are diabetic, it is important to examine your feet frequently for signs of cracks or infection. Foot Healer has Rosemary essentials that saves from any fungal or bacterial infection.</p>,
         imagePath : "",
         quantity : <p><b> Quantity:</b> ~40ml </p>,
-        flavours : <p><b> Available in flavours:</b>Chocolate, Orange(essential oil) - Available in round containers</p>,
-        howtouse : <p><b> How to Use: </b> Rub gently on the lips and after a while wipe off or rinse with water</p>,
-        ingredients :<p><b> Ingredients:</b>Bringing you, Silk Route, a foot healer that is made especially for that purpose. Cucumber seed oil along with grapeseed oil provides the healing capabilities for a dry and cracked skin. Also including other essential oils that encourages skin growth and cell regeneration</p>,
+        ingredients :<p><b> Ingredients:</b>Cucumber seed, Moringa,  Grapeseed, Rosemary, Hemp, Shea butter, Vitamin-E, Coconut, Virgin Olive, Beeswax</p>,
         parent: allProducts.footCare,
         price: <p> <b>Cost:</b> 200
                </p>     

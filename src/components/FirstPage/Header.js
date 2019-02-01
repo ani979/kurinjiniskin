@@ -14,13 +14,13 @@ function Header() {
     <Navbar.Collapse>
       
         <Nav>
-          <NavItem eventKey={1} href="/howtoorder">
+          <NavItem href="/howtoorder">
             How to Order
           </NavItem>
-          <NavItem eventKey={2} href="/shop">
+          <NavItem href="/shop">
             Products
           </NavItem>
-          <NavItem eventKey={3} href="/faqs">
+          <NavItem href="/faqs">
             FAQs
           </NavItem>
         </Nav>
