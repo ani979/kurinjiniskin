@@ -7,7 +7,7 @@ function ImageItem (props) {
     
     return (
                 <div>
-                    <ReactImageMagnify
+                    {/* <ReactImageMagnify
                         {...{
                             smallImage: {
                                 alt: 'Not available',
@@ -27,7 +27,8 @@ function ImageItem (props) {
                             enlargedImagePosition: 'over'
                         }}
                         
-                    />
+                    /> */}
+                    <img src = {props.smallImageOne} className="item-image"/>
                 </div>
             
 

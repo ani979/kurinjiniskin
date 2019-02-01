@@ -71,7 +71,7 @@ const allItems = [
     },
     {
         childId: allProducts.oilsAndSerums,
-        parent: "parent"
+        parent: allProducts.faceCare
     },
     {
         childId: allProducts.moisturizingCreams,
@@ -200,10 +200,10 @@ const allItems = [
         howtouse : <p><b> How to Use: </b> Rub gently on the lips and after a while wipe off or rinse with water</p>,
         ingredients :<p><b> Ingredients:</b>It has a sweet sugary flavour through caster sugar blended with raw unbleached beeswax and Cocoa butter. The nourishing oils used are Sweet Almond, Jojoba and Vitamin-E</p>,
         parent: allProducts.lipBalmParent,
-        price: <div> <b>Cost:</b> 
+        price: <div> <p><b>Cost:</b></p> 
                     <ul> 
-                    <li>5gm - Rs. 100/-</li>
-                    <li>~10gm - 150/-</li>
+                    <li><p>5gm - Rs. 100/-</p></li>
+                    <li><p>~10gm - 150/-</p></li>
                    </ul>
                </div>     
     },
@@ -217,7 +217,7 @@ const allItems = [
         quantity : <p><b> Quantity:</b> 20ml </p>,
         howtouse : <p><b> How to Use: </b>It's a night application cream. Take a small quantity on your finger tip and apply gently after a face wash on your face.</p>,
         ingredients :<p><b> Ingredients:</b>Sandalwood, Helichrysum, Rosehip, Frakincense, Vitamin-E, Jojoba, Sweet Almond, Hemp, Avocado, Moringa and Alove.</p>,
-        parent: allProducts.serums,
+        parent: allProducts.oilsAndSerums,
         goodFor: <p>All kinds of skin. 16 years and plus only.</p>,
         price: <p> <b>Cost:</b> Rs.350/-
                </p>     
@@ -231,7 +231,7 @@ const allItems = [
         quantity : <p><b> Quantity:</b> 20ml </p>,
         howtouse : <p><b> How to Use: </b>It's a night application cream. Take a small quantity on your finger tip and massage gently under your eyes so that it improves blood circulation.</p>,
         ingredients :<p><b> Ingredients:</b>Sandalwood, Helichrysum, Geranium, Lavender, Carrot seed, Cucumber seed, Rosehip, Vitamin-E, Hemp, Jojoba, Sweet Almond and Alove.</p>,
-        parent: allProducts.serums,
+        parent: allProducts.oilsAndSerums,
         goodFor: <p>All kinds of skin. 16 years and plus only.</p>,
         price: <p> <b>Cost:</b> Rs.350/-
                </p>     
@@ -241,17 +241,15 @@ const allItems = [
         
         title:<h3>Renaissance</h3>,
         type: <h6><b>{allProducts.nightOil}</b></h6>,
-        desc : <p> Extra-hydrating serum that has quick absorption quality. Its a combination of oils and essential oils having properties of skin brightening, removal of hyper-pigmentation, even removing blemishes. The basic component is Vitamin-E oil and along with carrier oils as Sweet Almond oil</p>,
+        desc : <p> Extra-hydrating night application oil that has quick absorption quality. Its a combination of oils and essential oils having properties of skin brightening, removal of hyper-pigmentation, even removing blemishes. The basic component is Vitamin-E oil and along with carrier oils as Sweet Almond oil</p>,
         imagePath : <ImageItem smallImageOne = {faceOil} bigImageOne={faceOil}></ImageItem>,
-        quantity : <p><b> Quantity:</b> 5mg </p>,
-        flavours : <p><b> Available in flavours:</b>Chocolate, Orange(essential oil) - Available in round containers</p>,
-        howtouse : <p><b> How to Use: </b> Rub gently on the lips and after a while wipe off or rinse with water</p>,
-        ingredients :<p><b> Ingredients:</b>It has a sweet sugary flavour through caster sugar blended with raw unbleached beeswax and Cocoa butter. The nourishing oils used are Sweet Almond, Jojoba and Vitamin-E</p>,
-        parent: allProducts.oils,
-        price: <div> <b>Cost:</b> <ul> 
-                    <li>5gm - Rs. 100/-</li>
-                    <li>~10gm - 150/-</li>
-                   </ul>
+        quantity : <p><b> Quantity:</b> 10 ml </p>,
+        howtouse : <p><b> How to Use: </b> Apply after a face wash during night before going to bed.</p>,
+        ingredients :<p><b> Ingredients:</b>Saffron, Argan, Moringa, Tea Tree, Geranium, Rosemary, Jojoba, Grapeseed,
+        Cucumber seed, Hemp, Avocado,
+        Frankincense, Lemon Grass, Coconut</p>,
+        parent: allProducts.oilsAndSerums,
+        price: <div> <p><b>Cost:</b> Rs.200/-</p>
                </div>     
     },
     {
@@ -266,9 +264,9 @@ const allItems = [
         howtouse : <p><b> How to Use: </b> Rub gently on the lips and after a while wipe off or rinse with water</p>,
         ingredients :<p><b> Ingredients:</b>It has a sweet sugary flavour through caster sugar blended with raw unbleached beeswax and Cocoa butter. The nourishing oils used are Sweet Almond, Jojoba and Vitamin-E</p>,
         parent: allProducts.oils,
-        price: <div> <b>Cost:</b> <ul> 
-                    <li>5gm - Rs. 100/-</li>
-                    <li>~10gm - 150/-</li>
+        price: <div> <p><b>Cost:</b></p> <ul> 
+                    <li><p>5gm - Rs. 100/-</p></li>
+                    <li><p>~10gm - 150/-</p></li>
                    </ul>
                </div>     
     },

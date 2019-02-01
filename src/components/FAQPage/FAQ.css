@@ -1,0 +1,19 @@
+@media (min-width: 200px) and (max-width:500px) {
+    .answer-style{
+        font-size:16px !important;
+    }
+    .collapsible-header, .is-open {
+        font-size:18px !important;
+    }
+    
+} 
+
+@media (min-width: 501px)  {
+    .answer-style {
+        font-size:18px !important;
+    }
+
+    .collapsible-header, .is-open {
+        font-size:20px !important;
+    }
+} 

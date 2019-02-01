@@ -10,7 +10,7 @@ function FAQ() {
 
     var allQandA = [];
     allquestions.map((one)=> {
-        return allQandA.push(<Collapsible trigger={one.header}>
+        return allQandA.push(<Collapsible className = "collapsible-header" trigger={one.header}>
         <p className = "answer-style"> {one.content}</p></Collapsible>)
     })
     return  (<div>

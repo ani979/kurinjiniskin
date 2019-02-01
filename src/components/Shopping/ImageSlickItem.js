@@ -40,7 +40,7 @@ function ImageSlickItem (props) {
         >
             {dataSource.map((src, index) => (
                 <div key={index}>
-                    <ReactImageMagnify
+                    {/* <ReactImageMagnify
                         {...{
                             smallImage: {
                                 alt:"Not available",
@@ -60,7 +60,8 @@ function ImageSlickItem (props) {
                             enlargedImagePosition: 'over'
                         }}
                         
-                    />
+                    /> */}
+                    <img src = {src.large} className="item-image"/>
                 </div>
             ))}
         </ReactSlick>
