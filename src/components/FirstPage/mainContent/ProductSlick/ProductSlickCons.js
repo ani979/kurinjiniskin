@@ -1,10 +1,10 @@
 const productsData = 
     [
-        {
-        'name': 'Body Care',
-        'desc':'Body butter for all seasons. A natural rejuvenator. Available in 250gms.',
-        'classname': 'bg-image-body'
-        },
+        // {
+        // 'name': 'Body Care',
+        // 'desc':'Body butter for all seasons. A natural rejuvenator. Available in 250gms.',
+        // 'classname': 'bg-image-body'
+        // },
         {
         'name': 'Face Care',
         'desc':'Our moisturizing creams range from anti-ageing to kids special. Helping in prevention of acne, hyper pigmentation, the creams are available in different ranges',

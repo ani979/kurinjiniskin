@@ -318,26 +318,9 @@ const allItems = [
         parent: allProducts.normalSoaps,
         goodFor:<p>Especially for Kids</p>,
         price: <p> <b>Cost:</b>80/-</p>     
-    },
-    {  
-        title:<h3>Shea Cherry Blossom</h3>,
-        desc : <p>A pink and carrying less fruity, more floral smell, this soap is for everyone who lives in the moment. Imagine a smell that is exotic and soothing both in and out of your skin.</p>,
-        imagePath : "",
-        quantity : <p><b> Quantity:</b> 100gm </p>,
-        ingredients :<p><b> Ingredients:</b>Coconut, Shea Butter, Glycerine, Cherry Blossom fragrance</p>,
-        parent: allProducts.normalSoaps,
-        price: <p> <b>Cost:</b>100/-</p>     
-    },
-    {  
-        title:<h3>Basil Thyme</h3>,
-        desc : <p>Basil essential oil is calming in nature and a natural relaxant oil. Inhaling this essential oil may help ease nervous tension, anxiety, depression, fatigue, mental strain, and other mental conditions. 
-            Imagine inhaling daily during your bath. This can not only do wonders on your skin but also calms your heart and mind.</p>,
-        imagePath : "",
-        quantity : <p><b> Quantity:</b> 80gm </p>,
-        ingredients :<p><b> Ingredients:</b>Coconut, Shea Butter, Coconut, Glycerine, Basil essentials, Thyme leaves</p>,
-        parent: allProducts.normalSoaps,
-        price: <p> <b>Cost:</b>100/-</p>     
-    },
+    }
+    // 
+    ,
     {
         
         title:<h3>Silk Route</h3>,

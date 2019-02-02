@@ -20,9 +20,9 @@ function Header() {
           <NavItem href="/shop">
             Products
           </NavItem>
-          <NavItem href="/faqs">
+          {/* <NavItem href="/faqs">
             FAQs
-          </NavItem>
+          </NavItem> */}
         </Nav>
         {/* <Nav pullRight>
           <NavItem eventKey={1} href="#">
