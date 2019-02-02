@@ -1,4 +1,5 @@
 .Collapsible {
+    font-family: 'Slabo 27px', serif;
     background-color: white; }
   
   .Collapsible__contentInner {
@@ -20,7 +21,8 @@
     position: relative;
     border: 1px solid white;
     padding: 10px;
-    background: #00ac9d;
+    padding-right: 25px;
+    background: #31315f;
     color: white; }
     .Collapsible__trigger:after {
       font-family: 'FontAwesome';

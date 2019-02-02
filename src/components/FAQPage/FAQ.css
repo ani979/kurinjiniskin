@@ -2,7 +2,7 @@
     .answer-style{
         font-size:16px !important;
     }
-    .collapsible-header, .is-open {
+    .collapsible-header, .is-open, .is-closed {
         font-size:18px !important;
     }
     
@@ -13,7 +13,7 @@
         font-size:18px !important;
     }
 
-    .collapsible-header, .is-open {
-        font-size:20px !important;
+    .collapsible-header, .is-open, .is-closed {
+        font-size:24px !important;
     }
 } 

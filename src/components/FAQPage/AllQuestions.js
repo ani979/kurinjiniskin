@@ -4,12 +4,12 @@ import React from 'react'
 const allquestions = [
 
     {
-        header: "Are our products really homemade?",
-        content: "Yes we do. We prepare our products at our house in Bangalore. We don't have any factory or any sort of industrial unit. From taking orders to preparing the products, everything is done at home."
+        header: "Are your products really homemade?",
+        content: "Indeed! We prepare our products at our home in Bangalore. We don't have any factory or any sort of industrial unit. From taking orders to preparing the products, everything is done at home."
     },
     {
         header: "What if products are found to be ineffective or not suitable to my skin?",
-        content: "Being natural, the products are quite safe to use and ingredients are within prescribed limits especially use of essential oils. However, it may happen that something doesnt suit you well, please don't hesitate to share with us and we will be happy to replace or return back. "
+        content: "Being natural, the products are quite safe to use and ingredients are within prescribed limits especially with the use of essential oils. However, it may happen that something doesnt suit you well, please don't hesitate to share with us and we will be happy to replace or take it back. "
     },
     {
         header: "Can you customize for my kind of skin?",
