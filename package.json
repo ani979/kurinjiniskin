@@ -20,7 +20,7 @@
     "start": "PORT=8000 react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "aws s3 sync build/ s3://kurinjiniskincare.com",
+    "deploy": "aws s3 sync --delete build/ s3://kurinjiniskincare.com",
     "build": "react-scripts build"
   },
   "eslintConfig": {

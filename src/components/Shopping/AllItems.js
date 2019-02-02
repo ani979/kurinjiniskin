@@ -256,19 +256,15 @@ const allItems = [
         
         title:<h3>Resurgence</h3>,
         type: <h6><b>{allProducts.hairOil}</b></h6>,
-        desc : <p> Extra-hydrating serum that has quick absorption quality. Its a combination of oils and essential oils having properties of skin brightening, removal of hyper-pigmentation, even removing blemishes. The basic component is Vitamin-E oil and along with carrier oils as Sweet Almond oil</p>,
+        desc : <p> Our hair is just as sensitive as our skin. The basic substance of hair is keratin, a strong protein. When we lose our hair as each one comes to the end, a new hair should grow in its place. This should happen instantaneously but because of our lifestyle and synthetic chemicals that we apply with shampoo or conditioners, the time between a hair getting lost and new one coming up can extend so that our hair begins to thin. “Resurgence” is an intense hair treatment oil. It consists of Argan, Grapeseed essential oils that consists of Vitamin-E, a natural anti-oxidant that nourishes dry damaged hair, repairs and rejuvenates, thereby protecting it and giving it the needed shine. Hemp oil is a great oil for scalp and helps grow hair faster, thicker and longer. Avocado oil present acts as a carrier oil stimulating the blood flow and unclog blocked follicles.</p>,
         imagePath : <ImageSlickItem count = {2} smallImage0 = {hairSmallOne} bigImage0={hairBigOne}
         smallImage1 = {hairSmallTwo} bigImage1={hairBigTwo}></ImageSlickItem>,
-        quantity : <p><b> Quantity:</b> 5mg </p>,
-        flavours : <p><b> Available in flavours:</b>Chocolate, Orange(essential oil) - Available in round containers</p>,
-        howtouse : <p><b> How to Use: </b> Rub gently on the lips and after a while wipe off or rinse with water</p>,
-        ingredients :<p><b> Ingredients:</b>It has a sweet sugary flavour through caster sugar blended with raw unbleached beeswax and Cocoa butter. The nourishing oils used are Sweet Almond, Jojoba and Vitamin-E</p>,
+        quantity : <p><b> Quantity:</b> 10ml </p>,
+        howtouse : <p><b> How to Use: </b> Apply with any carrier oil</p>,
+        ingredients :<p><b> Ingredients:</b>Argan, Moringa, Rosemary, Grapeseed, Cucumber seed, Jojoba, Hemp, Frankincense, Lemon Grass, Coconut, Avocado</p>,
         parent: allProducts.oils,
-        price: <div> <p><b>Cost:</b></p> <ul> 
-                    <li><p>5gm - Rs. 100/-</p></li>
-                    <li><p>~10gm - 150/-</p></li>
-                   </ul>
-               </div>     
+        price: <p><b>Cost:</b> Rs. 200/-</p> 
+                    
     },
     {
         
@@ -325,10 +321,14 @@ const allItems = [
         
         title:<h3>Silk Route</h3>,
         type: <h6><b>{allProducts.footHealer}</b></h6>,
-        desc : <p> One of the most common foot issues found in most of us is the issue of “cracked heels”. And, do we pay attention to it!  think its even one of the most neglected skin problem. But it does matter, these skin cracks apart from being painful, can allow bacteria and viruses to enter the body, leading to infection and illness. And, if you are diabetic, it is important to examine your feet frequently for signs of cracks or infection. Foot Healer has Rosemary essentials that saves from any fungal or bacterial infection.</p>,
+        desc : <p> One of the most common foot issues found in most of us is the issue of “cracked heels”. And, do we pay attention to it! 
+            I think its even one of the most neglected skin problem. 
+            But it does matter, these skin cracks apart from being painful, can allow bacteria and viruses to enter the body, leading to infection and illness. 
+            And, if you are diabetic, it is important to examine your feet frequently for signs of cracks or infection. 
+            Foot Healer has Rosemary essentials that saves from any fungal or bacterial infection. Cucumber seed oil being rich in Vitamin-B and Vitamin-C provides hydration to the skin and also is a healer to the dry and cracked skin.</p>,
         imagePath : "",
         quantity : <p><b> Quantity:</b> ~40ml </p>,
-        ingredients :<p><b> Ingredients:</b>Cucumber seed, Moringa,  Grapeseed, Rosemary, Hemp, Shea butter, Vitamin-E, Coconut, Virgin Olive, Beeswax</p>,
+        ingredients :<p><b> Ingredients:</b>Cucumber seed, Rosemary, Hemp, Moringa,  Grapeseed, Shea butter, Vitamin-E, Coconut, Virgin Olive, Beeswax</p>,
         parent: allProducts.footCare,
         price: <p> <b>Cost:</b> 200
                </p>     
