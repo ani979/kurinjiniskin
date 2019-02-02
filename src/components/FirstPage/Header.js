@@ -14,6 +14,9 @@ function Header() {
     <Navbar.Collapse>
       
         <Nav>
+        <NavItem href="/">
+            Home
+          </NavItem>
           <NavItem href="/howtoorder">
             How to Order
           </NavItem>

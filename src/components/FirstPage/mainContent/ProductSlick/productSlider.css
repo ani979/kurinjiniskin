@@ -1,15 +1,26 @@
 .sliderProduct {
     height:70vh;
 }
+@media (min-width: 200px) and (max-width:600px) {
+    .card {
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        padding-bottom: 1rem;
+        text-align: center;
+        /* width: 25%; */
+    }
+} 
 
-.card {
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    /* width: 25%; */
-}
+@media (min-width: 600px){
+    .card {
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        padding-right: 0.6rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        /* width: 25%; */
+    }
+} 
 
 .slick-slide .card {
     height: 100%;
