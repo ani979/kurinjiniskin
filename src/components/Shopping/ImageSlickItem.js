@@ -61,7 +61,7 @@ function ImageSlickItem (props) {
                         }}
                         
                     /> */}
-                    <img src = {src.large} className="item-image"/>
+                    <img src = {src.small} className="item-image"/>
                 </div>
             ))}
         </ReactSlick>

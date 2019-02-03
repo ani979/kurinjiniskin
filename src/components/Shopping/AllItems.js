@@ -19,15 +19,8 @@ import lipbalmSmallTwo from '../../assets/img/LipCare/lipbalm2_small.jpg'
 import lipbalmBigTwo from '../../assets/img/LipCare/lipbalm2_big.jpg'
 import lipbalmSmallThree from '../../assets/img/LipCare/lipbalm3_small.jpg'
 import lipbalmBigThree from '../../assets/img/LipCare/lipbalm3_big.jpg'
-import lipScrubSmallOne from '../../assets/img/LipCare/lipScrub1_small.jpg'
-import lipScrubBigOne from '../../assets/img/LipCare/lipScrub1_big.jpg'
-import lipScrubSmallTwo from '../../assets/img/LipCare/lipScrub2_small.jpg'
-import lipScrubBigTwo from '../../assets/img/LipCare/lipScrub2_big.jpg'
-import lipScrubSmallThree from '../../assets/img/LipCare/lipScrub3_small.jpg'
-import lipScrubBigThree from '../../assets/img/LipCare/lipScrub3_big.jpg'
-import sparkleSmallOne from '../../assets/img/Oils/Serums/sparkle_small.jpg'
+import lipScrubSmallOne from '../../assets/img/LipCare/lipScrub4_small.jpg'
 import sparkleBigOne from '../../assets/img/Oils/Serums/sparkle_big.jpg'
-import sparkleSmallTwo from '../../assets/img/Oils/Serums/sparkleTwo_small.jpg'
 import sparkleBigTwo from '../../assets/img/Oils/Serums/sparkleTwo_big.jpg'
 import moonStone from '../../assets/img/Oils/Serums/moonstone_big.jpg'
 import hairSmallOne from '../../assets/img/Oils/hairandface/hair.jpg'
@@ -193,8 +186,7 @@ const allItems = [
         
         title:<h3>{allProducts.lipScrubs}</h3>,
         desc : <p> Sugar-based exfoliator that peels off dry and flaky skin from your lips along with providing the needed hydration and nourishment</p>,
-        imagePath : <ImageSlickItem count = {3} smallImage0 = {lipScrubSmallOne} bigImage0={lipScrubBigOne}
-        smallImage1 = {lipScrubSmallTwo} bigImage1={lipScrubBigTwo} smallImage2 = {lipScrubSmallThree} bigImage2={lipScrubBigThree}></ImageSlickItem>,
+        imagePath : <ImageItem smallImageOne={lipScrubSmallOne}></ImageItem>,
         quantity : <p><b> Quantity:</b> 5mg </p>,
         flavours : <p><b> Available in flavours:</b>Chocolate, Orange(essential oil) - Available in round containers</p>,
         howtouse : <p><b> How to Use: </b> Rub gently on the lips and after a while wipe off or rinse with water</p>,
