@@ -34,6 +34,8 @@ import casterOne from '../../assets/img/Soaps/castersugar_scrubber_one.jpg'
 import casterTwo from '../../assets/img/Soaps/castersugar_scrubber_two.jpg'
 import vanillaChocOne from '../../assets/img/Soaps/vanilla_choc_1.jpg'
 import vanillaChocTwo from '../../assets/img/Soaps/vanilla_choc_2.jpg'
+import HeadingAndText from './HeadingAndText'
+
 const allItems = [
     {
         childId: allProducts.faceCare,
@@ -110,14 +112,14 @@ const allItems = [
          We also take customized orders for your specific requirement on fragrance.</p>,
         imagePath : <ImageSlickItem count = {2} smallImage0 = {roseSmallCream} bigImage0={roseBigCream}
                     smallImage1 = {orangeSmallCream} bigImage1={orangeBigCream}></ImageSlickItem>,
-        SuitableFor:"These are very mild creams, suitable for all kinds of skin",
-        quantity : <p><b> Quantity:</b> 60 ml</p>,
-        flavours : <p><b> Available in flavours:</b>Cherry Blossom, Winter Bloom, Orange, Rose Petals</p>,
-        ingredients : <p><b> Ingredients:</b>Jojoba, Sweet Almond, Vitamin-E,
+        goodFor:<HeadingAndText header={allProducts.suitableFor} text = "These are very mild creams, suitable for all kinds of skin"></HeadingAndText>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text ="60 ml"></HeadingAndText>,
+        flavours : <HeadingAndText header = {allProducts.availableinFlavours} text = "Cherry Blossom, Winter Bloom, Orange, Rose Petals"></HeadingAndText>,
+        ingredients : <HeadingAndText header = {allProducts.quantity} text ="Jojoba, Sweet Almond, Vitamin-E,
         Mango butter, Tea Tree, Rosemary,
-        Coconut, Virgin Olive, Beeswax</p>,
+        Coconut, Virgin Olive, Beeswax"></HeadingAndText>,
         parent: allProducts.moisturizingCreams,
-        price: <p>Rs.250/-</p>
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.250/-"></HeadingAndText>
     },
     {
         
@@ -128,19 +130,13 @@ const allItems = [
             It is high in Vitamin-A and Vitamin-E oil that prevents formation of free radicals that are scientifically proven to be the reason of pre-mature ageing.</p>,
         imagePath : <ImageSlickItem count = {3} smallImage0 = {immortalOne} 
         smallImage1 = {immortalTwo} smallImage2={immortalThree}></ImageSlickItem>,
-        SuitableFor:"Suitable for wrinked skin",
-        quantity : <p><b> Quantity:</b> 60 ml</p>,
-        ingredients : <p><b> Ingredients:</b>Frankincense, Geranium, Avocado,
-        Moringa, Argan, Jojoba, Grapeseed, 
-        Tea Tree, Rosemary, Hemp, Cucumber 
-        seed,  Coconut, beeswax, Sweet 
-        Almond,  Vitamin-E, Mango and 
-        African Shea butter, Apricot oil</p>,
+        goodFor:<HeadingAndText header = {allProducts.suitableFor} text = "Suitable for wrinked skin"></HeadingAndText>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text ="60 ml"></HeadingAndText>,
+        ingredients : <HeadingAndText header ={allProducts.ingredients} text = "Frankincense, Geranium, Avocado, Moringa, Argan, Jojoba, Grapeseed, Tea Tree, Rosemary, Hemp, Cucumber seed,  Coconut, beeswax, Sweet Almond,  Vitamin-E, Mango and African Shea butter, Apricot oil"></HeadingAndText>,
         parent: allProducts.antiageing,
-        price: <p>Rs.300/-</p>
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.300"></HeadingAndText>
     },
     {
-        
         title:<h3>Pacific</h3>,
         type:<h6><b>Sensitive Skin</b></h6>,
         desc : <p>Pacific has speciality of soothing sensitive skin. 
@@ -149,18 +145,17 @@ const allItems = [
             Tea tree and Rosemary are considered to be a natural antiseptic and has astringent properties. 
             It is effective in lightening scars, soothing pimples apart from being anti-blemish, anti-microbial agents.</p>,
         imagePath : <ImageItem smallImageOne = {pacificSmallCream} bigImageOne={pacificBigCream}></ImageItem>,
-        SuitableFor:"For Sensitive skin only",
-        quantity : <p><b> Quantity:</b> 60 ml</p>,
-        ingredients : <p><b> Ingredients:</b>JRosemary, Tea tree,  Safflower, 
+        quantity : <HeadingAndText header = {allProducts.quantity} text ="60 ml"></HeadingAndText>,
+        ingredients : <HeadingAndText header = {allProducts.ingredients} text="JRosemary, Tea tree,  Safflower, 
         Lemon,  Hemp, Cucumber seed, 
         Argan, Virgin Coconut, Sweet Almond, 
         Vitamin-E, Frankincense, Geranium, 
         Moringa, Argan, Jojoba, Grapeseed, 
         beeswax, Mango and African Shea butter, 
-        Apricot oil</p>,
+        Apricot oil"></HeadingAndText>,
         parent: allProducts.sensitiveSkin,
-        goodFor:<p><b> Suitable for:</b>Acne prone skin</p>,
-        price: <p>Rs.300/-</p>
+        goodFor:<HeadingAndText header = {allProducts.suitableFor} text ="Sensitive skin that is acne prone"></HeadingAndText>,
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.300"></HeadingAndText>
     },
     {
         
@@ -168,11 +163,11 @@ const allItems = [
         type:<h6><b>Especially For Kids</b></h6>,
         desc : <p>Very mild cream with combination of kids skin friendly oil like Jojoba, Argan and Almond. The essential oisl fight infection and promote healing thus providing parents some relaxation in caring for their child.</p>,
         imagePath : <ImageSlickItem count = {2} smallImage0 = {fluffyCreamOne} smallImage1={fluffyCreamTwo}></ImageSlickItem>,
-        SuitableFor:<p><b>Good For:</b>Excellent for Kids</p>,
-        quantity : <p><b>Quantity:</b> 60 ml</p>,
-        ingredients : <p><b>Ingredients:</b>Jojoba, Vitamin-E, Sweet Almond, Argan, Avocado, Virgin Coconut, Virgin Olive, Cocoa Butter</p>,
+        goodFor:<HeadingAndText header = {allProducts.suitableFor} text = "Excellent for Kids"></HeadingAndText>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text ="60 ml"></HeadingAndText>,
+        ingredients : <HeadingAndText header = {allProducts.ingredients} text="Jojoba, Vitamin-E, Sweet Almond, Argan, Avocado, Virgin Coconut, Virgin Olive, Cocoa Butter"></HeadingAndText>,
         parent: allProducts.kidsFriendly,
-        price: <p>Rs. 300/-</p>
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.300"></HeadingAndText>
     },
     {
         
@@ -180,28 +175,23 @@ const allItems = [
         desc : <p> Cocoa butter is a natural, meltable oil extracted from the cocoa bean. Cocoa butter is great for naturally healing dry, sensitive skin. it has a mild fragrance, a smooth texture and is ultra-hydrating</p>,
         imagePath : <ImageSlickItem count = {3} smallImage0 = {lipbalmSmallOne} bigImage0={lipbalmBigOne}
         smallImage1 = {lipbalmSmallTwo} bigImage1={lipbalmBigTwo} smallImage2 = {lipbalmSmallThree} bigImage2={lipbalmBigThree}></ImageSlickItem>,
-        quantity : <p><b> Quantity:</b> 5mg </p>,
-        flavours : <p><b> Available in flavours:</b> Chocolate, Strawberry, Spearmint, Vanilla & Orange - Available in round and stick containers</p>,
-        ingredients :<p><b> Ingredients:</b>Unrefined Beeswax and Cocoa Butter, Jojoba, Sweet Almonds, Vitamin-E, Avocado</p>,
+        quantity : <HeadingAndText header={allProducts.quantity} text = "5gm"></HeadingAndText>,
+        flavours : <HeadingAndText header= {allProducts.availableinFlavours} text="Chocolate, Strawberry, Spearmint, Vanilla & Orange - Available in round and stick containers"></HeadingAndText>,
+        ingredients :<HeadingAndText header= {allProducts.ingredients} text = "Unrefined Beeswax and Cocoa Butter, Jojoba, Sweet Almonds, Vitamin-E, Avocado"></HeadingAndText>,
         parent: allProducts.lipBalmParent,
-        price: <p>Rs. 100/-</p>
+        price: <HeadingAndText header = {allProducts.price} text = "Rs. 100"></HeadingAndText>
     },
     {
         
         title:<h3>{allProducts.lipScrubs}</h3>,
         desc : <p> Sugar-based exfoliator that peels off dry and flaky skin from your lips along with providing the needed hydration and nourishment</p>,
         imagePath : <ImageItem smallImageOne={lipScrubSmallOne}></ImageItem>,
-        quantity : <p><b> Quantity:</b> 5mg </p>,
-        flavours : <p><b> Available in flavours:</b>Chocolate, Orange(essential oil) - Available in round containers</p>,
-        howtouse : <p><b> How to Use: </b> Rub gently on the lips and after a while wipe off or rinse with water</p>,
-        ingredients :<p><b> Ingredients:</b>It has a sweet sugary flavour through caster sugar blended with raw unbleached beeswax and Cocoa butter. The nourishing oils used are Sweet Almond, Jojoba and Vitamin-E</p>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="5gm"></HeadingAndText>,
+        flavours : <HeadingAndText header = {allProducts.availableinFlavours} text = "Chocolate, Orange(essential oil) - Available in round containers"></HeadingAndText>,
+        howtouse : <HeadingAndText header = {allProducts.howToUse} text = "Rub gently on the lips and after some continuous rounds of rubbing, wipe off with towel or rinse with water"></HeadingAndText>,
+        ingredients :<HeadingAndText header = {allProducts.ingredients} text = "It has a sweet sugary flavour through caster sugar blended with raw unbleached beeswax and Cocoa butter. The nourishing oils used are Sweet Almond, Jojoba and Vitamin-E"></HeadingAndText>,
         parent: allProducts.lipBalmParent,
-        price: <div> <p><b>Cost:</b></p> 
-                    <ul> 
-                    <li><p>5gm - Rs. 100/-</p></li>
-                    <li><p>~10gm - 150/-</p></li>
-                   </ul>
-               </div>     
+        price: <HeadingAndText header = {allProducts.price} text = "Rs. 100"></HeadingAndText>
     },
     {
         
@@ -210,13 +200,12 @@ const allItems = [
         desc : <p> As the name suggests, it's a silicone free skin brightening overnight serum that absorbs quickly in the skin and gives a radiating effect over a period of time. Pores are tiny openings in the skin that release oil and sweat. When pores are clogged, it can result in blackheads or acne. This serum aims to unclog the pores. It also has Helichrysum essential oil that helps smooth both skin tone and texture, reduces the appearance of fine lines, and its emollient properties help keep skin hydrated. Helichrysum is also known to be beneficial for treating sunburns. Along with it is also added few drops of absolutely fantastic Sandalwood oil that acts as an antiseptic and anti-inflammatory agent too apart from being a brightening agent. Also added is Rosehip that tightens the pores and brightens your skin. Mixed with other essentials and carrier oils, this brightening skin serum is good for all kinds of skin.</p>,
         imagePath : <ImageSlickItem count = {2} smallImage0 = {sparkleBigOne} bigImage0={sparkleBigOne}
         smallImage1 = {sparkleBigTwo} bigImage1={sparkleBigTwo}></ImageSlickItem>,
-        quantity : <p><b> Quantity:</b> 20ml </p>,
-        howtouse : <p><b> How to Use: </b>It's a night application cream. Take a small quantity on your finger tip and apply gently after a face wash on your face.</p>,
-        ingredients :<p><b> Ingredients:</b>Sandalwood, Helichrysum, Rosehip, Frakincense, Vitamin-E, Jojoba, Sweet Almond, Hemp, Avocado, Moringa and Alove.</p>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="20 ml"></HeadingAndText>,
+        howtouse : <HeadingAndText header = {allProducts.howToUse} text = "It's a night application cream. Take a small quantity on your finger tip and apply gently after a face wash on your face."></HeadingAndText>,
+        ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Sandalwood, Helichrysum, Rosehip, Frakincense, Vitamin-E, Jojoba, Sweet Almond, Hemp, Avocado, Moringa and Alove"></HeadingAndText>,
         parent: allProducts.oilsAndSerums,
-        goodFor: <p>All kinds of skin. 16 years and plus only.</p>,
-        price: <p> <b>Cost:</b> Rs.350/-
-               </p>     
+        goodFor: <HeadingAndText header = {allProducts.suitableFor} text = "All kinds of skin. 16 years and plus only"></HeadingAndText>,
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.350/-"></HeadingAndText>
     },
     {
         
@@ -224,13 +213,12 @@ const allItems = [
         type: <h6><b>{allProducts.darkCirclesRemoval}</b></h6>,
         desc : <p> Moonstone is an under eye serum, an attempt from us to come up with something that can reduce the dark circles. Apart from some of the ingredients already present in “Sparkle”, there is also cucumber seed and carrot seed oil that reduces stress and tiredness from the eyes, keeping it cool. With its high content of vitamin C, beta-carotene and manganese, cucumber oil can stimulate collagen production, too. Collagen is the protein that provides the structure of your skin. It helps boosting your body’s natural collagen synthesis without having to rely on chemicals and synthetic ingredients. Carrot seed essential oil, a skin lightening agent, improves moisture retention, reduce the look of tired skin, and help nourish dry areas. Another essential added is Lavender, that helps enhance blood circulation and a natural healer along with reducing stress and anxiety. All these added with carrier oils forms this natural healer <b>Moonstone</b></p>,
         imagePath : <ImageItem smallImageOne = {moonStone} bigImageOne={moonStone}></ImageItem>,
-        quantity : <p><b> Quantity:</b> 20ml </p>,
-        howtouse : <p><b> How to Use: </b>It's a night application cream. Take a small quantity on your finger tip and massage gently under your eyes so that it improves blood circulation.</p>,
-        ingredients :<p><b> Ingredients:</b>Sandalwood, Helichrysum, Geranium, Lavender, Carrot seed, Cucumber seed, Rosehip, Vitamin-E, Hemp, Jojoba, Sweet Almond and Alove.</p>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="20 ml"></HeadingAndText>,
+        howtouse : <HeadingAndText header = {allProducts.howToUse} text = "It's a night application cream. Take a small quantity on your finger tip and massage gently under your eyes so that it improves blood circulation."></HeadingAndText>,
+        ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Sandalwood, Helichrysum, Geranium, Lavender, Carrot seed, Cucumber seed, Rosehip, Vitamin-E, Hemp, Jojoba, Sweet Almond and Alove"></HeadingAndText>,
         parent: allProducts.oilsAndSerums,
-        goodFor: <p>All kinds of skin. 16 years and plus only.</p>,
-        price: <p> <b>Cost:</b> Rs.350/-
-               </p>     
+        goodFor: <HeadingAndText header = {allProducts.suitableFor} text = "All kinds of skin. 16 years and plus only"></HeadingAndText>,
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.350/-"></HeadingAndText>
     },
     
     {
@@ -239,12 +227,11 @@ const allItems = [
         type: <h6><b>{allProducts.nightOil}</b></h6>,
         desc : <p> Extra-hydrating night application oil that has quick absorption quality. Its a combination of oils and essential oils having properties of skin brightening, removal of hyper-pigmentation, even removing blemishes. The basic component is Vitamin-E oil and along with carrier oils as Sweet Almond oil</p>,
         imagePath : <ImageItem smallImageOne = {faceOil} bigImageOne={faceOil}></ImageItem>,
-        quantity : <p><b> Quantity:</b> 10 ml </p>,
-        howtouse : <p><b> How to Use: </b> Apply after a face wash during night before going to bed.</p>,
-        ingredients :<p><b> Ingredients:</b>Saffron, Argan, Moringa, Tea Tree, Geranium, Rosemary, Jojoba, Grapeseed, Cucumber seed, Hemp, Avocado, Frankincense, Lemon Grass, Coconut</p>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="10 ml"></HeadingAndText>,
+        howtouse : <HeadingAndText header = {allProducts.howToUse} text= "Apply after a face wash during night before going to bed."></HeadingAndText>,
+        ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Saffron, Argan, Moringa, Tea Tree, Geranium, Rosemary, Jojoba, Grapeseed, Cucumber seed, Hemp, Avocado, Frankincense, Lemon Grass, Coconut"></HeadingAndText>,
         parent: allProducts.oilsAndSerums,
-        price: <div> <p><b>Cost:</b> Rs.200/-</p>
-               </div>     
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.200/-"></HeadingAndText>     
     },
     {
         
@@ -252,26 +239,25 @@ const allItems = [
         type: <h6><b>{allProducts.hairOil}</b></h6>,
         desc : <p> Our hair is just as sensitive as our skin. The basic substance of hair is keratin, a strong protein. When we lose our hair as each one comes to the end, a new hair should grow in its place. This should happen instantaneously but because of our lifestyle and synthetic chemicals that we apply with shampoo or conditioners, the time between a hair getting lost and new one coming up can extend so that our hair begins to thin. “Resurgence” is an intense hair treatment oil. It consists of Argan, Grapeseed essential oils that consists of Vitamin-E, a natural anti-oxidant that nourishes dry damaged hair, repairs and rejuvenates, thereby protecting it and giving it the needed shine. Hemp oil is a great oil for scalp and helps grow hair faster, thicker and longer. Avocado oil present acts as a carrier oil stimulating the blood flow and unclog blocked follicles.</p>,
         imagePath : <ImageItem smallImageOne = {hairOne} ></ImageItem>,
-        quantity : <p><b> Quantity:</b> 10ml </p>,
-        howtouse : <p><b> How to Use: </b> Apply with any carrier oil</p>,
-        ingredients :<p><b> Ingredients:</b>Argan, Moringa, Rosemary, Grapeseed, Cucumber seed, Jojoba, Hemp, Frankincense, Lemon Grass, Coconut, Avocado</p>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="10 ml"></HeadingAndText>,
+        howtouse : <HeadingAndText header = {allProducts.howToUse} text= "Apply on your hair and scalp with any career oil"></HeadingAndText>,
+        ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Argan, Moringa, Rosemary, Grapeseed, Cucumber seed, Jojoba, Hemp, Frankincense, Lemon Grass, Coconut, Avocado"></HeadingAndText>,
         parent: allProducts.oils,
-        price: <p><b>Cost:</b> Rs. 200/-</p> 
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.200/-"></HeadingAndText>  
                     
     },
     {
         
         title:<h3>Loofah based</h3>,
-        desc : <p> Loofahs are made from the dried fruit of a tropical plant called Loofah. Loofah is strong and suitable for hard heels. Extra-hydrating serum that has quick absorption quality. Its a combination of oils and essential oils having properties of skin brightening, removal of hyper-pigmentation, even removing blemishes. The basic component is Vitamin-E oil and along with carrier oils as Sweet Almond oil.
+        desc : <p> Loofahs are made from the dried fruit of a tropical plant called Loofah. Loofah is strong and suitable for hard heels. 
             Available with addition of some essential oils or fragrance that are proven to be not only beneficial on your skin but also your life. They have properties to reducing stress, anxiety, bringing calmness and soothing on skin too.</p>,
         imagePath : <ImageSlickItem count = {2} smallImage0 = {loofahOne} 
         smallImage1 = {loofahTwo}></ImageSlickItem>,
-        quantity : <p><b> Quantity:</b> 100gm </p>,
-        flavours : <p><b> Available in flavours:</b>Ylang-Ylang, Basil, Lavender, Orange, Fruit Medley, Mango Mandarian, Rosewood, Chamomile</p>,
-        ingredients :<p><b> Ingredients:</b>It has a sweet sugary flavour through caster sugar blended with raw unbleached beeswax and Cocoa butter. The nourishing oils used are Sweet Almond, Jojoba and Vitamin-E</p>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="100gm"></HeadingAndText>,
+        flavours : <HeadingAndText header = {allProducts.availableinFlavours} text = "Ylang-Ylang, Basil, Lavender, Orange, Fruit Medley, Mango Mandarian, Rosewood, Chamomile"></HeadingAndText>,
+        ingredients :<HeadingAndText header = {allProducts.ingredients} text = "It has a sweet sugary flavour through caster sugar blended with raw unbleached beeswax and Cocoa butter. The nourishing oils used are Sweet Almond, Jojoba and Vitamin-E"></HeadingAndText>,
         parent: allProducts.scrubbers,
-        price: <p> <b>Cost:</b> Rs. 100
-               </p>     
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.100/-"></HeadingAndText>       
     },
     {
         
@@ -281,35 +267,33 @@ const allItems = [
         </p>,
         imagePath : <ImageSlickItem count = {2} smallImage0 = {casterOne} 
         smallImage1 = {casterTwo}></ImageSlickItem>,
-        quantity : <p><b> Quantity:</b> ~80gm </p>,
-        flavours : <p><b> Available in flavours:</b>Ylang-Ylang, Basil, Lavender, Orange, Fruit Medley, Mango Mandarian, Rosewood, Chamomile</p>,
-        ingredients :<p><b> Ingredients:</b>Caster sugar blended with Vitamin-E and Sweet Almond. Essential oils are added depending on flavour</p>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="~80gm"></HeadingAndText>,
+        flavours : <HeadingAndText header = {allProducts.availableinFlavours} text = "Ylang-Ylang, Basil, Lavender, Orange, Fruit Medley, Mango Mandarian, Rosewood, Chamomile"></HeadingAndText>,
+        ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Caster sugar blended with Vitamin-E and Sweet Almond. Essential oils are added depending on flavour"></HeadingAndText>,
         parent: allProducts.scrubbers,
-        price: <p> <b>Cost:</b> Rs.70</p>     
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.70/-"></HeadingAndText>      
     },
     {
         
         title:<h3>Mild scrubbers</h3>,
-        desc : <p> Mild scrubbers that gently exfoliate the dead skin. These scrubbers are required for gentle body scrubbing and along with these provide skin nourishment too. Loofahs are made from the dried fruit of a tropical plant called Loofah. Loofah is strong and suitable for hard heels. Extra-hydrating serum that has quick absorption quality. Its a combination of oils and essential oils having properties of skin brightening, removal of hyper-pigmentation, even removing blemishes. The basic component is Vitamin-E oil and along with carrier oils as Sweet Almond oil.
-            Available with addition of some essential oils or fragrance that are proven to be not only beneficial on your skin but also your life. They have properties to reducing stress, anxiety, bringing calmness and soothing on skin too.</p>,
+        desc : <p> Mild scrubbers that gently exfoliate the dead skin. These scrubbers are required for gentle body scrubbing and along with these provide skin nourishment too. </p>,
         imagePath : <ImageItem smallImageOne = {mildScrubberOne}></ImageItem>,
-        quantity : <p><b> Quantity:</b> 100gm </p>,
-        flavours : <p><b> Available in flavours:</b>Oatmeal, Chia seeds, Flax seeds, Poppy seeds</p>,
-        ingredients :<p><b> Ingredients:</b>Coconute, Glycerine and dpeneding on the flavour the respective ingredient is added</p>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="100gm"></HeadingAndText>,
+        flavours : <HeadingAndText header = {allProducts.availableinFlavours} text = "Oatmeal, Chia seeds, Flax seeds, Poppy seeds"></HeadingAndText>,
+        ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Coconute, Glycerine and dpeneding on the flavour the respective ingredient is added"></HeadingAndText>,
         parent: allProducts.scrubbers,
-        price: <p> <b>Cost:</b> Rs. 100
-               </p>     
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.100/-"></HeadingAndText>   
     },
     {  
         title:<h3>Vanilla Chocolate</h3>,
         desc : <p>"mmmmm" is the first of the few expressions get out when taking a bath with such a soap. Imagine starting your day with such a scent every morning under a shower. Good for kids and everyone else out there who just love chocolate</p>,
         imagePath : <ImageSlickItem count = {2} smallImage0 = {vanillaChocTwo} 
         smallImage1 = {vanillaChocOne}></ImageSlickItem>,
-        quantity : <p><b> Quantity:</b> 80-90gm </p>,
-        ingredients :<p><b> Ingredients:</b>Coconut, Shea Butter, Glycerine, Cocoa powder, Warm Vanilla fragrance</p>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="80-90gm"></HeadingAndText>,
+        ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Coconut, Shea Butter, Glycerine, Cocoa powder, Warm Vanilla fragrance"></HeadingAndText>,
         parent: allProducts.normalSoaps,
-        goodFor:<p>Especially for Kids</p>,
-        price: <p> <b>Cost:</b>80/-</p>     
+        goodFor:<HeadingAndText header = {allProducts.suitableFor} text = "For everyone, but especially for Kids as they would love the smell of chocolate in their bath"></HeadingAndText>,
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.80/-"></HeadingAndText>      
     }
     // 
     ,
@@ -323,11 +307,11 @@ const allItems = [
             And, if you are diabetic, it is important to examine your feet frequently for signs of cracks or infection. 
             Foot Healer has Rosemary essentials that saves from any fungal or bacterial infection. Cucumber seed oil being rich in Vitamin-B and Vitamin-C provides hydration to the skin and also is a healer to the dry and cracked skin.</p>,
         imagePath : <ImageItem smallImageOne= {footScrubOne}></ImageItem>,
-        quantity : <p><b> Quantity:</b> ~40ml </p>,
-        ingredients :<p><b> Ingredients:</b>Cucumber seed, Rosemary, Hemp, Moringa,  Grapeseed, Shea butter, Vitamin-E, Coconut, Virgin Olive, Beeswax</p>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="40ml"></HeadingAndText>,
+        ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Cucumber seed, Rosemary, Hemp, Moringa,  Grapeseed, Shea butter, Vitamin-E, Coconut, Virgin Olive, Beeswax"></HeadingAndText>,
         parent: allProducts.footCare,
-        price: <p> <b>Cost:</b> 200
-               </p>     
+        howtouse:<HeadingAndText header = {allProducts.howToUse} text = "Apply on your heels. Put it in the night as absorption in the skin is better in the night"></HeadingAndText>,
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.200/-"></HeadingAndText>     
     }
     // ,
     // {

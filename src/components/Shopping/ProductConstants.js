@@ -26,7 +26,13 @@ const allProducts = {
     kidsFriendly:"Kids cream",
     sensitiveSkin:"Cream for sensitive Skin",
     footHealer:"Foot Healer",
-    kidSoap:"Kids friendly Soap"
+    kidSoap:"Kids friendly Soap",
+    suitableFor:"Suitable for",
+    quantity:"Quantity",
+    ingredients:"Ingredients",
+    price:"Cost",
+    availableinFlavours:"Available in flavours",
+    howToUse:"How to use"
 }
 
 export default allProducts
