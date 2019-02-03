@@ -7,12 +7,13 @@ import roseSmallCream from '../../assets/img/FaceCare/MoisturizingCreams/rose_sm
 import roseBigCream from '../../assets/img/FaceCare/MoisturizingCreams/rose_big.jpg'
 import orangeSmallCream from '../../assets/img/FaceCare/MoisturizingCreams/orange_small.jpg'
 import orangeBigCream from '../../assets/img/FaceCare/MoisturizingCreams/orange_big.jpg'
-import immortalBigCream from '../../assets/img/FaceCare/SpecialNeeds/Immortal_big.jpg'
-import immortalSmallCream from '../../assets/img/FaceCare/SpecialNeeds/Immortal_small.jpg'
+import immortalOne from '../../assets/img/FaceCare/SpecialNeeds/Immortal_one.jpg'
+import immortalTwo from '../../assets/img/FaceCare/SpecialNeeds/Immortal_two.jpg'
+import immortalThree from '../../assets/img/FaceCare/SpecialNeeds/Immortal_three.jpg'
 import pacificBigCream from '../../assets/img/FaceCare/SpecialNeeds/pacific_big.jpg'
 import pacificSmallCream from '../../assets/img/FaceCare/SpecialNeeds/pacific_small.jpg'
-import fluffySmallCream from '../../assets/img/FaceCare/SpecialNeeds/Fluffy_small.jpg'
-import fluffyBigCream from '../../assets/img/FaceCare/SpecialNeeds/Fluffy_big.jpg'
+import fluffyCreamTwo from '../../assets/img/FaceCare/SpecialNeeds/fluffy_one.jpg'
+import fluffyCreamOne from '../../assets/img/FaceCare/SpecialNeeds/fluffy_two.jpg'
 import lipbalmSmallOne from '../../assets/img/LipCare/lipbalm1_small.jpg'
 import lipbalmBigOne from '../../assets/img/LipCare/lipbalm1_big.jpg'
 import lipbalmSmallTwo from '../../assets/img/LipCare/lipbalm2_small.jpg'
@@ -23,12 +24,16 @@ import lipScrubSmallOne from '../../assets/img/LipCare/lipScrub4_small.jpg'
 import sparkleBigOne from '../../assets/img/Oils/Serums/sparkle_big.jpg'
 import sparkleBigTwo from '../../assets/img/Oils/Serums/sparkleTwo_big.jpg'
 import moonStone from '../../assets/img/Oils/Serums/moonstone_big.jpg'
-import hairSmallOne from '../../assets/img/Oils/hairandface/hair.jpg'
-import hairBigOne from '../../assets/img/Oils/hairandface/hair.jpg'
-import hairSmallTwo from '../../assets/img/Oils/hairandface/hair_two.jpg'
-import hairBigTwo from '../../assets/img/Oils/hairandface/hair_two.jpg'
+import hairOne from '../../assets/img/Oils/hairandface/hair_one.jpg'
 import faceOil from '../../assets/img/Oils/hairandface/faceOil_One.jpg'
-
+import footScrubOne from '../../assets/img/FootCare/footScrub1.jpg'
+import loofahOne from '../../assets/img/Soaps/loofah_one.jpg'
+import loofahTwo from '../../assets/img/Soaps/loofah_two.jpg'
+import mildScrubberOne from '../../assets/img/Soaps/mildScrubber_one.jpg'
+import casterOne from '../../assets/img/Soaps/castersugar_scrubber_one.jpg'
+import casterTwo from '../../assets/img/Soaps/castersugar_scrubber_two.jpg'
+import vanillaChocOne from '../../assets/img/Soaps/vanilla_choc_1.jpg'
+import vanillaChocTwo from '../../assets/img/Soaps/vanilla_choc_2.jpg'
 const allItems = [
     {
         childId: allProducts.faceCare,
@@ -101,7 +106,7 @@ const allItems = [
         desc : <p>Daily moisturizing is vital for a healthy skin.
          Leaving skin without a moisturizer means compromising the protective skin barrier.
          Kurinjini brings to you a Shea, Mango butter based moisturizer that also has the anti-oxidant properties brought by Vitamin-E.
-         Along with these Jojoba and Sweet Almond oils provide that extra nourishment to the skin.
+         Along with these, we have also added Jojoba and Sweet Almond oils provide that extra nourishment to the skin.
          We also take customized orders for your specific requirement on fragrance.</p>,
         imagePath : <ImageSlickItem count = {2} smallImage0 = {roseSmallCream} bigImage0={roseBigCream}
                     smallImage1 = {orangeSmallCream} bigImage1={orangeBigCream}></ImageSlickItem>,
@@ -121,7 +126,8 @@ const allItems = [
         desc : <p>An anti-ageing cream that also helps fighting hyperpigmentation. 
             It has ingredients that are considered to be anti-wrinkle, skin tightening agent, reducing dark spots and blemishes. 
             It is high in Vitamin-A and Vitamin-E oil that prevents formation of free radicals that are scientifically proven to be the reason of pre-mature ageing.</p>,
-        imagePath : <ImageItem smallImageOne = {immortalSmallCream} bigImageOne={immortalBigCream}></ImageItem>,
+        imagePath : <ImageSlickItem count = {3} smallImage0 = {immortalOne} 
+        smallImage1 = {immortalTwo} smallImage2={immortalThree}></ImageSlickItem>,
         SuitableFor:"Suitable for wrinked skin",
         quantity : <p><b> Quantity:</b> 60 ml</p>,
         ingredients : <p><b> Ingredients:</b>Frankincense, Geranium, Avocado,
@@ -161,12 +167,10 @@ const allItems = [
         title:<h3>Fluffy</h3>,
         type:<h6><b>Especially For Kids</b></h6>,
         desc : <p>Very mild cream with combination of kids skin friendly oil like Jojoba, Argan and Almond. The essential oisl fight infection and promote healing thus providing parents some relaxation in caring for their child.</p>,
-        imagePath : <ImageItem smallImageOne = {fluffySmallCream} bigImageOne={fluffyBigCream}></ImageItem>,
-        SuitableFor:"Excellent for Kids",
-        quantity : <p><b> Quantity:</b> 60 ml</p>,
-        ingredients : <p><b> Ingredients:</b>Jojoba, Vitamin-E, Sweet Almond,
-        Argan, Avocado, Virgin Coconut,
-        Virgin Olive, Cocoa Butter</p>,
+        imagePath : <ImageSlickItem count = {2} smallImage0 = {fluffyCreamOne} smallImage1={fluffyCreamTwo}></ImageSlickItem>,
+        SuitableFor:<p><b>Good For:</b>Excellent for Kids</p>,
+        quantity : <p><b>Quantity:</b> 60 ml</p>,
+        ingredients : <p><b>Ingredients:</b>Jojoba, Vitamin-E, Sweet Almond, Argan, Avocado, Virgin Coconut, Virgin Olive, Cocoa Butter</p>,
         parent: allProducts.kidsFriendly,
         price: <p>Rs. 300/-</p>
     },
@@ -237,9 +241,7 @@ const allItems = [
         imagePath : <ImageItem smallImageOne = {faceOil} bigImageOne={faceOil}></ImageItem>,
         quantity : <p><b> Quantity:</b> 10 ml </p>,
         howtouse : <p><b> How to Use: </b> Apply after a face wash during night before going to bed.</p>,
-        ingredients :<p><b> Ingredients:</b>Saffron, Argan, Moringa, Tea Tree, Geranium, Rosemary, Jojoba, Grapeseed,
-        Cucumber seed, Hemp, Avocado,
-        Frankincense, Lemon Grass, Coconut</p>,
+        ingredients :<p><b> Ingredients:</b>Saffron, Argan, Moringa, Tea Tree, Geranium, Rosemary, Jojoba, Grapeseed, Cucumber seed, Hemp, Avocado, Frankincense, Lemon Grass, Coconut</p>,
         parent: allProducts.oilsAndSerums,
         price: <div> <p><b>Cost:</b> Rs.200/-</p>
                </div>     
@@ -249,8 +251,7 @@ const allItems = [
         title:<h3>Resurgence</h3>,
         type: <h6><b>{allProducts.hairOil}</b></h6>,
         desc : <p> Our hair is just as sensitive as our skin. The basic substance of hair is keratin, a strong protein. When we lose our hair as each one comes to the end, a new hair should grow in its place. This should happen instantaneously but because of our lifestyle and synthetic chemicals that we apply with shampoo or conditioners, the time between a hair getting lost and new one coming up can extend so that our hair begins to thin. “Resurgence” is an intense hair treatment oil. It consists of Argan, Grapeseed essential oils that consists of Vitamin-E, a natural anti-oxidant that nourishes dry damaged hair, repairs and rejuvenates, thereby protecting it and giving it the needed shine. Hemp oil is a great oil for scalp and helps grow hair faster, thicker and longer. Avocado oil present acts as a carrier oil stimulating the blood flow and unclog blocked follicles.</p>,
-        imagePath : <ImageSlickItem count = {2} smallImage0 = {hairSmallOne} bigImage0={hairBigOne}
-        smallImage1 = {hairSmallTwo} bigImage1={hairBigTwo}></ImageSlickItem>,
+        imagePath : <ImageItem smallImageOne = {hairOne} ></ImageItem>,
         quantity : <p><b> Quantity:</b> 10ml </p>,
         howtouse : <p><b> How to Use: </b> Apply with any carrier oil</p>,
         ingredients :<p><b> Ingredients:</b>Argan, Moringa, Rosemary, Grapeseed, Cucumber seed, Jojoba, Hemp, Frankincense, Lemon Grass, Coconut, Avocado</p>,
@@ -263,7 +264,8 @@ const allItems = [
         title:<h3>Loofah based</h3>,
         desc : <p> Loofahs are made from the dried fruit of a tropical plant called Loofah. Loofah is strong and suitable for hard heels. Extra-hydrating serum that has quick absorption quality. Its a combination of oils and essential oils having properties of skin brightening, removal of hyper-pigmentation, even removing blemishes. The basic component is Vitamin-E oil and along with carrier oils as Sweet Almond oil.
             Available with addition of some essential oils or fragrance that are proven to be not only beneficial on your skin but also your life. They have properties to reducing stress, anxiety, bringing calmness and soothing on skin too.</p>,
-        imagePath : "",
+        imagePath : <ImageSlickItem count = {2} smallImage0 = {loofahOne} 
+        smallImage1 = {loofahTwo}></ImageSlickItem>,
         quantity : <p><b> Quantity:</b> 100gm </p>,
         flavours : <p><b> Available in flavours:</b>Ylang-Ylang, Basil, Lavender, Orange, Fruit Medley, Mango Mandarian, Rosewood, Chamomile</p>,
         ingredients :<p><b> Ingredients:</b>It has a sweet sugary flavour through caster sugar blended with raw unbleached beeswax and Cocoa butter. The nourishing oils used are Sweet Almond, Jojoba and Vitamin-E</p>,
@@ -277,7 +279,8 @@ const allItems = [
         desc : <p> A soap that removes dry skin from your feet making it smooth and clean. Currently in two variants, caster sugar is fine-grained sugar that helps to maintain moisture in the skin and makes a gentle scrub, removing dead cells to brighten, smooth and moisturise the skin.
             Available with addition of some essential oils or fragrance that are proven to be not only beneficial on your skin but also your life. They have properties to reducing stress, anxiety, bringing calmness and soothing on skin too.
         </p>,
-        imagePath : "",
+        imagePath : <ImageSlickItem count = {2} smallImage0 = {casterOne} 
+        smallImage1 = {casterTwo}></ImageSlickItem>,
         quantity : <p><b> Quantity:</b> ~80gm </p>,
         flavours : <p><b> Available in flavours:</b>Ylang-Ylang, Basil, Lavender, Orange, Fruit Medley, Mango Mandarian, Rosewood, Chamomile</p>,
         ingredients :<p><b> Ingredients:</b>Caster sugar blended with Vitamin-E and Sweet Almond. Essential oils are added depending on flavour</p>,
@@ -289,7 +292,7 @@ const allItems = [
         title:<h3>Mild scrubbers</h3>,
         desc : <p> Mild scrubbers that gently exfoliate the dead skin. These scrubbers are required for gentle body scrubbing and along with these provide skin nourishment too. Loofahs are made from the dried fruit of a tropical plant called Loofah. Loofah is strong and suitable for hard heels. Extra-hydrating serum that has quick absorption quality. Its a combination of oils and essential oils having properties of skin brightening, removal of hyper-pigmentation, even removing blemishes. The basic component is Vitamin-E oil and along with carrier oils as Sweet Almond oil.
             Available with addition of some essential oils or fragrance that are proven to be not only beneficial on your skin but also your life. They have properties to reducing stress, anxiety, bringing calmness and soothing on skin too.</p>,
-        imagePath : "",
+        imagePath : <ImageItem smallImageOne = {mildScrubberOne}></ImageItem>,
         quantity : <p><b> Quantity:</b> 100gm </p>,
         flavours : <p><b> Available in flavours:</b>Oatmeal, Chia seeds, Flax seeds, Poppy seeds</p>,
         ingredients :<p><b> Ingredients:</b>Coconute, Glycerine and dpeneding on the flavour the respective ingredient is added</p>,
@@ -300,7 +303,8 @@ const allItems = [
     {  
         title:<h3>Vanilla Chocolate</h3>,
         desc : <p>"mmmmm" is the first of the few expressions get out when taking a bath with such a soap. Imagine starting your day with such a scent every morning under a shower. Good for kids and everyone else out there who just love chocolate</p>,
-        imagePath : "",
+        imagePath : <ImageSlickItem count = {2} smallImage0 = {vanillaChocTwo} 
+        smallImage1 = {vanillaChocOne}></ImageSlickItem>,
         quantity : <p><b> Quantity:</b> 80-90gm </p>,
         ingredients :<p><b> Ingredients:</b>Coconut, Shea Butter, Glycerine, Cocoa powder, Warm Vanilla fragrance</p>,
         parent: allProducts.normalSoaps,
@@ -318,7 +322,7 @@ const allItems = [
             But it does matter, these skin cracks apart from being painful, can allow bacteria and viruses to enter the body, leading to infection and illness. 
             And, if you are diabetic, it is important to examine your feet frequently for signs of cracks or infection. 
             Foot Healer has Rosemary essentials that saves from any fungal or bacterial infection. Cucumber seed oil being rich in Vitamin-B and Vitamin-C provides hydration to the skin and also is a healer to the dry and cracked skin.</p>,
-        imagePath : "",
+        imagePath : <ImageItem smallImageOne= {footScrubOne}></ImageItem>,
         quantity : <p><b> Quantity:</b> ~40ml </p>,
         ingredients :<p><b> Ingredients:</b>Cucumber seed, Rosemary, Hemp, Moringa,  Grapeseed, Shea butter, Vitamin-E, Coconut, Virgin Olive, Beeswax</p>,
         parent: allProducts.footCare,

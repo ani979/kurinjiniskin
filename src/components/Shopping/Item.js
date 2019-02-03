@@ -10,7 +10,7 @@ if(!props.title) return(<div></div>);
                         {props.imagePath}
                     </div>
                     <div className = "col-md-6 col-sm-12 col-lg-6">
-                        <div class = "col-12">
+                        <div className = "col-12">
                             {props.title}
                             {props.type}
                         </div>
