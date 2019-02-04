@@ -13,12 +13,12 @@ import EachProduct from './EachProduct'
 function ProductSlick() {
     const settings = {
         dots: true,
-        infinite: false,
+        infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: false,
-        speed: 2000,
-        cssEase: "linear",
+        speed: 1000,
+        cssEase:"appear",
         arrows:true,
         responsive: [
           {

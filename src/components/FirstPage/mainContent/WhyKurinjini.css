@@ -1,4 +1,18 @@
 .oil-image {
-    width:50%;
+    width:80%;
     height:auto;
 }
+
+@media (min-width: 200px) and (max-width:500px) {
+    .whyK-para {
+        text-align: center;
+        font-size:20px;
+    }
+} 
+
+@media (min-width: 1000px) {
+    .whyK-para {
+        text-align: center;
+        font-size:28px;
+    }
+}  

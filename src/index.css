@@ -17,21 +17,7 @@ code {
     monospace;
 }
 
-.h1, h1, .mainheader {
-  font-family: 'Lobster', cursive;
-  font-size: 1.66667rem;
-  text-transform: lowercase;
-  line-height: 1em;
-  color:#31315f;
-}
 
-.h2, h2  {
-  font-family: 'Niconne', cursive;
-  font-size: 1rem;
-  text-transform: lowercase;
-  line-height: 1em;
-  color:#31315f;
-}
 
 .center {
   text-align: center;
@@ -95,6 +81,22 @@ code {
     color:#31315f;
     text-transform: none;
   }
+
+  .h1, h1, .mainheader {
+    font-family: 'Lobster', cursive;
+    font-size: 1.2rem;
+    text-transform: none;
+    line-height: 1em;
+    color:#31315f;
+  }
+  
+  .h2, h2  {
+    font-family: 'Niconne', cursive;
+    font-size: 1rem;
+    text-transform: lowercase;
+    line-height: 1em;
+    color:#31315f;
+  }
 }
 
 @media (min-width: 700px) {
@@ -108,6 +110,21 @@ code {
     line-height: 1em;
     color:#31315f;
     text-transform: none;
+  }
+  .h1, h1, .mainheader {
+    font-family: 'Lobster', cursive;
+    font-size: 1.66667rem;
+    text-transform: none;
+    line-height: 1em;
+    color:#31315f;
+  }
+  
+  .h2, h2  {
+    font-family: 'Niconne', cursive;
+    font-size: 1rem;
+    text-transform: lowercase;
+    line-height: 1em;
+    color:#31315f;
   }
 }
 

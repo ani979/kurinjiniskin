@@ -88,9 +88,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: 2s all cubic-bezier(0.2, 0.9, 0.4, 0.75); 
+    /* transition: 2s all cubic-bezier(0.2, 0.9, 0.4, 0.75);  */
 }
 
-.bg-image:hover {
+/* .bg-image:hover {
     background-position:left;
-}
+} */
