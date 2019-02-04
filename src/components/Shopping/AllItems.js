@@ -164,7 +164,7 @@ const allItems = [
         
         title:<h3>Fluffy</h3>,
         type:<h6><b>Especially For Kids</b></h6>,
-        desc : <p>Very mild cream with combination of kids skin friendly oil like Jojoba, Argan and Almond. The essential oisl fight infection and promote healing thus providing parents some relaxation in caring for their child.</p>,
+        desc : <p>Very mild cream with combination of kids skin friendly oil like Jojoba, Argan and Almond. The essential oils fight infection and promote healing thus providing parents some relaxation in caring for their child.</p>,
         imagePath : <ImageSlickItem count = {2} smallImage0 = {fluffyCreamOne} smallImage1={fluffyCreamTwo}></ImageSlickItem>,
         goodFor:<HeadingAndText header = {allProducts.suitableFor} text = "Excellent for Kids"></HeadingAndText>,
         quantity : <HeadingAndText header = {allProducts.quantity} text ="60 ml"></HeadingAndText>,
