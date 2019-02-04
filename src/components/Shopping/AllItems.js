@@ -119,7 +119,8 @@ const allItems = [
         Mango butter, Tea Tree, Rosemary,
         Coconut, Virgin Olive, Beeswax"></HeadingAndText>,
         parent: allProducts.moisturizingCreams,
-        price: <HeadingAndText header = {allProducts.price} text = "Rs.250/-"></HeadingAndText>
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.250/-"></HeadingAndText>,
+        precaution:<HeadingAndText header = {allProducts.precaution} text = "All our moisturizing creams should be kept away from sunlight as it may lose its consistency"></HeadingAndText>
     },
     {
         
@@ -134,7 +135,8 @@ const allItems = [
         quantity : <HeadingAndText header = {allProducts.quantity} text ="60 ml"></HeadingAndText>,
         ingredients : <HeadingAndText header ={allProducts.ingredients} text = "Frankincense, Geranium, Avocado, Moringa, Argan, Jojoba, Grapeseed, Tea Tree, Rosemary, Hemp, Cucumber seed,  Coconut, beeswax, Sweet Almond,  Vitamin-E, Mango and African Shea butter, Apricot oil"></HeadingAndText>,
         parent: allProducts.antiageing,
-        price: <HeadingAndText header = {allProducts.price} text = "Rs.300"></HeadingAndText>
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.300"></HeadingAndText>,
+        precaution:<HeadingAndText header = {allProducts.precaution} text = "All our moisturizing creams should be kept away from sunlight as it may lose its consistency"></HeadingAndText>
     },
     {
         title:<h3>Pacific</h3>,
@@ -146,7 +148,7 @@ const allItems = [
             It is effective in lightening scars, soothing pimples apart from being anti-blemish, anti-microbial agents.</p>,
         imagePath : <ImageItem smallImageOne = {pacificSmallCream} bigImageOne={pacificBigCream}></ImageItem>,
         quantity : <HeadingAndText header = {allProducts.quantity} text ="60 ml"></HeadingAndText>,
-        ingredients : <HeadingAndText header = {allProducts.ingredients} text="JRosemary, Tea tree,  Safflower, 
+        ingredients : <HeadingAndText header = {allProducts.ingredients} text="Rosemary, Tea tree,  Safflower, 
         Lemon,  Hemp, Cucumber seed, 
         Argan, Virgin Coconut, Sweet Almond, 
         Vitamin-E, Frankincense, Geranium, 
@@ -155,7 +157,8 @@ const allItems = [
         Apricot oil"></HeadingAndText>,
         parent: allProducts.sensitiveSkin,
         goodFor:<HeadingAndText header = {allProducts.suitableFor} text ="Sensitive skin that is acne prone"></HeadingAndText>,
-        price: <HeadingAndText header = {allProducts.price} text = "Rs.300"></HeadingAndText>
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.300"></HeadingAndText>,
+        precaution:<HeadingAndText header = {allProducts.precaution} text = "All our moisturizing creams should be kept away from sunlight as it may lose its consistency"></HeadingAndText>
     },
     {
         
@@ -167,12 +170,13 @@ const allItems = [
         quantity : <HeadingAndText header = {allProducts.quantity} text ="60 ml"></HeadingAndText>,
         ingredients : <HeadingAndText header = {allProducts.ingredients} text="Jojoba, Vitamin-E, Sweet Almond, Argan, Avocado, Virgin Coconut, Virgin Olive, Cocoa Butter"></HeadingAndText>,
         parent: allProducts.kidsFriendly,
-        price: <HeadingAndText header = {allProducts.price} text = "Rs.300"></HeadingAndText>
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.300"></HeadingAndText>,
+        precaution:<HeadingAndText header = {allProducts.precaution} text = "All our moisturizing creams should be kept away from sunlight as it may lose its consistency"></HeadingAndText>
     },
     {
         
         title:<h3>{allProducts.lipbalm}</h3>,
-        desc : <p> Cocoa butter is a natural, meltable oil extracted from the cocoa bean. Cocoa butter is great for naturally healing dry, sensitive skin. it has a mild fragrance, a smooth texture and is ultra-hydrating</p>,
+        desc : <p> Lip balms are made of cocoa butter which is a natural, meltable oil extracted from the cocoa bean. Cocoa butter is great for naturally healing dry, sensitive skin. it has a mild fragrance, a smooth texture and is ultra-hydrating. Unrefined beeswax, consisting of naturally produced vitamins makes it healthier and prevents from further dryness and chapping of the lips</p>,
         imagePath : <ImageSlickItem count = {3} smallImage0 = {lipbalmSmallOne} bigImage0={lipbalmBigOne}
         smallImage1 = {lipbalmSmallTwo} bigImage1={lipbalmBigTwo} smallImage2 = {lipbalmSmallThree} bigImage2={lipbalmBigThree}></ImageSlickItem>,
         quantity : <HeadingAndText header={allProducts.quantity} text = "5gm"></HeadingAndText>,
@@ -197,7 +201,7 @@ const allItems = [
         
         title:<h3>Sparkle</h3>,
         type: <h6><b>{allProducts.faceSerum}</b></h6>,
-        desc : <p> As the name suggests, it's a silicone free skin brightening overnight serum that absorbs quickly in the skin and gives a radiating effect over a period of time. Pores are tiny openings in the skin that release oil and sweat. When pores are clogged, it can result in blackheads or acne. This serum aims to unclog the pores. It also has Helichrysum essential oil that helps smooth both skin tone and texture, reduces the appearance of fine lines, and its emollient properties help keep skin hydrated. Helichrysum is also known to be beneficial for treating sunburns. Along with it is also added few drops of absolutely fantastic Sandalwood oil that acts as an antiseptic and anti-inflammatory agent too apart from being a brightening agent. Also added is Rosehip that tightens the pores and brightens your skin. Mixed with other essentials and carrier oils, this brightening skin serum is good for all kinds of skin.</p>,
+        desc : <p> As the name suggests, it's a silicone free skin brightening overnight serum that absorbs quickly in the skin and gives a radiating effect over a period of time. Pores are tiny openings in the skin that release oil and sweat. When pores are clogged, it can result in blackheads or acne. This serum aims to unclog the pores. It also has Helichrysum essential oil that helps smooth both skin tone and texture, reduces the appearance of fine lines, and its emollient properties help keep skin hydrated. Helichrysum is also known to be beneficial for treating sunburns. Along with it is also added few drops of Mysore Sandalwood oil that acts as an antiseptic and anti-inflammatory agent too apart from being a brightening agent. Also added is Rosehip that tightens the pores and brightens your skin. Mixed with other essentials and carrier oils, this brightening skin serum is good for all kinds of skin.</p>,
         imagePath : <ImageSlickItem count = {2} smallImage0 = {sparkleBigOne} bigImage0={sparkleBigOne}
         smallImage1 = {sparkleBigTwo} bigImage1={sparkleBigTwo}></ImageSlickItem>,
         quantity : <HeadingAndText header = {allProducts.quantity} text="20 ml"></HeadingAndText>,
@@ -311,7 +315,8 @@ const allItems = [
         ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Cucumber seed, Rosemary, Hemp, Moringa,  Grapeseed, Shea butter, Vitamin-E, Coconut, Virgin Olive, Beeswax"></HeadingAndText>,
         parent: allProducts.footCare,
         howtouse:<HeadingAndText header = {allProducts.howToUse} text = "Apply on your heels. Put it in the night as absorption in the skin is better in the night"></HeadingAndText>,
-        price: <HeadingAndText header = {allProducts.price} text = "Rs.200/-"></HeadingAndText>     
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.200/-"></HeadingAndText>,
+        precaution:<HeadingAndText header = {allProducts.precaution} text = "All our moisturizing creams should be kept away from sunlight as it may lose its consistency"></HeadingAndText>
     }
     // ,
     // {

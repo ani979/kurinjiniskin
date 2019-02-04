@@ -32,7 +32,8 @@ const allProducts = {
     ingredients:"Ingredients",
     price:"Cost",
     availableinFlavours:"Available in flavours",
-    howToUse:"How to use"
+    howToUse:"How to use",
+    precaution:"Precaution"
 }
 
 export default allProducts

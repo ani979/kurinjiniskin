@@ -41,6 +41,9 @@ if(!props.title) return(<div></div>);
                     {props.howtouse}
                     </div>
                     <div className = "col-md-12 col-sm-12 col-lg-12">
+                    {props.precaution}
+                    </div>
+                    <div className = "col-md-12 col-sm-12 col-lg-12">
                      <p><b>Order here:</b> <a href = "/howtoorder" target="__blank" >Order</a></p>
                     </div> 
                 {/* </div> */}
