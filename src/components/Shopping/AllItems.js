@@ -35,6 +35,8 @@ import casterTwo from '../../assets/img/Soaps/castersugar_scrubber_two.jpg'
 import vanillaChocOne from '../../assets/img/Soaps/vanilla_choc_1.jpg'
 import vanillaChocTwo from '../../assets/img/Soaps/vanilla_choc_2.jpg'
 import HeadingAndText from './HeadingAndText'
+import sheaCashmereOne from '../../assets/img/Soaps/shea_cashmere_1.jpg'
+import basilThymeOne from '../../assets/img/Soaps/basil_thyme_1.jpg'
 
 const allItems = [
     {
@@ -290,14 +292,36 @@ const allItems = [
     },
     {  
         title:<h3>Vanilla Chocolate</h3>,
-        desc : <p>"mmmmm" is the first of the few expressions get out when taking a bath with such a soap. Imagine starting your day with such a scent every morning under a shower. Good for kids and everyone else out there who just love chocolate</p>,
-        imagePath : <ImageSlickItem count = {2} smallImage0 = {vanillaChocTwo} 
-        smallImage1 = {vanillaChocOne}></ImageSlickItem>,
-        quantity : <HeadingAndText header = {allProducts.quantity} text="80-90gm"></HeadingAndText>,
+        desc : <p>"mmmmm" is the first expression you greet this soap with. Imagine starting your day with such a scent every morning under a shower. Shea butter acts as that necessary moisturizing agent your skin needs every day. Good for kids and everyone else out there who just love smell of a chocolate.</p>,
+        imagePath : <ImageItem smallImageOne = {vanillaChocTwo}></ImageItem>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="75-80gm"></HeadingAndText>,
         ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Coconut, Shea Butter, Glycerine, Cocoa powder, Warm Vanilla fragrance"></HeadingAndText>,
         parent: allProducts.normalSoaps,
         goodFor:<HeadingAndText header = {allProducts.suitableFor} text = "For everyone, but especially for Kids as they would love the smell of chocolate in their bath"></HeadingAndText>,
-        price: <HeadingAndText header = {allProducts.price} text = "Rs.80/-"></HeadingAndText>      
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.80/-"></HeadingAndText>,    
+        deliveryTimeline:  <HeadingAndText header = {allProducts.delivery} text = " a day "></HeadingAndText> 
+    },
+    {  
+        title:<h3>Shea Cashmere soap</h3>,
+        desc : <p>A fragrance balanced perfectly between sweet, warm and comforting. A rich buttery opening note combined with warm coconut leaves a fascinating scent. A soft moisturising soaping bar made with Shea Butter, Coconut oil base, Cashmere & Cherry blossom fragrance.</p>,
+        imagePath : <ImageItem smallImageOne = {sheaCashmereOne}></ImageItem>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="approx. 100gm"></HeadingAndText>,
+        ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Shea Butter, Coconut oil, Cashmere & Cherry blossom fragrance"></HeadingAndText>,
+        parent: allProducts.normalSoaps,
+        goodFor:<HeadingAndText header = {allProducts.suitableFor} text = "Suitable for all kinds of skin"></HeadingAndText>,
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.100/-"></HeadingAndText>,    
+        deliveryTimeline:  <HeadingAndText header = {allProducts.delivery} text = " a day "></HeadingAndText>
+    },
+    {  
+        title:<h3>Basil and Thyme soap</h3>,
+        desc : <p>A slightly sweet and spicy aromatic soap that consists in it Basil Essential oil which is found to be stimulating, promoting mental clarity and alertness. Thyme provides a herbal culinary note along with acting as something that is anti-bacterial, anti-septic. Found to be useful to manage body odour naturally. Extremely effective for an energising bath during the daytime hours.</p>,
+        imagePath : <ImageItem smallImageOne = {basilThymeOne}></ImageItem>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="75-80gm"></HeadingAndText>,
+        ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Thyme leaves, Basil Essentials, Coconut oil"></HeadingAndText>,
+        parent: allProducts.normalSoaps,
+        goodFor:<HeadingAndText header = {allProducts.suitableFor} text = "Suitable for all kinds of skin"></HeadingAndText>,
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.80/-"></HeadingAndText>,      
+        deliveryTimeline:  <HeadingAndText header = {allProducts.delivery} text = " a day "></HeadingAndText>
     }
     // 
     ,

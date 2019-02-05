@@ -31,6 +31,7 @@ const allProducts = {
     quantity:"Quantity",
     ingredients:"Ingredients",
     price:"Cost",
+    delivery:"Possible delivery within",
     availableinFlavours:"Available in flavours",
     howToUse:"How to use",
     precaution:"Precaution"
