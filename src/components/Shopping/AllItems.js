@@ -114,11 +114,11 @@ const allItems = [
          Kurinjini brings to you a Shea, Mango butter based moisturizer that also has the anti-oxidant properties brought by Vitamin-E.
          Along with these, we have also added Jojoba and Sweet Almond oils provide that extra nourishment to the skin.
          We also take customized orders for your specific requirement on fragrance.</p>,
-        imagePath : <ImageSlickItem count = {4} smallImage0 = {roseSmallCream} bigImage0={roseBigCream}
-                    smallImage1 = {orangeSmallCream} bigImage1={orangeBigCream} smallImage2={flh_one} smallImage3={flh_two}></ImageSlickItem>,
+        imagePath : <ImageSlickItem count = {4} smallImage0 = {flh_two} bigImage0={roseBigCream}
+                    smallImage1 = {roseSmallCream} bigImage1={orangeBigCream} smallImage2={orangeSmallCream} smallImage3={flh_one}></ImageSlickItem>,
         goodFor:<HeadingAndText header={allProducts.suitableFor} text = "These are very mild creams, suitable for all kinds of skin"></HeadingAndText>,
         quantity : <HeadingAndText header = {allProducts.quantity} text ="60 ml"></HeadingAndText>,
-        flavours : <HeadingAndText header = {allProducts.availableinFlavours} text = "Cherry Blossom, Winter Bloom, Orange, Rose Petals"></HeadingAndText>,
+        flavours : <HeadingAndText header = {allProducts.availableinFlavours} text = "French Lavender Honey Cherry Blossom, Winter Bloom, Orange, Rose Petals"></HeadingAndText>,
         ingredients : <HeadingAndText header = {allProducts.quantity} text ="Jojoba, Sweet Almond, Vitamin-E,
         Mango butter, Tea Tree, Rosemary,
         Coconut, Virgin Olive, Beeswax"></HeadingAndText>,
