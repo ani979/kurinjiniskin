@@ -1,0 +1,70 @@
+import React from 'react'
+import Slider from 'react-slick'
+import image1 from '../../assets/img/Main/Image1.jpg'
+import image2 from '../../assets/img/Main/Image2.jpg'
+import image3 from '../../assets/img/Main/Image3.jpg'
+import image4 from '../../assets/img/Main/Image4.jpg'
+import image5 from '../../assets/img/Main/Image5.jpg'
+import smallImage4 from '../../assets/img/Main/small_Image4.jpg'
+import './Main-Carousel.css'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import BlurredImage from './BlurredImage'
+
+class MainCarousel extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {imageLoaded:false, pageLoaded:true};
+  }
+  render() {
+      const settings = {
+          dots: true,
+          infinite: true,
+          fade:true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          speed: 10000,
+          autoplaySpeed: 10000,
+          arrows:true,
+          className: 'slides'
+        };
+        console.log(" this.state.pageLoaded ", this.state.pageLoaded)
+          return (
+              <div>
+                
+                  <Slider {...settings}>
+                  <div>
+                      <BlurredImage imageUrl = {smallImage4} shouldBeVisible={!this.state.imageLoaded} />
+                      {this.state.pageLoaded && <img className = "sliderImg" src={image4} onLoad={this.handleImageLoaded} />}
+                  </div>
+                    <div>
+                    {/* <BlurredImage imageUrl = {smallImage4} shouldBeVisible={!this.state.imageLoaded} /> */}
+                      {this.state.pageLoaded && <img className = "sliderImg" src={image1} onLoad={this.handleImageLoaded} />}
+                    </div>
+                    <div>
+                    {/* <BlurredImage imageUrl = {smallImage4} shouldBeVisible={!this.state.imageLoaded} /> */}
+                      {this.state.pageLoaded && <img className = "sliderImg" src={image3} onLoad={this.handleImageLoaded} />}
+                    </div>
+                    <div>
+                    {/* <BlurredImage imageUrl = {smallImage4} shouldBeVisible={!this.state.imageLoaded} /> */}
+                      {this.state.pageLoaded && <img className = "sliderImg" src={image5} onLoad={this.handleImageLoaded} />}
+                    </div>
+                    
+                    
+                  </Slider>
+                  
+              </div>
+         );
+  }
+
+  handleImageLoaded = () => {
+    console.log("Loaded now");
+    this.setState({
+        imageLoaded: true,
+        pageLoaded:true
+    });
+  }
+}  
+
+export default MainCarousel
