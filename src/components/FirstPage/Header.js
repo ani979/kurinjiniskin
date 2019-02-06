@@ -23,6 +23,9 @@ function Header() {
           <NavItem href="/shop">
             Products
           </NavItem>
+          <NavItem href="/recycling">
+            Recycling
+          </NavItem>
           {/* <NavItem href="/faqs">
             FAQs
           </NavItem> */}
