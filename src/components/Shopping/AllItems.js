@@ -37,6 +37,8 @@ import vanillaChocTwo from '../../assets/img/Soaps/vanilla_choc_2.jpg'
 import HeadingAndText from './HeadingAndText'
 import sheaCashmereOne from '../../assets/img/Soaps/shea_cashmere_1.jpg'
 import basilThymeOne from '../../assets/img/Soaps/basil_thyme_1.jpg'
+import flh_one from '../../assets/img/FaceCare/MoisturizingCreams/frenchLavender_1.jpg'
+import flh_two from '../../assets/img/FaceCare/MoisturizingCreams/frenchLavender_2.jpg'
 
 const allItems = [
     {
@@ -112,8 +114,8 @@ const allItems = [
          Kurinjini brings to you a Shea, Mango butter based moisturizer that also has the anti-oxidant properties brought by Vitamin-E.
          Along with these, we have also added Jojoba and Sweet Almond oils provide that extra nourishment to the skin.
          We also take customized orders for your specific requirement on fragrance.</p>,
-        imagePath : <ImageSlickItem count = {2} smallImage0 = {roseSmallCream} bigImage0={roseBigCream}
-                    smallImage1 = {orangeSmallCream} bigImage1={orangeBigCream}></ImageSlickItem>,
+        imagePath : <ImageSlickItem count = {4} smallImage0 = {roseSmallCream} bigImage0={roseBigCream}
+                    smallImage1 = {orangeSmallCream} bigImage1={orangeBigCream} smallImage2={flh_one} smallImage3={flh_two}></ImageSlickItem>,
         goodFor:<HeadingAndText header={allProducts.suitableFor} text = "These are very mild creams, suitable for all kinds of skin"></HeadingAndText>,
         quantity : <HeadingAndText header = {allProducts.quantity} text ="60 ml"></HeadingAndText>,
         flavours : <HeadingAndText header = {allProducts.availableinFlavours} text = "Cherry Blossom, Winter Bloom, Orange, Rose Petals"></HeadingAndText>,
