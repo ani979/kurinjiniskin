@@ -15,7 +15,7 @@ function Recycling() {
                         <li className = "answer-style"> Glass containers - When you get empty glass bottles(used in creams) back irrespective of their sizes, you can choose to take <b>Rs. 20/- off on your next purchase of any item</b></li>
                         <li className = "answer-style"> Lip balm containers:  When you get empty lip balm containers back, you can choose to take <b>10/- off on your next purchase of any item</b></li>
                     </ul>
-                    <p className = "answer-style">There may be some calculations if you get back assorted items but we assure your effort on reuse don’t go waste. As usual, free home pick-up or delivery options available.
+                    <p className = "answer-style">There may be some calculations if you get back multiple items together but we assure your effort on reuse don’t go waste. As usual, free home pick-up or delivery options available.
                             <br/>
                             <i>Every container will be sterilised before reuse</i></p>
 
