@@ -51,10 +51,10 @@ function Header(props) {
           <LinkContainer exact to="/recycling">
             <NavItem eventKey={4}>Recycling</NavItem>
           </LinkContainer>
-          {/* <LinkContainer exact to="/faqs">
+          <LinkContainer exact to="/faqs">
             <NavItem eventKey={5}>FAQs</NavItem>
           </LinkContainer>
-          {props.cartButton ? getCartButton() : ''} */}
+          {/* {props.cartButton ? getCartButton() : ''} */}
         </Nav>
         {/* <Nav pullRight>
           <NavItem eventKey={1} href="#">
