@@ -3,7 +3,7 @@ import Collapsible from 'react-collapsible';
 import './Shop.css'
 import Item from './Item'
 import TopBar from '../FirstPage/TopBar';
-import Header from '../FirstPage/Header'
+import Header from '../header/Header'
 
 import allItems from './AllItems'
 

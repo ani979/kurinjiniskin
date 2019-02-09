@@ -23,6 +23,10 @@ const allquestions = [
         header: "Are your products home delivered",
         content: "Yes as much as possible, we would like to deliver it to you through hand. The reason being, some creams might lose consistency if too much exposed to outside temperature. Within Bangalore, we do it ourselves but for outstation we generally courier through some established courier services."
     },
+    {
+        header: "Can we cancel the order once its placed",
+        content: "Yes you can cancel the order till it leaves for the delivery to your home. Once its on the way, it would be difficult to manage the cancellation."
+    },
 ]
 
 export default allquestions

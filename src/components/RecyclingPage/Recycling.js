@@ -1,7 +1,7 @@
 import React from 'react'
 import './Recycling.css'
 import TopBar from '../FirstPage/TopBar'
-import Header from '../FirstPage/Header'
+import Header from '../header/Header'
 
 function Recycling() {
 

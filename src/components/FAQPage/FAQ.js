@@ -1,6 +1,6 @@
 import React from 'react'
 import TopBar from '../FirstPage/TopBar'
-import Header from '../FirstPage/Header'
+import Header from '../header/Header'
 import Collapsible from 'react-collapsible';
 import '../Shopping/Shop.css'
 import allquestions from './AllQuestions'

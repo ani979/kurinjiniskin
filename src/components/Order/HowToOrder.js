@@ -1,7 +1,8 @@
 import React from 'react'
 import './HowToOrder.css'
 import TopBar from '../FirstPage/TopBar'
-import Header from '../FirstPage/Header'
+import Header from '../header/Header'
+import HeaderContainer from '../header/HeaderContainer'
 
 function HowToOrder() {
 

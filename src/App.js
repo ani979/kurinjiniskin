@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Footer from './components/FirstPage/Footer'
 import ProductSlick from './components/FirstPage/mainContent/ProductSlick/ProductSlick'
-import Header from './components/FirstPage/Header'
+import Header from './components/header/Header'
 import WhyKurinjini from './components/FirstPage/mainContent/WhyKurinjini'
 import MainCarousel from './components/FirstPage/Main-Carousel';
 import SellingText from './components/FirstPage/SellingText';
