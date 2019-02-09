@@ -5,6 +5,7 @@ import HowToOrder from '../Order/HowToOrder'
 import Shop from '../Shopping/Shop'
 import FAQ from '../FAQPage/FAQ'
 import Recycling from '../RecyclingPage/Recycling'
+import Gifting from '../GiftingIdeas/Gifting'
 
 function Routes() {
     return (
@@ -15,6 +16,7 @@ function Routes() {
                 <Route path="/shop" component={Shop} />
                 <Route path="/faqs" component={FAQ} />
                 <Route path="/recycling" component={Recycling} />
+                <Route path="/gifting" component={Gifting} />
             </div>
         </Router>);
 }

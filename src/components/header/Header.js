@@ -55,6 +55,9 @@ function Header(props) {
             <NavItem eventKey={5}>FAQs</NavItem>
           </LinkContainer>
           {props.cartButton ? getCartButton() : ''} */}
+          <LinkContainer exact to="/gifting">
+            <NavItem eventKey={6}>Gifting Ideas</NavItem>
+          </LinkContainer>
         </Nav>
         {/* <Nav pullRight>
           <NavItem eventKey={1} href="#">
