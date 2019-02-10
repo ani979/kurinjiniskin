@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {Total} from './Total'
-import {Checkout} from './Checkout'
+import Checkout from './Checkout'
 import {CartItems} from './CartItems'
 
 export const Cart = ({ cart, onQtyChange, onRemoveClick, onPayClick }) => (
@@ -20,6 +20,7 @@ export const Cart = ({ cart, onQtyChange, onRemoveClick, onPayClick }) => (
   Cart.PropTypes = {
     cart: PropTypes.arrayOf(PropTypes.shape({
       id: PropTypes.number.isRequired,
+      flavour:PropTypes.string.isRequired,
       price: PropTypes.number.isRequired,
       count: PropTypes.number.isRequired,
       stockCount: PropTypes.number.isRequired,

@@ -1,7 +1,7 @@
 import React from 'react'
 import './Item.css'
 
-function Item(props) {
+function Item(props, state) {
 if(!props.title) return(<div></div>);
     return (<div> 
                 {/* <div className = "col-md-12"> */}
@@ -47,7 +47,29 @@ if(!props.title) return(<div></div>);
                     {props.deliveryTimeline}
                     </div>
                     <div className = "col-md-12 col-sm-12 col-lg-12">
-                     <p><b>Order here:</b> <a href = "/howtoorder" target="__blank" >Order</a></p>
+                     <p><b>Add to Cart:</b></p>
+                        <form
+                            className='item-add-form'
+                                onSubmit={e => {
+                                    e.preventDefault();
+                                    props.onSubmit(e, props.id);
+                                }}>
+                            <label>
+                            Pick your favorite flavour:
+                            <select value={state.flavour} onChange={props.handleChange}>
+                                <option value="grapefruit">Grapefruit</option>
+                                <option value="lime">Lime</option>
+                                <option value="coconut">Coconut</option>
+                                <option value="mango">Mango</option>
+                            </select>
+                            </label>
+                            <button
+                                className='item-add-button'
+                                type='submit'
+                                >
+                                Add to cart
+                            </button>
+                        </form>
                     </div> 
                 {/* </div> */}
                 <div className = "col-md-12">

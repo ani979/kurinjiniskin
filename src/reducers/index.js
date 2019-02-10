@@ -6,9 +6,10 @@ const cartItem = (state, action) => {
         return {
           id: action.id,
           count: action.count,
+          flavour:action.flavour
         };
       case 'REMOVE_FROM_CART':
-        return state.id !== action.id;
+        return (state.id !== action.id);
       case 'UPDATE_CART_ITEM':
         if (state.id !== action.id) {
           return state;
@@ -30,7 +31,7 @@ const cartItem = (state, action) => {
 const cart = (state = [], action) => {
     switch (action.type) {
       case 'ADD_TO_CART':
-        //console.log(" Am i here?? ", state, action);
+        console.log(" Am i here?? ", state, action);
         return [
           ...state,
           cartItem(undefined, action),
@@ -38,6 +39,7 @@ const cart = (state = [], action) => {
       case 'REMOVE_FROM_CART':
         return state.filter(item => cartItem(item, action));
       case 'UPDATE_CART_ITEM':
+        console.log("coming here i update ", action);
         return state.map(item => cartItem(item, action));
       default:
         return state;

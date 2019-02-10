@@ -7,24 +7,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 function Header(props) {
   const getCartButton = () => (
-    <div>
       <LinkContainer to="/cart"><NavItem eventKey={6}>Cart ({props.cartItems})</NavItem></LinkContainer>
-      
-      
-      <form
-        className='item-add-form'
-        onSubmit={e => {
-          e.preventDefault();
-          props.onSubmit();
-        }}>
-        <button
-          className='item-add-button'
-          type='submit'
-        >
-        Add to cart
-       </button>
-      </form>
-    </div>
   );
     return (
     <div>
@@ -53,8 +36,8 @@ function Header(props) {
           </LinkContainer>
           {/* <LinkContainer exact to="/faqs">
             <NavItem eventKey={5}>FAQs</NavItem>
-          </LinkContainer>
-          {props.cartButton ? getCartButton() : ''} */}
+          </LinkContainer> */}
+          {props.cartButton ? getCartButton() : ''}
         </Nav>
         {/* <Nav pullRight>
           <NavItem eventKey={1} href="#">

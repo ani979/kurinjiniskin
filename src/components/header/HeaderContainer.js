@@ -1,4 +1,3 @@
-    
 import React from 'react'
 import {connect} from 'react-redux'
 import Header from './Header'
@@ -7,7 +6,7 @@ import {updateCartItem, removeFromCart, removeStockItem} from '../../actions/ind
 
    
     const showCartButton = (pathname) => (
-        !pathname.includes('cart') ? true : false
+        true
         
     );
   

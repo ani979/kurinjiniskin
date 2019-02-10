@@ -9,10 +9,12 @@ export const CartContainer =
       {
         cart: state.cart.map(cartItem => {
           console.log("cartItem ", cartItem)
-          const item = state.stock.find(stockItem => cartItem.id === stockItem.id);
+          const item = state.stock.find(stockItem => (cartItem.id === stockItem.id));
           return {
             id: cartItem.id,
             price: item.price,
+            flavour:item.flavour,
+            name: item.name,
             count: cartItem.count,
             stockCount: item.count,
           };
@@ -25,9 +27,9 @@ export const CartContainer =
           dispatch(updateCartItem(id, cartGetSelectedValue(e)));
         },
   
-        onRemoveClick: (e, id) => {
+        onRemoveClick: (e, id, flavour) => {
           e.preventDefault();
-          dispatch(removeFromCart(id));
+          dispatch(removeFromCart(id, flavour));
         },
   
         dispatch: (reducer) => dispatch(reducer),
@@ -37,8 +39,8 @@ export const CartContainer =
       Object.assign({}, ownProps, stateProps, dispatchProps, {
         onPayClick: () =>
           stateProps.cart.map(item => {
-            dispatchProps.dispatch(removeStockItem(item.id, item.count));
-            dispatchProps.dispatch(removeFromCart(item.id));
+            // dispatchProps.dispatch(removeStockItem(item.id, item.count, item.flavour));
+            dispatchProps.dispatch(removeFromCart(item.id, item.flavour));
           }),
       })
     )

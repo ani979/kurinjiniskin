@@ -4,8 +4,9 @@ import './Shop.css'
 import Item from './Item'
 import TopBar from '../FirstPage/TopBar';
 import Header from '../header/Header'
-
 import allItems from './AllItems'
+import ItemContainer from './ItemContainer';
+import HeaderContainer from '../header/HeaderContainer';
 
 function Shop() {
     //const itemMainCategories = allItems.keys();
@@ -16,7 +17,7 @@ function Shop() {
     return (
     <div>
         <TopBar></TopBar>
-        <Header></Header>
+        <HeaderContainer></HeaderContainer>
         <h2 className="center shopping-header" > Our Products </h2>
         <p className="inside-para"> Click to collapse and view the products</p>
         {allItemsData}
@@ -34,7 +35,7 @@ function parseItems(arrayOfitems) {
         } else {
             //console.log("eachItem child", eachItem);
             
-            return collapsibleArray.push(<Item deliveryTimeline = {eachItem.deliveryTimeline} precaution={eachItem.precaution} howtouse = {eachItem.howtouse} price = {eachItem.price} title={eachItem.title} type={eachItem.type} imagePath={eachItem.imagePath} desc={eachItem.desc} goodFor={eachItem.goodFor} quantity={eachItem.quantity} flavours={eachItem.flavours} ingredients={eachItem.ingredients}></Item>);
+            return collapsibleArray.push(<ItemContainer flavour = {"coconut"} id = {eachItem.id} deliveryTimeline = {eachItem.deliveryTimeline} precaution={eachItem.precaution} howtouse = {eachItem.howtouse} price = {eachItem.price} title={eachItem.title} type={eachItem.type} imagePath={eachItem.imagePath} desc={eachItem.desc} goodFor={eachItem.goodFor} quantity={eachItem.quantity} flavours={eachItem.flavours} ingredients={eachItem.ingredients}></ItemContainer>);
             
         }
         

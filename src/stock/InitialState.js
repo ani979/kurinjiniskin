@@ -2,9 +2,29 @@ export const initialState = {
     cart: [],
     stock: [
         {
-            id: 1,
+            id: "IMM",
             count: 12,
-            price:200
+            price:300
+        },
+        {
+            id: "MOISTcoconut",
+            count: 12,
+            price:300,
+            name:"Immortal",
+            flavour:"coconut"
+        },
+        {
+            id: "MOISTmango",
+            count: 12,
+            price:300,
+            name:"Immortal",
+            flavour:"mango"
+        },
+       
+        {
+            id: "LPSCRB",
+            count: 12,
+            price:100
         },
     ]
 }        

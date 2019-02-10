@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 
  // CartItem
  export const CartItem = (
-  { id, name, price, img, count, stockCount, onQtyChange, onRemoveClick }
+  { id, name, flavour, price, img, count, stockCount, onQtyChange, onRemoveClick }
 ) => (
   <li className={'cart-item cart-item-' + id}>
     <Link
@@ -26,6 +26,14 @@ import {Link} from 'react-router-dom'
           {name}
         </h1>
       </Link>
+      <Link
+        to={'/item/' + id}
+        className='cart-item-name-link'
+      >
+        <h1 className='cart-item-name'>
+          {flavour}
+        </h1>
+      </Link>
       <div className='cart-item-value'>
         <span className='cart-item-price'>
           ${price.toFixed(2)}
@@ -35,7 +43,7 @@ import {Link} from 'react-router-dom'
           <select
             className='cart-item-qty-select'
             value={count}
-            onChange={(e) => onQtyChange(e, id)}
+            onChange={(e) => onQtyChange(e, id, flavour)}
           >
             {getOptionsArray(stockCount).map(num =>
               <option
@@ -53,7 +61,7 @@ import {Link} from 'react-router-dom'
       href="#"
       className='cart-item-delete'
       onClick={(e) => {
-        onRemoveClick(e, id);
+        onRemoveClick(e, id, flavour);
       }}
     >
       ×

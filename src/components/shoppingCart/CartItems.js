@@ -17,6 +17,7 @@ export const CartItems = ({ cart, onQtyChange, onRemoveClick }) => {
             key={item.id}
             id={item.id}
             name={item.name}
+            flavour={item.flavour}
             price={item.price}
             img={item.img}
             count={item.count}
