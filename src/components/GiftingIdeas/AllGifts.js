@@ -19,7 +19,7 @@ const allItems = [
     {
         
         title:<h3>{allGifts.valentineSpecial}</h3>,
-        desc : <p>Not all romantic gestures come in the form of Roses, Lindt, Chardonnay or Solitaire. Some just come in the form of a soft touch and a warm comfort. This romantic season gift a box of care and good health. Our box of nourishment silently and slowly takes care of the skin, keeps it nourished, healthy and glowing while the life moves on.
+        desc : <p>Not all romantic gestures come in the form of Roses, Lindt, Chardonnay or Solitaire. Some just come in the form of a soft touch and a warm comfort. Gift your partner a box of care and good health. Our box of nourishment silently and slowly takes care of the skin, keeps it nourished, healthy and glowing while the life moves on.
             <br/>
             <br/>
             <b>A box of nourishing cream, soaps and lip balm, all inclusive for Rs. 550/-</b>.
