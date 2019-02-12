@@ -66,7 +66,7 @@ const allItems = [
         imagePath : <ImageSlickItem count = {3} smallImage0 = {vanillaChocTwo} 
         smallImage1 = {jute_bag_two} smallImage2={jute_bag_one}></ImageSlickItem>,
         consistsOf : <HeadingAndText header = {allGifts.consistsOf} text ="Vanilla Chocolate or Fruit Medley soaps"></HeadingAndText>,
-        price: <HeadingAndText header = {allGifts.price} text = "Rs80/- inclusive of gift pacakging for orders 10 and above"></HeadingAndText>,
+        price: <HeadingAndText header = {allGifts.price} text = "Rs80/- inclusive of gift pacakging for order quantity 10 and above"></HeadingAndText>,
     },
     {
         
@@ -78,7 +78,7 @@ const allItems = [
         </p>,
         imagePath : <ImageSlickItem count = {4} smallImage0 = {gift_box_one} smallImage1 = {jute_bag_one} smallImage2 = {jute_bag_two} smallImage3= {gift_box_two}></ImageSlickItem>,
         consistsOf : <HeadingAndText header = {allGifts.consistsOf} text ="One scrubbing bar and lip balm/lip scrub"></HeadingAndText>,
-        price: <HeadingAndText header = {allGifts.price} text = "Rs150/- inclusive of gift pacakging for orders 10 and above"></HeadingAndText>,
+        price: <HeadingAndText header = {allGifts.price} text = "Rs150/- inclusive of gift pacakging for order quantity 10 and above"></HeadingAndText>,
     }
 ]
 
