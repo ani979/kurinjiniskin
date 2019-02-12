@@ -24,7 +24,7 @@ const allItems = [
             <br/>
             <b>A box of nourishing cream, soaps and lip balm, all inclusive for Rs. 550/-</b>.
             <br/>
-            Available in pink and purple heart-shaped metal tin boxes and also wonderful paper packs.
+            Available in pink and purple heart-shaped metal tin boxes and also wonderful paper boxes.
             <i>Note:These can be customised as per your request too </i>
         </p>,
         imagePath : <ImageSlickItem count = {4} smallImage0 = {valentine_special_two} 
@@ -38,7 +38,7 @@ const allItems = [
         desc : <p>Gifting has never been an easy task. When it comes to choosing a right gift we are bludgeoned by ideas and then what we choose finally doesn’t always satisfy us. We want to choose a right one, something that’s experiential, an unforgettable one. 
                 We, at <b>Kurinjini</b>, bring you our handmade handpicked gifting options. Be it a birthday gift, an anniversary gift or a wedding gift, we can help you choose a perfect one and deliver it to you in wonderful gift packaging options.
             <br/>
-            Available in various paper made boxes.
+            Available in various paper boxes.
         </p>,
         imagePath : <ImageSlickItem count = {2} smallImage0 = {gift_box_one} smallImage1= {gift_box_two}></ImageSlickItem>,
         consistsOf : <HeadingAndText header = {allGifts.consistsOf} text ="Choose between our brightening serum, hair oil, moisturizing creams, soaps & lip balms"></HeadingAndText>,
