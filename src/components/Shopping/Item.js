@@ -25,7 +25,10 @@ if(!props.title) return(<div></div>);
                 {/* </div> */}
                 {/* <div className = "col-md-12"> */}
                 <div className = "col-md-12 col-sm-12 col-lg-12">
-                        {props.video}
+                    <div className = "col-md-4 col-sm-12 col-lg-4">
+                            {props.video}
+                    </div>
+                        
                 </div>
                     <div className = "col-md-12 col-sm-12 col-lg-12">
                         {props.quantity}
