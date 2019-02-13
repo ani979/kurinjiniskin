@@ -380,7 +380,7 @@ const allItems = [
         parent: allProducts.hydrosols,
         howtouse:<HeadingAndText header = {allProducts.howToUse} text = "Its a sprayer and hence should be sprayed on your skin or hair wherever you would like to use"></HeadingAndText>,
         price: <HeadingAndText header = {allProducts.price} text = "Rs.100/-"></HeadingAndText>,
-        video:<iframe width="80%" height="auto" src="https://www.youtube.com/embed/G9oTLM4qxc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        video:<iframe width="80%" height="auto" src="https://www.youtube.com/embed/NaNhsof3LtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     },
     {
         
@@ -400,7 +400,7 @@ const allItems = [
         parent: allProducts.hydrosols,
         howtouse:<HeadingAndText header = {allProducts.howToUse} text = "Soak cotton pad in Rose arka and dab it all over the face for extra-hydration. The cotton pad can also be chilled in fridge and used on eyes for tired and puffy eyes."></HeadingAndText>,
         price: <HeadingAndText header = {allProducts.price} text = "Rs.80/-"></HeadingAndText>,
-        video:<iframe width="80%" height="auto" src="https://www.youtube.com/embed/G9oTLM4qxc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        video:<iframe width="80%" height="100%" src="https://www.youtube.com/embed/NaNhsof3LtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     }
     // ,
     // {

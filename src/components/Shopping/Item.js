@@ -18,14 +18,15 @@ if(!props.title) return(<div></div>);
                             {props.desc}
                             {props.goodFor}
                         </div>
-                        <div className = "col-12">
-                            {props.video}
-                        </div>
+                        
                     </div>
                 </div>    
                     
                 {/* </div> */}
                 {/* <div className = "col-md-12"> */}
+                <div className = "col-md-12 col-sm-12 col-lg-12">
+                        {props.video}
+                </div>
                     <div className = "col-md-12 col-sm-12 col-lg-12">
                         {props.quantity}
                     </div>
