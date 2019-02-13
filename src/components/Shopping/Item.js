@@ -18,6 +18,9 @@ if(!props.title) return(<div></div>);
                             {props.desc}
                             {props.goodFor}
                         </div>
+                        <div className = "col-12">
+                            {props.video}
+                        </div>
                     </div>
                 </div>    
                     

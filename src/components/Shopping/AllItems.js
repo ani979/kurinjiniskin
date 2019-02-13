@@ -39,6 +39,9 @@ import sheaCashmereOne from '../../assets/img/Soaps/shea_cashmere_1.jpg'
 import basilThymeOne from '../../assets/img/Soaps/basil_thyme_1.jpg'
 import flh_one from '../../assets/img/FaceCare/MoisturizingCreams/frenchLavender_1.jpg'
 import flh_two from '../../assets/img/FaceCare/MoisturizingCreams/frenchLavender_2.jpg'
+import rose_common from '../../assets/img/rosewater/common.jpg'
+import rose_mist from '../../assets/img/rosewater/rose_mist.jpg'
+import rose_arka from '../../assets/img/rosewater/rose_arka.jpg'
 
 const allItems = [
     {
@@ -55,6 +58,10 @@ const allItems = [
     },
     {
         childId: allProducts.soaps,
+        parent: "parent"
+    },
+    {
+        childId: allProducts.hydrosols,
         parent: "parent"
     },
     {
@@ -343,6 +350,57 @@ const allItems = [
         howtouse:<HeadingAndText header = {allProducts.howToUse} text = "Apply on your heels. Put it in the night as absorption in the skin is better in the night"></HeadingAndText>,
         price: <HeadingAndText header = {allProducts.price} text = "Rs.200/-"></HeadingAndText>,
         precaution:<HeadingAndText header = {allProducts.precaution} text = "All our moisturizing creams should be kept away from sunlight as it may lose its consistency"></HeadingAndText>
+    },
+    {
+        
+        title:<h3>Rose Mist</h3>,
+        type: <h6><b>{allProducts.roseHydrosol}</b></h6>,
+        desc : 
+            <p>
+                A few seconds of spritzing, to dress the air or your skin, could change your day. Rose water isn’t new. It has been around for almost 14 centuries, originated in Iran as part of their medical and spiritual practices.
+                <br/>
+                <br/>
+                Rose mist is a powerful beauty potion made by distilling rose-infused water. The product is a collected mist that hydrates the inside while leaving the surface toned and smooth. Being an anti-inflammatory agent and anti-oxidant, it can be used as a natural treatment for your skin related issues. 
+                Due to the astringent like properties it possesses, rose mist helps clean pores and tone the skin
+                <br/>
+                <br/>
+                Use in the mornings or evenings or anytime of the day you want to hydrate. Spray on your face with eyes closed. Use the palm to lightly massage into the skin. 
+                <br/>
+                <br/>
+                <ul>
+                    <li> Can also use it with coconut oil to remove the make-up. </li>
+                    <li> Spray it on your scalp so that it penetrates in transporting nutrients. They make an excellent complement to hair oils, shampoos and conditioners. </li>
+                    <li> Spray it for a better, more relaxed sleep.</li>
+                </ul>
+
+            </p>,
+        imagePath : <ImageSlickItem count = {2} smallImage0 = {rose_common} 
+        smallImage1 = {rose_mist}></ImageSlickItem>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="50ml"></HeadingAndText>,
+        parent: allProducts.hydrosols,
+        howtouse:<HeadingAndText header = {allProducts.howToUse} text = "Its a sprayer and hence should be sprayed on your skin or hair wherever you would like to use"></HeadingAndText>,
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.100/-"></HeadingAndText>,
+        video:<iframe width="80%" height="auto" src="https://www.youtube.com/embed/G9oTLM4qxc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    },
+    {
+        
+        title:<h3>Rose Arka</h3>,
+        type: <h6><b>{allProducts.roseWater}</b></h6>,
+        desc : 
+            <p>
+                Rose Arka or Rose water is a fragrant, rose-colored water having similar qualities as Rose Mist and it can be used to complement face packs or ubtan. 
+                <br/>
+                <br/>
+                Soak cotton pad in Rose arka and dab it all over the face for extra-hydration. The cotton pad can also be chilled in fridge and used on eyes for tired and puffy eyes.
+                
+            </p>,
+        imagePath : <ImageSlickItem count = {2} smallImage0 = {rose_common} 
+        smallImage1 = {rose_arka}></ImageSlickItem>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="50ml"></HeadingAndText>,
+        parent: allProducts.hydrosols,
+        howtouse:<HeadingAndText header = {allProducts.howToUse} text = "Soak cotton pad in Rose arka and dab it all over the face for extra-hydration. The cotton pad can also be chilled in fridge and used on eyes for tired and puffy eyes."></HeadingAndText>,
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.80/-"></HeadingAndText>,
+        video:<iframe width="80%" height="auto" src="https://www.youtube.com/embed/G9oTLM4qxc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     }
     // ,
     // {

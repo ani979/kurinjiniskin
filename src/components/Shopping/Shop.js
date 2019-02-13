@@ -34,7 +34,7 @@ function parseItems(arrayOfitems) {
         } else {
             //console.log("eachItem child", eachItem);
             
-            return collapsibleArray.push(<Item deliveryTimeline = {eachItem.deliveryTimeline} precaution={eachItem.precaution} howtouse = {eachItem.howtouse} price = {eachItem.price} title={eachItem.title} type={eachItem.type} imagePath={eachItem.imagePath} desc={eachItem.desc} goodFor={eachItem.goodFor} quantity={eachItem.quantity} flavours={eachItem.flavours} ingredients={eachItem.ingredients}></Item>);
+            return collapsibleArray.push(<Item video = {eachItem.video} deliveryTimeline = {eachItem.deliveryTimeline} precaution={eachItem.precaution} howtouse = {eachItem.howtouse} price = {eachItem.price} title={eachItem.title} type={eachItem.type} imagePath={eachItem.imagePath} desc={eachItem.desc} goodFor={eachItem.goodFor} quantity={eachItem.quantity} flavours={eachItem.flavours} ingredients={eachItem.ingredients}></Item>);
             
         }
         
