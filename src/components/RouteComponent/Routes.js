@@ -6,6 +6,7 @@ import Shop from '../Shopping/Shop'
 import FAQ from '../FAQPage/FAQ'
 import Recycling from '../RecyclingPage/Recycling'
 import Gifting from '../GiftingIdeas/Gifting'
+import AboutUs from '../aboutus/AboutUs'
 
 function Routes() {
     return (
@@ -17,6 +18,7 @@ function Routes() {
                 <Route path="/faqs" component={FAQ} />
                 <Route path="/recycling" component={Recycling} />
                 <Route path="/gifting" component={Gifting} />
+                <Route path="/aboutus" component={AboutUs} />
             </div>
         </Router>);
 }

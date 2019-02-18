@@ -1,6 +1,6 @@
 import React from 'react'
 import './header.css'
-import {Navbar, Nav, NavItem} from 'react-bootstrap'
+import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap'
 import logo from '../../assets/img/Kurinjini_smallsize.png'
 import { Link, hashHistory } from 'react-router-dom'
 import { LinkContainer } from 'react-router-bootstrap';
@@ -42,14 +42,25 @@ function Header(props) {
           <LinkContainer exact to ="/">
             <NavItem eventKey={1}>Home</NavItem>
           </LinkContainer>
+          <NavDropdown eventKey={2} title = "Company">
+            <LinkContainer to="/aboutus" goto = "mission">
+              <MenuItem eventKey={2.1}>Mission & Vision</MenuItem>    
+            </LinkContainer> 
+            <LinkContainer to="/aboutus" goto = "team">
+              <MenuItem eventKey={2.2}>The Team</MenuItem>    
+            </LinkContainer>      
+          </NavDropdown>
+          {/* <LinkContainer exact to="/aboutus">
+            <NavItem eventKey={2}>About Us</NavItem>
+          </LinkContainer> */}
           <LinkContainer exact to="/howtoorder">
-            <NavItem eventKey={2}>How to Order</NavItem> 
+            <NavItem eventKey={3}>How to Order</NavItem> 
           </LinkContainer>
           <LinkContainer exact to="/shop">
-            <NavItem eventKey={3}>Products</NavItem>
+            <NavItem eventKey={4}>Products</NavItem>
           </LinkContainer>
           <LinkContainer exact to="/recycling">
-            <NavItem eventKey={4}>Recycling</NavItem>
+            <NavItem eventKey={5}>Recycling</NavItem>
           </LinkContainer>
           {/* <LinkContainer exact to="/faqs">
             <NavItem eventKey={5}>FAQs</NavItem>
@@ -58,6 +69,7 @@ function Header(props) {
           <LinkContainer exact to="/gifting">
             <NavItem eventKey={6}>Gifting Ideas</NavItem>
           </LinkContainer>
+
         </Nav>
         {/* <Nav pullRight>
           <NavItem eventKey={1} href="#">
