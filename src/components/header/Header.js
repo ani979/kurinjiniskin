@@ -2,8 +2,8 @@ import React from 'react'
 import './header.css'
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap'
 import logo from '../../assets/img/Kurinjini_smallsize.png'
-import { Link, hashHistory } from 'react-router-dom'
 import { LinkContainer } from 'react-router-bootstrap';
+import { NavHashLink as Link } from 'react-router-hash-link';
 
 function Header(props) {
   const getCartButton = () => (
@@ -43,12 +43,15 @@ function Header(props) {
             <NavItem eventKey={1}>Home</NavItem>
           </LinkContainer>
           <NavDropdown eventKey={2} title = "Company">
-            <LinkContainer to="/aboutus" goto = "mission">
-              <MenuItem eventKey={2.1}>Mission & Vision</MenuItem>    
-            </LinkContainer> 
-            <LinkContainer to="/aboutus" goto = "team">
-              <MenuItem eventKey={2.2}>The Team</MenuItem>    
-            </LinkContainer>      
+            
+              <MenuItem eventKey={2.1}>
+                <Link to="/aboutus#mission-and-vision"
+                scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'start' })}>Mission & Vision</Link>
+              </MenuItem>    
+             
+              <MenuItem eventKey={2.2}>
+                <Link smooth to="/aboutus#the-team" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}>The Team</Link>
+              </MenuItem>        
           </NavDropdown>
           {/* <LinkContainer exact to="/aboutus">
             <NavItem eventKey={2}>About Us</NavItem>

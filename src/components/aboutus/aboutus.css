@@ -74,3 +74,13 @@
     flex: 1 1 auto;
     background: #F6F4F1;
 }
+
+.img-team {
+    width:100%;
+    height:auto;
+}
+
+.subheader {
+    line-height: 1.2em;
+    letter-spacing: .03rem;
+}
