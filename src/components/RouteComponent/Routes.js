@@ -18,7 +18,7 @@ function Routes() {
                 <Route path="/faqs" component={FAQ} />
                 <Route path="/recycling" component={Recycling} />
                 <Route path="/gifting" component={Gifting} />
-                <Route path="/aboutus" component={AboutUs} />
+                {/* <Route path="/aboutus" component={AboutUs} /> */}
             </div>
         </Router>);
 }

@@ -271,6 +271,7 @@ const allItems = [
         quantity : <HeadingAndText header = {allProducts.quantity} text="100gm"></HeadingAndText>,
         flavours : <HeadingAndText header = {allProducts.availableinFlavours} text = "Ylang-Ylang, Basil, Lavender, Orange, Fruit Medley, Mango Mandarian, Rosewood, Chamomile"></HeadingAndText>,
         ingredients :<HeadingAndText header = {allProducts.ingredients} text = "It has a sweet sugary flavour through caster sugar blended with raw unbleached beeswax and Cocoa butter. The nourishing oils used are Sweet Almond, Jojoba and Vitamin-E"></HeadingAndText>,
+        howtouse:<HeadingAndText header = {allProducts.howToUse} text = "After applying the scrubber, keep it on a dry surface"></HeadingAndText>,
         parent: allProducts.scrubbers,
         price: <HeadingAndText header = {allProducts.price} text = "Rs.100/-"></HeadingAndText>       
     },
@@ -284,6 +285,7 @@ const allItems = [
         smallImage1 = {casterTwo}></ImageSlickItem>,
         quantity : <HeadingAndText header = {allProducts.quantity} text="~80gm"></HeadingAndText>,
         flavours : <HeadingAndText header = {allProducts.availableinFlavours} text = "Ylang-Ylang, Basil, Lavender, Orange, Fruit Medley, Mango Mandarian, Rosewood, Chamomile"></HeadingAndText>,
+        howtouse:<HeadingAndText header = {allProducts.howToUse} text = "After applying the scrubber, keep it on a dry surface"></HeadingAndText>,
         ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Caster sugar blended with Vitamin-E and Sweet Almond. Essential oils are added depending on flavour"></HeadingAndText>,
         parent: allProducts.scrubbers,
         price: <HeadingAndText header = {allProducts.price} text = "Rs.70/-"></HeadingAndText>      
@@ -296,6 +298,7 @@ const allItems = [
         quantity : <HeadingAndText header = {allProducts.quantity} text="100gm"></HeadingAndText>,
         flavours : <HeadingAndText header = {allProducts.availableinFlavours} text = "Oatmeal, Chia seeds, Flax seeds, Poppy seeds"></HeadingAndText>,
         ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Coconute, Glycerine and dpeneding on the flavour the respective ingredient is added"></HeadingAndText>,
+        howtouse:<HeadingAndText header = {allProducts.howToUse} text = "After applying the scrubber, keep it on a dry surface"></HeadingAndText>,
         parent: allProducts.scrubbers,
         price: <HeadingAndText header = {allProducts.price} text = "Rs.100/-"></HeadingAndText>   
     },
@@ -345,7 +348,7 @@ const allItems = [
             Foot Healer has Rosemary essentials that saves from any fungal or bacterial infection. Cucumber seed oil being rich in Vitamin-B and Vitamin-C provides hydration to the skin and also is a healer to the dry and cracked skin.</p>,
         imagePath : <ImageItem smallImageOne= {footScrubOne}></ImageItem>,
         quantity : <HeadingAndText header = {allProducts.quantity} text="40ml"></HeadingAndText>,
-        ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Cucumber seed, Rosemary, Hemp, Moringa,  Grapeseed, Shea butter, Vitamin-E, Coconut, Virgin Olive, Beeswax"></HeadingAndText>,
+        ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Unrefined Shea, Cocoa Butter, Beeswax, Rosemary, Hemp, Moringa,  Grapeseed, Vitamin-E, Sweet Almond, Wheat Germ"></HeadingAndText>,
         parent: allProducts.footCare,
         howtouse:<HeadingAndText header = {allProducts.howToUse} text = "Apply on your heels. Put it in the night as absorption in the skin is better in the night"></HeadingAndText>,
         price: <HeadingAndText header = {allProducts.price} text = "Rs.200/-"></HeadingAndText>,

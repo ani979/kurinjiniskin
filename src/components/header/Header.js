@@ -42,7 +42,7 @@ function Header(props) {
           <LinkContainer exact to ="/">
             <NavItem eventKey={1}>Home</NavItem>
           </LinkContainer>
-          <NavDropdown eventKey={2} title = "Company">
+          {/* <NavDropdown eventKey={2} title = "Company">
             
               <MenuItem eventKey={2.1}>
                 <Link to="/aboutus#mission-and-vision"
@@ -52,7 +52,7 @@ function Header(props) {
               <MenuItem eventKey={2.2}>
                 <Link smooth to="/aboutus#the-team" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}>The Team</Link>
               </MenuItem>        
-          </NavDropdown>
+          </NavDropdown> */}
           {/* <LinkContainer exact to="/aboutus">
             <NavItem eventKey={2}>About Us</NavItem>
           </LinkContainer> */}
@@ -65,12 +65,15 @@ function Header(props) {
           <LinkContainer exact to="/recycling">
             <NavItem eventKey={5}>Recycling</NavItem>
           </LinkContainer>
+          <LinkContainer exact to="/faqs">
+            <NavItem eventKey={6}>FAQs</NavItem>
+          </LinkContainer>
           {/* <LinkContainer exact to="/faqs">
             <NavItem eventKey={5}>FAQs</NavItem>
           </LinkContainer>
           {props.cartButton ? getCartButton() : ''} */}
           <LinkContainer exact to="/gifting">
-            <NavItem eventKey={6}>Gifting Ideas</NavItem>
+            <NavItem eventKey={7}>Gifting Ideas</NavItem>
           </LinkContainer>
 
         </Nav>
