@@ -29,7 +29,7 @@ const allquestions = [
     },
     {
         header: "Can we cancel or change the order once its placed",
-        content: "Yes you can cancel or change the order until it leaves for the delivery to your home. Once its on the way, it would be difficult to manage the cancellation."
+        content: "Yes you can cancel or change the order until it leaves for the delivery to your home. Once its on the way, it would be difficult to manage any changes."
     },
     {
         header: "What are the modes of payment? Do we have to pay when placing an order?",
