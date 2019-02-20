@@ -33,7 +33,7 @@ const allquestions = [
     },
     {
         header: "What are the modes of payment? Do we have to pay when placing an order?",
-        content: "We accept paytm, googlepay and cash. No not necessary to pay when placing an order. You can pay us after we deliver too. However, for bulk orders, we request a small part-payment before."
+        content: "We accept paytm, googlepay and cash at present. No not necessary to pay when placing an order. You can pay us after we deliver too. However, for bulk orders, we request a small part-payment before as a token of confirmation."
     },
     {
         header: "I have a suggestion or a feedback to share, how do i do?",
