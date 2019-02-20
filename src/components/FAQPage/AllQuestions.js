@@ -28,8 +28,8 @@ const allquestions = [
         content: "We give it to some of our close friends or clients who we engage closely with. We don't have a fixed set of people for testing and we try to reach out to different people."
     },
     {
-        header: "Can we cancel the order once its placed",
-        content: "Yes you can cancel the order until it leaves for the delivery to your home. Once its on the way, it would be difficult to manage the cancellation."
+        header: "Can we cancel or change the order once its placed",
+        content: "Yes you can cancel or change the order until it leaves for the delivery to your home. Once its on the way, it would be difficult to manage the cancellation."
     },
     {
         header: "What are the modes of payment? Do we have to pay when placing an order?",
