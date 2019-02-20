@@ -137,9 +137,13 @@ const allItems = [
         
         title:<h3>Immortal</h3>,
         type:<h6><b>Anti-ageing</b></h6>,
-        desc : <p>An anti-ageing cream that also helps fighting hyperpigmentation. 
-            It has ingredients that are considered to be anti-wrinkle, skin tightening agent, reducing dark spots and blemishes. 
-            It is high in Vitamin-A and Vitamin-E oil that prevents formation of free radicals that are scientifically proven to be the reason of pre-mature ageing.</p>,
+        desc : <p>
+            Cellular regeneration is the key to a youthful skin, and essential oils provide a way of doing this which is far more pleasant and safe than methods involving synthetic chemicals.
+            Immortal is not only an anti-ageing cream but it also helps fight hyperpigmentation. 
+            It has ingredients that stimualte skin cells into reproducing at a quicker rate, thus reducing the time-lag between new skin growth and the elimination of old cells. 
+            Immortal has essentials that are considered to be anti-wrinkle, act as a skin tightening agent, helping in reducing dark spots and blemishes. 
+            It is high in Vitamin-A and Vitamin-E oil that prevents formation of free radicals that are scientifically proven to be one of the reasons of pre-mature ageing.
+            <b> Immortal is our most popular face cream. Lot of people have given a great feedback on this cream. </b></p>,
         imagePath : <ImageSlickItem count = {3} smallImage0 = {immortalOne} 
         smallImage1 = {immortalTwo} smallImage2={immortalThree}></ImageSlickItem>,
         goodFor:<HeadingAndText header = {allProducts.suitableFor} text = "Suitable for wrinked skin"></HeadingAndText>,
