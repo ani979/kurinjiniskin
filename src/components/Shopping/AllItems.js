@@ -370,11 +370,8 @@ const allItems = [
                 <br/>
                 <br/>
                 Rose mist is a powerful beauty potion made by distilling rose-infused water. The product is a collected mist that hydrates the inside while leaving the surface toned and smooth. Being an anti-inflammatory agent and anti-oxidant, it can be used as a natural treatment for your skin related issues. 
-                Due to the astringent like properties it possesses, rose mist helps clean pores and tone the skin
-                <br/>
-                <br/>
-                Use in the mornings or evenings or anytime of the day you want to hydrate. Spray on your face with eyes closed. Use the palm to lightly massage into the skin. 
-                <br/>
+                Due to the astringent like properties it possesses, rose mist helps clean pores and tone the skin.
+                
                 <br/>
                 <ul>
                     <li> Can also use it with coconut oil to remove the make-up. </li>
@@ -387,7 +384,7 @@ const allItems = [
         smallImage1 = {rose_mist}></ImageSlickItem>,
         quantity : <HeadingAndText header = {allProducts.quantity} text="50ml"></HeadingAndText>,
         parent: allProducts.hydrosols,
-        howtouse:<HeadingAndText header = {allProducts.howToUse} text = "Its a sprayer and hence should be sprayed on your skin or hair wherever you would like to use"></HeadingAndText>,
+        howtouse:<HeadingAndText header = {allProducts.howToUse} text = "Use in the mornings or evenings or anytime of the day you want to hydrate your skin. Spray it on your face or hair roots for better results."></HeadingAndText>,
         price: <HeadingAndText header = {allProducts.price} text = "Rs.100/-"></HeadingAndText>,
         video:<iframe width="auto" height="100%" src="https://www.youtube.com/embed/NaNhsof3LtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     },
@@ -421,14 +418,13 @@ const allItems = [
                 The spray freshens up the face by removing dirt and cleansing pores. Active herbs like Mint, & Cucumber protect the skin from germs and makes skin soft and fresh instantly. Fresh cucumber water contains Vitamin C and caffeic acid, both of which soothe skin irritations, reduce swelling, and prevent water retention. Cucumber has the same pH level as the skin. It restores the protective acid mantle which keeps bacteria and other contaminants from being absorbed. It has hydrating, nourishing, and astringent properties.
                 <br/>
                 <br/>
-                Use in the mornings or evenings or anytime of the day you want to hydrate. Spray on your face with eyes closed. Use the palm to lightly massage into the skin. 
                 
             </p>,
         imagePath : <ImageSlickItem count = {2} smallImage0 = {mini_mist_one} 
         smallImage1 = {mini_mist_two}></ImageSlickItem>,
         quantity : <HeadingAndText header = {allProducts.quantity} text="50ml"></HeadingAndText>,
         parent: allProducts.hydrosols,
-        howtouse:<HeadingAndText header = {allProducts.howToUse} text = "Its a sprayer and hence should be sprayed on your skin or hair wherever you would like to use"></HeadingAndText>,
+        howtouse:<HeadingAndText header = {allProducts.howToUse} text = "Use in the mornings or evenings or anytime of the day you want to hydrate your skin. Spray it on your face or hair roots for better results."></HeadingAndText>,
         price: <HeadingAndText header = {allProducts.price} text = "Rs.100/-"></HeadingAndText>,
     },
     {
@@ -440,14 +436,14 @@ const allItems = [
                 <br/>
                 Containing antibacterial and anti-inflammatory properties, Tea Tree oil works as a natural remedy for acne and other inflammatory skin conditions like eczema and psoriasis along with soothing skin irritations. Tea tree oil has been proven very beneficial for the health of your hair and scalp, it has the ability to soothe dry, flaking scalp and remove dandruff.                <br/>
                 <br/>
-                <b>This particular mist can be used for solving scalp itching problem. Spray it on the hair roots and massage it to spread on the scalp. It doesn’t need any wash after that.</b>
+                <b>This particular mist can be used for solving scalp itching problem. Spray it on the hair roots and massage to spread it on the scalp. It doesn’t need any wash after that.</b>
                  
             </p>,
         imagePath : <ImageSlickItem count = {2} smallImage0 = {mini_mist_one} 
         smallImage1 = {mini_mist_two}></ImageSlickItem>,
         quantity : <HeadingAndText header = {allProducts.quantity} text="50ml"></HeadingAndText>,
         parent: allProducts.hydrosols,
-        howtouse:<HeadingAndText header = {allProducts.howToUse} text = "Its a sprayer and hence should be sprayed on your skin or hair wherever you would like to use"></HeadingAndText>,
+        howtouse:<HeadingAndText header = {allProducts.howToUse} text = "Use in the mornings or evenings or anytime of the day you want to hydrate your skin. Spray it on your face or hair roots for better results."></HeadingAndText>,
         price: <HeadingAndText header = {allProducts.price} text = "Rs.100/-"></HeadingAndText>,
     }
     // ,
