@@ -14,7 +14,7 @@ const allProducts = {
     faceSerum:"Skin brightening face serum",
     darkCirclesRemoval: "Under eye serum for dark circles",
     soaps: "Soaping bars",
-    hydrosols:"Rose Hydrosol and Water",
+    hydrosols:"Hydrosols and Water",
     bodyScrub:"Body Scrubbers",
     footScrub:"Foot Scrubbers",
     normalSoaps: "Aromatic Soaps",

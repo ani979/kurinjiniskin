@@ -42,6 +42,8 @@ import flh_two from '../../assets/img/FaceCare/MoisturizingCreams/frenchLavender
 import rose_common from '../../assets/img/rosewater/common.jpg'
 import rose_mist from '../../assets/img/rosewater/rose_mist.jpg'
 import rose_arka from '../../assets/img/rosewater/rose_arka.jpg'
+import mini_mist_one from '../../assets/img/rosewater/mintMist_1.jpg'
+import mini_mist_two from '../../assets/img/rosewater/mintMist_2.jpg'
 
 const allItems = [
     {
@@ -389,6 +391,7 @@ const allItems = [
         price: <HeadingAndText header = {allProducts.price} text = "Rs.100/-"></HeadingAndText>,
         video:<iframe width="auto" height="100%" src="https://www.youtube.com/embed/NaNhsof3LtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     },
+    
     {
         
         title:<h3>Rose Arka</h3>,
@@ -408,6 +411,44 @@ const allItems = [
         howtouse:<HeadingAndText header = {allProducts.howToUse} text = "Soak cotton pad in Rose arka and dab it all over the face for extra-hydration. The cotton pad can also be chilled in fridge and used on eyes for tired and puffy eyes."></HeadingAndText>,
         price: <HeadingAndText header = {allProducts.price} text = "Rs.80/-"></HeadingAndText>,
         video:<iframe width="auto" height="100%" src="https://www.youtube.com/embed/NaNhsof3LtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    },
+    {   
+        title:<h3>Mint Cucumber Mist</h3>,
+        desc : 
+            <p>
+                As summer approaches, Toners or face mists become an essential part of our daily skin care.
+                <br/>
+                The spray freshens up the face by removing dirt and cleansing pores. Active herbs like Mint, & Cucumber protect the skin from germs and makes skin soft and fresh instantly. Fresh cucumber water contains Vitamin C and caffeic acid, both of which soothe skin irritations, reduce swelling, and prevent water retention. Cucumber has the same pH level as the skin. It restores the protective acid mantle which keeps bacteria and other contaminants from being absorbed. It has hydrating, nourishing, and astringent properties.
+                <br/>
+                <br/>
+                Use in the mornings or evenings or anytime of the day you want to hydrate. Spray on your face with eyes closed. Use the palm to lightly massage into the skin. 
+                
+            </p>,
+        imagePath : <ImageSlickItem count = {2} smallImage0 = {mini_mist_one} 
+        smallImage1 = {mini_mist_two}></ImageSlickItem>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="50ml"></HeadingAndText>,
+        parent: allProducts.hydrosols,
+        howtouse:<HeadingAndText header = {allProducts.howToUse} text = "Its a sprayer and hence should be sprayed on your skin or hair wherever you would like to use"></HeadingAndText>,
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.100/-"></HeadingAndText>,
+    },
+    {
+        
+        title:<h3>Mint Tea Tree Mist</h3>,
+        desc : 
+            <p>
+                As summer approaches, Toners or face mists become an essential part of our daily skin care.
+                <br/>
+                Containing antibacterial and anti-inflammatory properties, Tea Tree oil works as a natural remedy for acne and other inflammatory skin conditions like eczema and psoriasis along with soothing skin irritations. Tea tree oil has been proven very beneficial for the health of your hair and scalp, it has the ability to soothe dry, flaking scalp and remove dandruff.                <br/>
+                <br/>
+                <b>This particular mist can be used for solving scalp itching problem. Spray it on the hair roots and massage it to spread on the scalp. It doesn’t need any wash after that.</b>
+                 
+            </p>,
+        imagePath : <ImageSlickItem count = {2} smallImage0 = {mini_mist_one} 
+        smallImage1 = {mini_mist_two}></ImageSlickItem>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="50ml"></HeadingAndText>,
+        parent: allProducts.hydrosols,
+        howtouse:<HeadingAndText header = {allProducts.howToUse} text = "Its a sprayer and hence should be sprayed on your skin or hair wherever you would like to use"></HeadingAndText>,
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.100/-"></HeadingAndText>,
     }
     // ,
     // {
