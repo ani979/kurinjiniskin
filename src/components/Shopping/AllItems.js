@@ -457,7 +457,7 @@ const allItems = [
                 A natural conditioner made out of oils, butter and other hydrating ingredients. It provides treatment for primarily hair fall and split ends along with giving your hair a shiny and bouncy look. 
                 <br/>
                 <ul>
-                    <li>Ingredients like Brahmi, Bhringraj and Hibiscus strengthens the root follicles promotes hair growth, treats dry, itchy scalp and makes hair bouncier.</li>
+                    <li>Ingredients like Brahmi, Bhringraj and Hibiscus strengthens the root follicles promotes hair growth, treats dry, itchy scalp and makes hair bouncy.</li>
                     <li>Argan oil has a number of benefits when used on hair. It can act as a moisturiser for the scalp to fight dandruff and dry scalp. </li>
                     <li>Along with it is added Rosemary that stimulates hair growth, prevents dandruff. </li>
                     <li>Avacodo butter and oil both not only provide lustrous hair but also prevent premature greying.</li>
