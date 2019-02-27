@@ -1,6 +1,7 @@
 
 
 const allProducts = {
+    hairMask:"Hair Mask",
     lipBalmParent : "Lip Care",
     specialNeeds: "Special needs",
     moisturizingCreams:"Moisturizing cream",

@@ -14,6 +14,7 @@ import { Icon as BaseIcon } from "react-icons-kit";
 import Card from './Card'
 import sample from '../../assets/img/FaceCare/MoisturizingCreams/orange_big.jpg'
 import animeshPic from '../../assets/img/AboutUs/animesh.jpg'
+import shilpi from '../../assets/img/AboutUs/Shilpi_4.jpg'
 
 const AppContainer = styled(BaseAppContainer)`
   height: calc(100vh - 40px);
@@ -98,7 +99,7 @@ class AboutUs extends React.Component {
                     </div>
                     <div className = "row col-md-12 col-sm-12 col-lg-12">
                         <div className = "col-md-4 col-sm-4 col-lg-4">
-                            <img className= "img-team" src = {sample}/>
+                            <img className= "img-team" src = {shilpi}/>
                         </div>
                         <div className = "col-md-4 col-sm-4 col-lg-8">
                             <div className = "answer-style">

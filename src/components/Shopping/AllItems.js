@@ -44,6 +44,8 @@ import rose_mist from '../../assets/img/rosewater/rose_mist.jpg'
 import rose_arka from '../../assets/img/rosewater/rose_arka.jpg'
 import mini_mist_one from '../../assets/img/rosewater/mintMist_1.jpg'
 import mini_mist_two from '../../assets/img/rosewater/mintMist_2.jpg'
+import roots_one from '../../assets/img/hairCare/roots_1.jpg'
+import roots_two from '../../assets/img/hairCare/roots_2.jpg'
 
 const allItems = [
     {
@@ -263,7 +265,7 @@ const allItems = [
         quantity : <HeadingAndText header = {allProducts.quantity} text="10 ml"></HeadingAndText>,
         howtouse : <HeadingAndText header = {allProducts.howToUse} text= "Apply on your hair and scalp with any career oil"></HeadingAndText>,
         ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Argan, Moringa, Rosemary, Grapeseed, Cucumber seed, Jojoba, Hemp, Frankincense, Lemon Grass, Coconut, Avocado"></HeadingAndText>,
-        parent: allProducts.oils,
+        parent: allProducts.hairCare,
         price: <HeadingAndText header = {allProducts.price} text = "Rs.200/-"></HeadingAndText>  
                     
     },
@@ -445,6 +447,40 @@ const allItems = [
         parent: allProducts.hydrosols,
         howtouse:<HeadingAndText header = {allProducts.howToUse} text = "Use in the mornings or evenings or anytime of the day you want to hydrate your skin. Spray it on your face or hair roots for better results."></HeadingAndText>,
         price: <HeadingAndText header = {allProducts.price} text = "Rs.100/-"></HeadingAndText>,
+    },
+    {
+        
+        title:<h3>Roots</h3>,
+        type: <h6><b>{allProducts.hairMask}</b></h6>,
+        desc : 
+            <p>
+                A natural conditioner made out of oils, butter and other hydrating ingredients. It provides treatment for primarily hair fall and split ends along with giving your hair a shiny and bouncy look. 
+                <br/>
+                <ul>
+                    <li>Ingredients like Brahmi, Bhringraj and Hibiscus strengthens the root follicles promotes hair growth, treats dry, itchy scalp and makes hair bouncier.</li>
+                    <li>Argan oil has a number of benefits when used on hair. It can act as a moisturiser for the scalp to fight dandruff and dry scalp. </li>
+                    <li>Along with it is added Rosemary that stimulates hair growth, prevents dandruff. </li>
+                    <li>Avacodo butter and oil both not only provide lustrous hair but also prevent premature greying.</li>
+                    <li>Moringa oil is a natural hair cleanser.  It rejuvenates your hair from deep within and the minerals and vitamins make your hair stronger and fight dandruff and split ends. It has great healing properties which makes it ideal for hair care.</li>
+                </ul>
+                
+                <p> Begin with using more frequently, weekly application and then move on to monthly application.</p>
+                <b>A regular use of hair mask is recommended for healthy hair and healthy root.</b>
+            </p>,
+        imagePath : <ImageSlickItem count = {2} smallImage0 = {roots_one} 
+        smallImage1 = {roots_two}></ImageSlickItem>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="60ml and 120 ml bottles"></HeadingAndText>,
+        parent: allProducts.hairCare,
+        howtouse:<p><b>{allProducts.howToUse}: </b> <ul>
+                    <li> Wash and towel dry your hair</li>
+                    <li>Apply good amount of mask from hair roots to tips</li>
+                    <li>Keep it like that for an hour</li>
+                    <li>Do a shampoo wash after that</li>
+            </ul></p>,
+        price: <p><b>{allProducts.price}: </b> <ul>
+            <li>60ml - 200/- and</li>
+            <li>120 ml - 400/-</li></ul></p>,
+        video:<iframe width="auto" height="100%" src="https://www.youtube.com/embed/yHlx7sPuY2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     }
     // ,
     // {
