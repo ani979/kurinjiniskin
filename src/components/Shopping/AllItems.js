@@ -388,7 +388,7 @@ const allItems = [
         parent: allProducts.hydrosols,
         howtouse:<HeadingAndText header = {allProducts.howToUse} text = "Use in the mornings or evenings or anytime of the day you want to hydrate your skin. Spray it on your face or hair roots for better results."></HeadingAndText>,
         price: <HeadingAndText header = {allProducts.price} text = "Rs.100/-"></HeadingAndText>,
-        video:<iframe width="auto" height="100%" src="https://www.youtube.com/embed/NaNhsof3LtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        video:<iframe width="auto" height="100%" src="https://www.youtube.com/embed/NaNhsof3LtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
     },
     
     {
@@ -409,7 +409,7 @@ const allItems = [
         parent: allProducts.hydrosols,
         howtouse:<HeadingAndText header = {allProducts.howToUse} text = "Soak cotton pad in Rose arka and dab it all over the face for extra-hydration. The cotton pad can also be chilled in fridge and used on eyes for tired and puffy eyes."></HeadingAndText>,
         price: <HeadingAndText header = {allProducts.price} text = "Rs.80/-"></HeadingAndText>,
-        video:<iframe width="auto" height="100%" src="https://www.youtube.com/embed/NaNhsof3LtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        video:<iframe width="auto" height="100%" src="https://www.youtube.com/embed/NaNhsof3LtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
     },
     {   
         title:<h3>Mint Cucumber Mist</h3>,
@@ -480,7 +480,7 @@ const allItems = [
         price: <p><b>{allProducts.price}: </b> <ul>
             <li>60ml - 200/- and</li>
             <li>120 ml - 400/-</li></ul></p>,
-        video:<iframe width="auto" height="100%" src="https://www.youtube.com/embed/yHlx7sPuY2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        video:<iframe width="auto" height="100%" src="https://www.youtube.com/embed/yHlx7sPuY2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
     }
     // ,
     // {
