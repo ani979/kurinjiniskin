@@ -454,7 +454,7 @@ const allItems = [
         type: <h6><b>{allProducts.hairMask}</b></h6>,
         desc : 
             <p>
-                A natural conditioner made out of oils, butter and other hydrating ingredients. It provides treatment for primarily hair fall and split ends along with giving your hair a shiny and bouncy look. 
+                A natural hair cream made out of oils, butter and other hydrating ingredients. It provides treatment for primarily hair fall and split ends along with giving your hair a shiny and bouncy look. 
                 <br/>
                 <ul>
                     <li>Ingredients like Brahmi, Bhringraj and Hibiscus strengthens the root follicles promotes hair growth, treats dry, itchy scalp and makes hair bouncy.</li>
@@ -480,7 +480,7 @@ const allItems = [
         price: <p><b>{allProducts.price}: </b> <ul>
             <li>60ml - 200/- and</li>
             <li>120 ml - 400/-</li></ul></p>,
-        video:<iframe width="auto" height="100%" src="https://www.youtube.com/embed/yHlx7sPuY2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
+        video:<iframe width="auto" height="100%" src="https://www.youtube.com/embed/wGjqT1T-Lk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
     }
     // ,
     // {
