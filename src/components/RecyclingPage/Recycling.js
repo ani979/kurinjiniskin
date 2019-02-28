@@ -1,13 +1,10 @@
 import React from 'react'
 import './Recycling.css'
-import TopBar from '../FirstPage/TopBar'
-import Header from '../header/Header'
 
 function Recycling() {
 
     return (<div>
-                <TopBar></TopBar>
-                <Header></Header>
+
                 <div className = "col-md-12">
                     <h2 className="center shopping-header" > Recycling is rewarding </h2>
                     <p className = "answer-style"> It’s time we practice reduce, reuse and recycle. Don’t throw away the empties. The bottles or containers that you purchased from us can be easily reused. Bring us those empty containers or glass bottles for a refill. And, here are the rewards you get for doing these:</p>

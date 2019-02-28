@@ -1,6 +1,5 @@
 import React from 'react'
-import TopBar from '../FirstPage/TopBar'
-import Header from '../header/Header'
+
 import Collapsible from 'react-collapsible';
 import '../Shopping/Shop.css'
 import allquestions from './AllQuestions'
@@ -14,8 +13,7 @@ function FAQ() {
         <p className = "answer-style"> {one.content}</p></Collapsible>)
     })
     return  (<div>
-                <TopBar></TopBar>
-                <Header></Header>
+
                 <div className = "col-md-12">
                 <h2 className="center shopping-header" > Some questions you may have been thinking of: </h2>
                 {allQandA}

@@ -2,8 +2,6 @@ import React from 'react'
 import Collapsible from 'react-collapsible';
 import './Shop.css'
 import Item from './Item'
-import TopBar from '../FirstPage/TopBar';
-import Header from '../header/Header'
 
 import allItems from './AllItems'
 
@@ -15,8 +13,6 @@ function Shop() {
     
     return (
     <div>
-        <TopBar></TopBar>
-        <Header></Header>
         <h2 className="center shopping-header" > Our Products </h2>
         <p className="inside-para"> Click to collapse and view the products</p>
         {allItemsData}

@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux'
+import { IntlReducer as Intl, IntlProvider } from 'react-redux-multilingual'
 
 const cartItem = (state, action) => {
     switch (action.type) {
@@ -78,5 +79,6 @@ const stock = (state = [], action) => {
 
 export const rootReducers = combineReducers({
     cart,
-    stock
+    stock,
+    Intl
   });

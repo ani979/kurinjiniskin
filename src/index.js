@@ -7,18 +7,35 @@ import { createStore } from 'redux'
 import Routes from './components/RouteComponent/Routes'
 import {initialState} from './stock/InitialState'
 import {rootReducers} from './reducers'
+import translations from './constants/translations'
+import {IntlProvider } from 'react-redux-multilingual'
 
-const store = createStore(rootReducers, initialState)
-ReactDOM.render(
-    <Provider store={store}>
-        <Routes/>
-    </Provider>, 
-    document.getElementById('root')
-);
+class Root extends React.Component {
+    constructor(props){
+        super(props);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+    }
+
+    render() {
+        const store = createStore(rootReducers, initialState)
+        return (
+            <Provider store={store}>
+                <IntlProvider translations={translations} locale='en'>
+                    <Routes/>
+                </IntlProvider>    
+            </Provider>
+        );
+
+        // If you want your app to work offline and load faster, you can change
+        // unregister() to register() below. Note this comes with some pitfalls.
+        // Learn more about service workers: http://bit.ly/CRA-PWA
+        serviceWorker.unregister();
+    }
+}    
+
+
+
+
+ReactDOM.render(<Root />, document.getElementById('root'));
 
 

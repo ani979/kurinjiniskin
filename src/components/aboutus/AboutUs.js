@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
 import { SideNav, Nav as BaseNav } from "react-sidenav";
-import TopBar from '../FirstPage/TopBar';
-import Header from '../header/Header'
 import './aboutus.css'
 import '../FAQPage/FAQ.css'
 import {
@@ -64,8 +62,7 @@ class AboutUs extends React.Component {
     render() {
       return (
         <div>
-            <TopBar></TopBar>
-            <Header></Header>
+
             <div className="panel" id="mission-and-vision">
                 <div className="center-column aboutus-content">
                     <div>

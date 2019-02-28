@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap'
-import logo from '../../assets/img/Kurinjini_smallsize.png'
+import logo from '../../../assets/img/Kurinjini_smallsize.png'
 import { LinkContainer } from 'react-router-bootstrap';
 import { NavHashLink as Link } from 'react-router-hash-link';
 
