@@ -85,7 +85,7 @@ class AboutUs extends React.Component {
                                         <div className="col-md-6">
                                             <div className = "answer-style">
                                                 <p> <b>Animesh</b> does most of the backend work for Kurinjini. Got married to Shilpi in 2007, he has been there with her in all her endeavors. He is involved into daily operations and deliveries. His responsibility in Kurinjini includes website development, photography and video shoots, preparing promotional content on whatsapp and other social media and managing Kurinjini's deliveries. 
-                                                    He strongly believes that customer service is key to any successful business and hence at Kurinjini he ensures that every query is responded quickly and every order is delivered on time to every customer. He works as a software engineer at a firm in Bangalore.
+                                                    He strongly believes that customer service is key to any successful business and hence at Kurinjini he ensures that every query is responded quickly and every order is delivered on time to every customer. He works as an IT Engineer at a firm in Bangalore.
                                                 </p>
                                             </div>
                                                 
