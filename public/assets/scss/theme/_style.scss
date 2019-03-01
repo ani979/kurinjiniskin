@@ -56,11 +56,9 @@ html{}
 h1 {
   font-size: 60px;
   color: $dark-font;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   span {
-    font-size: 107px;
-    font-weight: 700;
     color: $theme-deafult;
   }
 }
@@ -1508,7 +1506,7 @@ header {
   }
   p {
     text-transform: capitalize;
-    margin-bottom: 0;
+    // margin-bottom: 0;
   }
 
   + .service-block {
@@ -4157,7 +4155,7 @@ footer{
         border-radius: 100%;
         border: 1px solid $round-border;
         padding: 5px;
-        height: 130px;
+        height: auto;
         width: 130px;
       }
       h5 {

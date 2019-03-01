@@ -3,7 +3,7 @@ import './aboutus.css'
 
 function Card(props) {
     return (
-        <div class="card">
+        <div class="aboutus-card">
             <div>
                 <div class="content">
                     <div>

@@ -9,6 +9,7 @@ import Gifting from '../GiftingIdeas/Gifting'
 import AboutUs from '../aboutus/AboutUs'
 import { ScrollContext } from 'react-router-scroll-4';
 import Layout from '../app'
+import aboutUs from '../aboutus/AboutUs'
 
 function Routes() {
     return (
@@ -23,6 +24,7 @@ function Routes() {
                                 <Route exact path={`${process.env.PUBLIC_URL}/faqs`} component={FAQ} />
                                 <Route exact path={`${process.env.PUBLIC_URL}/recycling`} component={Recycling} />
                                 <Route exact path={`${process.env.PUBLIC_URL}/gifting`} component={Gifting} />
+                                <Route exact path={`${process.env.PUBLIC_URL}/aboutUs`} component={aboutUs} />
                                 {/* <Route path="/aboutus" component={AboutUs} /> */}
                             </Switch>
                         </Layout>

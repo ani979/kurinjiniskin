@@ -1,9 +1,9 @@
 import React from 'react'
 import './header.css'
-import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap'
-import logo from '../../../assets/img/Kurinjini_smallsize.png'
+import {Navbar, Nav, NavItem} from 'react-bootstrap'
+import logo from '../../assets/img/Kurinjini_smallsize.png'
+import { Link, hashHistory } from 'react-router-dom'
 import { LinkContainer } from 'react-router-bootstrap';
-import { NavHashLink as Link } from 'react-router-hash-link';
 
 function Header(props) {
   const getCartButton = () => (
@@ -42,20 +42,9 @@ function Header(props) {
           <LinkContainer exact to ="/">
             <NavItem eventKey={1}>Home</NavItem>
           </LinkContainer>
-          <NavDropdown eventKey={2} title = "Us">
-            
-              <MenuItem eventKey={2.1}>
-                <Link to="/aboutUs#mission-and-vision"
-                scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'start' })}>Mission & Vision</Link>
-              </MenuItem>    
-             
-              <MenuItem eventKey={2.2}>
-                <Link smooth to="/aboutUs#the-team" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>The Team</Link>
-              </MenuItem>        
-          </NavDropdown>
-          {/* <LinkContainer exact to="/aboutus">
+          <LinkContainer exact to="/aboutus">
             <NavItem eventKey={2}>About Us</NavItem>
-          </LinkContainer> */}
+          </LinkContainer>
           <LinkContainer exact to="/howtoorder">
             <NavItem eventKey={3}>How to Order</NavItem> 
           </LinkContainer>
@@ -65,15 +54,12 @@ function Header(props) {
           <LinkContainer exact to="/recycling">
             <NavItem eventKey={5}>Recycling</NavItem>
           </LinkContainer>
-          <LinkContainer exact to="/faqs">
-            <NavItem eventKey={6}>FAQs</NavItem>
-          </LinkContainer>
           {/* <LinkContainer exact to="/faqs">
             <NavItem eventKey={5}>FAQs</NavItem>
           </LinkContainer>
           {props.cartButton ? getCartButton() : ''} */}
           <LinkContainer exact to="/gifting">
-            <NavItem eventKey={7}>Gifting Ideas</NavItem>
+            <NavItem eventKey={6}>Gifting Ideas</NavItem>
           </LinkContainer>
 
         </Nav>

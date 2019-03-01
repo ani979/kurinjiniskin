@@ -6,7 +6,7 @@ import Pace from 'react-pace-progress'
 // Import custom components
 import NavBar from "./common/navbar";
 import SideBar from "./common/sidebar";
-import TopBar from "../../FirstPage/TopBar";
+import TopBar from "../TopBar";
 import {connect} from "react-redux";
 
 class HeaderOne extends Component {

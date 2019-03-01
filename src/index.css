@@ -1,10 +1,10 @@
-html, body { height: 100%; }
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Crimson Text', serif;
   letter-spacing: .015rem;
-  line-height: 1;
+  line-height: 2;
   font-size:30px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -96,6 +96,7 @@ code {
     text-transform: lowercase;
     line-height: 1em;
     color:#31315f;
+    font-weight:400;
   }
 }
 
@@ -147,6 +148,6 @@ code {
   background-color: #31315f;
 }
 
-.white {
+.white-text {
   color:white;
 }

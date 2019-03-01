@@ -18,10 +18,10 @@ function EachProduct(props) {
 
         <div>
 
-          <h2 className="title red">{props.name}</h2>
+          <h2 className="titl">{props.name}</h2>
     
           <div className="excerpt">
-            <p><span>{props.desc}</span></p>
+            <span>{props.desc}</span>
           </div>  
         </div>
       </div>

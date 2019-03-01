@@ -1,56 +1,11 @@
 import React from 'react'
-import styled from "styled-components";
-import { SideNav, Nav as BaseNav } from "react-sidenav";
 import './aboutus.css'
 import '../FAQPage/FAQ.css'
 import {
   AppContainer as BaseAppContainer,
-  ExampleNavigation as BaseNavigation,
-  ExampleBody as Body
+  ExampleNavigation as BaseNavigation
 } from "./Containers";
-import { Icon as BaseIcon } from "react-icons-kit";
 import Card from './Card'
-import sample from '../../assets/img/FaceCare/MoisturizingCreams/orange_big.jpg'
-import animeshPic from '../../assets/img/AboutUs/animesh.jpg'
-import shilpi from '../../assets/img/AboutUs/Shilpi_4.jpg'
-
-const AppContainer = styled(BaseAppContainer)`
-  height: calc(100vh - 40px);
-`;
-
-const Navigation = styled(BaseNavigation)`
-  background: #303641;
-  color: #8d97ad;
-  font-size: 1em;
-  letter-spacing: 2px;
-  width: 100px;
-  line-height: 22px;
-  margin: 20px;
-`;
-
-const IconCnt = styled.div`
-  color: #FFF;
-  display: flex;
-  justify-content: center;
-  aligh-items: center;
-`;
-
-const Nav = styled(BaseNav)`
-  flex-direction: column;
-`;
-
-const theme = {
-  selectionColor: "#FFF",
-  hoverBgColor: "#181b20",
-  selectionBgColor: "#00BCD4"
-};
-
-const Text = styled.div`
-  font-size: 0.42em;
-  text-transform: uppercase;
-`;
-
-const Icon = props => <BaseIcon size={32} icon={props.icon} />;
 
 class AboutUs extends React.Component {
     state = { selectedPath: "1" };
@@ -75,7 +30,7 @@ class AboutUs extends React.Component {
                         <p>By bringing nature's healing to you, we have devoted ourselves to a dream, a vision, a mission. We will revolutionize the way we care! And in so doing we will bring nourishment and balance, health and well being, sustainability and community to people and planet.</p>
                         <p>Hippocrates the father of medicine, said that 'the way to health is to have an aromatic bath and scented massage every day'. There are about three hundred essential oils in general use today and each having a distinct aroma of its own. The most effective way to use essential oils is not orally , as one might think, but by external application or inhalation. This is where we come in, bringing these aromas closer to you.</p>
                         <p>We need to take small steps so that change doesnt come heavy on you. We don't want you to change your skin routine overnight but we definitely would like you to start trying slowly the nature's gift and see for yourself what it does to you. </p>
-                        <p>Everyone is beautiful and your care doesn’t have to be a choice between the lesser of evils. So let's work together to bring about a beautiful change, a change for a better care and love.</p>
+                        <p>So let's work together to bring about a beautiful change, a change for a better care and love.</p>
                         <p>Together, we can change the world.</p>
                     </div>        
                 </div>
@@ -89,20 +44,76 @@ class AboutUs extends React.Component {
                     <Card title = "Customer service" excerpt = "Serving you is our greatest wealth."></Card>
                 </div>
             </div>
-            <div className="panel" id="the-team">
-                <div>
-                    <div style = {{textAlign:"center"}}>
-                        <h1><span className="subheader">The &amp; Team&nbsp;</span></h1>
+            <section className="testimonial small-section" id="the-team">
+                <div style = {{textAlign:"center", marginBottom:"40px"}}>
+                    <h1><span className="subheader">The Team</span></h1>
+                </div>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-sm-12">
+                                <div className="slide-2 testimonial-slider no-arrow">
+                                    
+                                    <div className = " row col-md-12">
+                                        <div className="media-aboutus media col-md-6">
+                                            <div>
+                                                <img src={`${process.env.PUBLIC_URL}/assets/images/AboutUs/Shilpi_5.jpg`} alt="#" />
+                                                    <h4>Shilpi Shrivastava</h4>
+                                            </div>
+                                            
+                                        </div>
+                                        <div className="col-md-6">
+                                            <div className = "answer-style">
+                                                <p> <b>Shilpi</b> is the founder of Kurinjini skin care. A graduate from Delhi University, she did her post graduation in History from Jawaharalal Nehru University and proceeded to Bengaluru after her marraige.
+                                                    In Bengaluru, she completed her PhD in History under ICHR(Indian Council of Historical Research) funding. Even before starting with Kurinjini, she always had that inclination towards making handmade soaps but she kept it to herself and used her skills for gifting to her friends. 
+                                                    She got an opportunity to take it fulltime after getting her Doctorate degree. Her focus has always been on research of the various natural oils including essential oils that go into making a perfect concoction for the skin.
+                                                    <br/>
+                                                    She intends to continue Kurinjini as a home made brand rather than a factory-made brand.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className = "row col-md-12">
+                                        <div className="media-aboutus media col-md-6">
+                                            <div>
+                                                <img src={`${process.env.PUBLIC_URL}/assets/images/AboutUs/animesh.jpg`} alt="#" />
+                                                    <h4>Animesh Shrivastava</h4>
+                                                    
+                                            </div>
+                                            
+                                        </div>
+                                        <br/>
+                                        <div className="col-md-6">
+                                            <div className = "answer-style">
+                                                <p> <b>Animesh</b> does most of the backend work for Kurinjini. Got married to Shilpi in 2007, he has been there with her in all her endeavors. He is involved into daily operations and deliveries. His responsibility in Kurinjini includes website development, photography and video shoots, preparing promotional content on whatsapp and other social media, and managing Kurinjini's deliveries. 
+                                                    He strongly believes that customer service is key to any successful business and hence at Kurinjini he ensures that every query is responded quickly and every order is delivered on time to every customer. He works as a software engineer at a firm in Bangalore.
+                                                </p>
+                                            </div>
+                                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </section>
+            {/* <div className="panel row" id="the-team">
+                <div style = {{textAlign:"center"}}>
+                    <h1><span className="subheader">The Team</span></h1>
+                </div>
+                <div>
+                    
                     <div className = "row col-md-12 col-sm-12 col-lg-12">
                         <div className = "col-md-4 col-sm-4 col-lg-4">
                             <img className= "img-team" src = {shilpi}/>
                         </div>
                         <div className = "col-md-4 col-sm-4 col-lg-8">
                             <div className = "answer-style">
-                                <p> Shilpi is the `Walter White` of Kurinjini. She is the brain behind Kurinjini Skin Care. A graduate from Delhi University, she did her post graduation in History from Jawaharalal Nehru University and proceeded to Bangalore after her marraige.
+                                <p> Shilpi is the founder of Kurinjini skin care. A graduate from Delhi University, she did her post graduation in History from Jawaharalal Nehru University and proceeded to Bangalore after her marraige.
                                     In Bengaluru, she completed her PhD in History under ICHR(Indian Council of Historical Research) funding. Even before starting with Kurinjini, she always had that liking towards making handmade soaps but she kept it to herself and used her skills for gifting to her friends. 
-                                    She got an opportunity to take it fulltime after getting her Doctorate degree. Now she deovtes her full time into researching on essential oils and their benefits. She is even a wonderful baker and a gardener. When she is not working, you can see her gardening or baking some fantastic breads for her household. 
+                                    She got an opportunity to take it fulltime after getting her Doctorate degree. Even though her time is divided now between family and Kurinjini, she balances it well without compromising on any. Her focus has always been to research on the essential oils, their benefits and prepare the right concoction to treat different skin issues. 
+                                    <br/>
+                                    She is even a wonderful baker and a gardener. When she is not working, you can see her gardening or baking some fantastic breads for her household. 
                                     She intends to continue Kurinjini as a home made brand rather than a factory-made brand.
                                 </p>
                             </div>
@@ -114,14 +125,14 @@ class AboutUs extends React.Component {
                         </div>
                         <div className = "col-md-8 col-sm-8 col-lg-8">
                             <div className = "answer-style">
-                                <p> If Shilpi is Walter White of Kurinjini, you can guess what Animesh is! Got married to Shilpi in 2008, he has been there with her in all her endeavors. Animesh does most of the backend work for Kurinjini. He is involved into daily operations and deliveries. He is a full-time software engineer at a start-up in Bangalore. His responsibility in Kurinjini includes managing website development, photography and video shoots, preparing promotional content on whatsapp and other social media, and managing Kurinjini's deliveries. 
+                                <p> Animesh does most of the backend work for Kurinjini. Got married to Shilpi in 2008, he has been there with her in all her endeavors. He is involved into daily operations and deliveries. He is a full-time software engineer at an organization in Bangalore. His responsibility in Kurinjini includes website development, photography and video shoots, preparing promotional content on whatsapp and other social media, and managing Kurinjini's deliveries. 
                                     He strongly believes that customer service is key to any successful business and hence at Kurinjini he ensures that every query is responded quickly and every order is delivered on time to every customer. 
                                 </p>
                             </div>
                         </div>
                     </div>     
                 </div>
-            </div>
+            </div> */}
         </div>    
       );
     }

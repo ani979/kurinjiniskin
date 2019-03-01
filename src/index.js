@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
@@ -9,6 +9,8 @@ import {initialState} from './stock/InitialState'
 import {rootReducers} from './reducers'
 import translations from './constants/translations'
 import {IntlProvider } from 'react-redux-multilingual'
+import './components/common/index.scss';
+import './index.css';
 
 class Root extends React.Component {
     constructor(props){
