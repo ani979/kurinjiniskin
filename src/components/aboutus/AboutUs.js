@@ -38,10 +38,10 @@ class AboutUs extends React.Component {
             <div class="panel panel-cards">
                 
                 <div class="cards cards--wrap content-wrapper--large add-pad">
-                    <Card title = "Research" excerpt = "Consistent improvement through regular and continuous research on nature's gitfs."></Card>
-                    <Card title = "Home Made" excerpt = "Our products are home made without compromising on purity and quality."></Card>
-                    <Card title = "Beauty and health" excerpt = "Beauty and health go together in our products."></Card>
-                    <Card title = "Customer service" excerpt = "Serving you is our greatest wealth."></Card>
+                    <Card title = "Research" excerpt = "Constant research on oils and their benefits"></Card>
+                    <Card title = "Home Made" excerpt = "Home made without compromising on purity and quality"></Card>
+                    <Card title = "Beauty and health" excerpt = "Beauty and health go together"></Card>
+                    <Card title = "Customer service" excerpt = "Greatest wealth lies in serving you"></Card>
                 </div>
             </div>
             <section className="testimonial small-section" id="the-team">
@@ -64,7 +64,7 @@ class AboutUs extends React.Component {
                                         <div className="col-md-6">
                                             <div className = "answer-style">
                                                 <p> <b>Shilpi</b> is the founder of Kurinjini skin care. A graduate from Delhi University, she did her post graduation in History from Jawaharalal Nehru University and proceeded to Bengaluru after her marraige.
-                                                    In Bengaluru, she completed her PhD in History under ICHR(Indian Council of Historical Research) funding. Even before starting with Kurinjini, she always had that inclination towards making handmade soaps but she kept it to herself and used her skills for gifting to her friends. 
+                                                    In Bengaluru, she completed her PhD in History under ICHR(Indian Council of Historical Research) funding. Even before starting with Kurinjini, she had that inclination towards making handmade soaps but she kept it to herself and used her skills for gifting to her friends. 
                                                     She got an opportunity to take it fulltime after getting her Doctorate degree. Her focus has always been on research of the various natural oils including essential oils that go into making a perfect concoction for the skin.
                                                     <br/>
                                                     She intends to continue Kurinjini as a home made brand rather than a factory-made brand.
