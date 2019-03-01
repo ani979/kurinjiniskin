@@ -63,9 +63,8 @@ class AboutUs extends React.Component {
                                         </div>
                                         <div className="col-md-6">
                                             <div className = "answer-style">
-                                                <p> <b>Shilpi</b> is the founder of Kurinjini skin care. A graduate from Delhi University, she did her post graduation in History from Jawaharalal Nehru University and proceeded to Bengaluru after her marraige.
-                                                    In Bengaluru, she completed her PhD in History under ICHR(Indian Council of Historical Research) funding. Even before starting with Kurinjini, she had that inclination towards making handmade soaps but she kept it to herself and used her skills for gifting to her friends. 
-                                                    She got an opportunity to take it fulltime after getting her Doctorate degree. Her focus has always been on research of the various natural oils including essential oils that go into making a perfect concoction for the skin.
+                                                <p> <b>Shilpi</b> started Kurinjini skin care as an outcome of her passion towards soap making. A doctorate in Historical studies, she always had that creative itch on creating something of her own. She had an inclination towards making handmade soaps but she kept it to herself and used her skills to gift her friends. 
+                                                    After getting her Doctorate degree, she got an opportunity to take it fulltime. Now, she focuses on research of the various natural oils including essential oils that go into making a perfect concoction for the skin. 
                                                     <br/>
                                                     She intends to continue Kurinjini as a home made brand rather than a factory-made brand.
                                                 </p>
@@ -85,7 +84,7 @@ class AboutUs extends React.Component {
                                         <br/>
                                         <div className="col-md-6">
                                             <div className = "answer-style">
-                                                <p> <b>Animesh</b> does most of the backend work for Kurinjini. Got married to Shilpi in 2007, he has been there with her in all her endeavors. He is involved into daily operations and deliveries. His responsibility in Kurinjini includes website development, photography and video shoots, preparing promotional content on whatsapp and other social media, and managing Kurinjini's deliveries. 
+                                                <p> <b>Animesh</b> does most of the backend work for Kurinjini. Got married to Shilpi in 2007, he has been there with her in all her endeavors. He is involved into daily operations and deliveries. His responsibility in Kurinjini includes website development, photography and video shoots, preparing promotional content on whatsapp and other social media and managing Kurinjini's deliveries. 
                                                     He strongly believes that customer service is key to any successful business and hence at Kurinjini he ensures that every query is responded quickly and every order is delivered on time to every customer. He works as a software engineer at a firm in Bangalore.
                                                 </p>
                                             </div>
