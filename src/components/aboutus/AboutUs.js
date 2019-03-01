@@ -57,7 +57,7 @@ class AboutUs extends React.Component {
                                         <div className="media-aboutus media col-md-6">
                                             <div>
                                                 <img src={`${process.env.PUBLIC_URL}/assets/images/AboutUs/Shilpi_5.jpg`} alt="#" />
-                                                    <h4>Shilpi Shrivastava</h4>
+                                                    
                                             </div>
                                             
                                         </div>
@@ -76,7 +76,7 @@ class AboutUs extends React.Component {
                                         <div className="media-aboutus media col-md-6">
                                             <div>
                                                 <img src={`${process.env.PUBLIC_URL}/assets/images/AboutUs/animesh.jpg`} alt="#" />
-                                                    <h4>Animesh Shrivastava</h4>
+                                                    
                                                     
                                             </div>
                                             
