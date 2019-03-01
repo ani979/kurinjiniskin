@@ -74,7 +74,8 @@ class AboutUs extends React.Component {
 
                                     <div className = "row col-md-12">
                                         <div className="media-aboutus media col-md-6">
-                                            <div>
+                                           
+                                            <div className = "spacer-above">
                                                 <img src={`${process.env.PUBLIC_URL}/assets/images/AboutUs/animesh.jpg`} alt="#" />
                                                     
                                                     
