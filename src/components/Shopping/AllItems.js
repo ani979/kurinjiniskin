@@ -46,6 +46,8 @@ import mini_mist_one from '../../assets/img/rosewater/mintMist_1.jpg'
 import mini_mist_two from '../../assets/img/rosewater/mintMist_2.jpg'
 import roots_one from '../../assets/img/hairCare/roots_1.jpg'
 import roots_two from '../../assets/img/hairCare/roots_2.jpg'
+import lip_balm_straberry_one from '../../assets/img/LipCare/lipbalm_strawberry_1.jpg'
+import lip_balm_straberry_two from '../../assets/img/LipCare/lipbalm_strawberry_2.jpg'
 
 const allItems = [
     {
@@ -196,8 +198,8 @@ const allItems = [
         
         title:<h3>{allProducts.lipbalm}</h3>,
         desc : <p> Lip balms are made of cocoa butter which is a natural, meltable oil extracted from the cocoa bean. Cocoa butter is great for naturally healing dry, sensitive skin. it has a mild fragrance, a smooth texture and is ultra-hydrating. Unrefined beeswax, consisting of naturally produced vitamins makes it healthier and prevents from further dryness and chapping of the lips</p>,
-        imagePath : <ImageSlickItem count = {3} smallImage0 = {lipbalmSmallOne} bigImage0={lipbalmBigOne}
-        smallImage1 = {lipbalmSmallTwo} bigImage1={lipbalmBigTwo} smallImage2 = {lipbalmSmallThree} bigImage2={lipbalmBigThree}></ImageSlickItem>,
+        imagePath : <ImageSlickItem count = {5} smallImage0 = {lipbalmSmallOne} bigImage0={lipbalmBigOne}
+        smallImage1 = {lipbalmSmallTwo} bigImage1={lipbalmBigTwo} smallImage2 = {lipbalmSmallThree} bigImage2={lipbalmBigThree} smallImage3 = {lip_balm_straberry_one} smallImage4= {lip_balm_straberry_two}></ImageSlickItem>,
         quantity : <HeadingAndText header={allProducts.quantity} text = "5gm"></HeadingAndText>,
         flavours : <HeadingAndText header= {allProducts.availableinFlavours} text="Chocolate, Strawberry, Spearmint, Vanilla & Orange - Available in round and stick containers"></HeadingAndText>,
         ingredients :<HeadingAndText header= {allProducts.ingredients} text = "Unrefined Beeswax and Cocoa Butter, Jojoba, Sweet Almonds, Vitamin-E, Avocado"></HeadingAndText>,
