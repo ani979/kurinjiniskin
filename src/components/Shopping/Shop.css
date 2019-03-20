@@ -50,3 +50,9 @@
     font-size: 12px;
     background-color: #CBB700;
     color: black; }
+
+
+ul li {
+      display: list-item;
+      list-style-type: circle;
+  }

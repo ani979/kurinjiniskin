@@ -24,19 +24,24 @@ import lipScrubSmallOne from '../../assets/img/LipCare/lipScrub4_small.jpg'
 import sparkleBigOne from '../../assets/img/Oils/Serums/sparkle_big.jpg'
 import sparkleBigTwo from '../../assets/img/Oils/Serums/sparkleTwo_big.jpg'
 import moonStone from '../../assets/img/Oils/Serums/moonstone_big.jpg'
-import hairOne from '../../assets/img/Oils/hairandface/hair_one.jpg'
+import hairOne from '../../assets/img/Oils/hairandface/hair.jpg'
 import faceOil from '../../assets/img/Oils/hairandface/faceOil_One.jpg'
 import footScrubOne from '../../assets/img/FootCare/footScrub1.jpg'
 import loofahOne from '../../assets/img/Soaps/loofah_one.jpg'
 import loofahTwo from '../../assets/img/Soaps/loofah_two.jpg'
+import loofahThree from '../../assets/img/Soaps/loofah_three.jpg'
 import mildScrubberOne from '../../assets/img/Soaps/mildScrubber_one.jpg'
 import casterOne from '../../assets/img/Soaps/castersugar_scrubber_one.jpg'
 import casterTwo from '../../assets/img/Soaps/castersugar_scrubber_two.jpg'
 import vanillaChocOne from '../../assets/img/Soaps/vanilla_choc_1.jpg'
 import vanillaChocTwo from '../../assets/img/Soaps/vanilla_choc_2.jpg'
+import vanillaChocThree from '../../assets/img/Soaps/vanilla_choc_3.jpg'
+import vanillaChocFour from '../../assets/img/Soaps/vanilla_choc_4.jpg'
 import HeadingAndText from './HeadingAndText'
 import sheaCashmereOne from '../../assets/img/Soaps/shea_cashmere_1.jpg'
 import basilThymeOne from '../../assets/img/Soaps/basil_thyme_1.jpg'
+import mangoMandarinOne from '../../assets/img/Soaps/shea_punch_mango_one.jpg'
+import mangoMandarinTwo from '../../assets/img/Soaps/shea_punch_mango_two.jpg'
 import flh_one from '../../assets/img/FaceCare/MoisturizingCreams/frenchLavender_1.jpg'
 import flh_two from '../../assets/img/FaceCare/MoisturizingCreams/frenchLavender_2.jpg'
 import rose_common from '../../assets/img/rosewater/common.jpg'
@@ -52,6 +57,10 @@ import lip_balm_straberry_two from '../../assets/img/LipCare/lipbalm_strawberry_
 const allItems = [
     {
         childId: allProducts.faceCare,
+        parent: "parent"
+    },
+    {
+        childId: allProducts.allKids,
         parent: "parent"
     },
     {
@@ -152,7 +161,7 @@ const allItems = [
             <b> Immortal is our most popular face cream. Lot of people have given a great feedback on this cream. </b></p>,
         imagePath : <ImageSlickItem count = {3} smallImage0 = {immortalOne} 
         smallImage1 = {immortalTwo} smallImage2={immortalThree}></ImageSlickItem>,
-        goodFor:<HeadingAndText header = {allProducts.suitableFor} text = "Suitable for wrinked skin"></HeadingAndText>,
+        goodFor:<HeadingAndText header = {allProducts.suitableFor} text = "Suitable for wrinkled skin"></HeadingAndText>,
         quantity : <HeadingAndText header = {allProducts.quantity} text ="60 ml"></HeadingAndText>,
         ingredients : <HeadingAndText header ={allProducts.ingredients} text = "Frankincense, Geranium, Avocado, Moringa, Argan, Jojoba, Grapeseed, Tea Tree, Rosemary, Hemp, Cucumber seed,  Coconut, beeswax, Sweet Almond,  Vitamin-E, Mango and African Shea butter, Apricot oil"></HeadingAndText>,
         parent: allProducts.antiageing,
@@ -196,6 +205,19 @@ const allItems = [
     },
     {
         
+        title:<h3>Fluffy</h3>,
+        type:<h6><b>Moisturizing Cream for Kids</b></h6>,
+        desc : <p>Very mild cream with combination of kids skin friendly oil like Jojoba, Argan and Almond. The essential oils fight infection and promote healing thus providing parents some relaxation in caring for their child.</p>,
+        imagePath : <ImageSlickItem count = {2} smallImage0 = {fluffyCreamOne} smallImage1={fluffyCreamTwo}></ImageSlickItem>,
+        goodFor:<HeadingAndText header = {allProducts.suitableFor} text = "Excellent for Kids"></HeadingAndText>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text ="60 ml"></HeadingAndText>,
+        ingredients : <HeadingAndText header = {allProducts.ingredients} text="Jojoba, Vitamin-E, Sweet Almond, Argan, Avocado, Virgin Coconut, Virgin Olive, Cocoa Butter"></HeadingAndText>,
+        parent: allProducts.allKids,
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.300"></HeadingAndText>,
+        precaution:<HeadingAndText header = {allProducts.precaution} text = "All our moisturizing creams should be kept away from sunlight as it may lose its consistency"></HeadingAndText>
+    },
+    {
+        
         title:<h3>{allProducts.lipbalm}</h3>,
         desc : <p> Lip balms are made of cocoa butter which is a natural, meltable oil extracted from the cocoa bean. Cocoa butter is great for naturally healing dry, sensitive skin. it has a mild fragrance, a smooth texture and is ultra-hydrating. Unrefined beeswax, consisting of naturally produced vitamins makes it healthier and prevents from further dryness and chapping of the lips</p>,
         imagePath : <ImageSlickItem count = {5} smallImage0 = {lipbalmSmallOne} bigImage0={lipbalmBigOne}
@@ -204,6 +226,17 @@ const allItems = [
         flavours : <HeadingAndText header= {allProducts.availableinFlavours} text="Chocolate, Strawberry, Spearmint, Vanilla & Orange - Available in round and stick containers"></HeadingAndText>,
         ingredients :<HeadingAndText header= {allProducts.ingredients} text = "Unrefined Beeswax and Cocoa Butter, Jojoba, Sweet Almonds, Vitamin-E, Avocado"></HeadingAndText>,
         parent: allProducts.lipBalmParent,
+        price: <HeadingAndText header = {allProducts.price} text = "Rs. 100"></HeadingAndText>
+    },
+    {
+        
+        title:<h3>{allProducts.lipbalmKids}</h3>,
+        desc : <p> Give your kids the freedom from dry and chapped lips. A fresh batch of strawberry flavoured lip balm available that is made primarily out of Cocoa Butter, Avocado oil & Sweet Almond oil. The added oils provide the necessary hydration and softness. </p>,
+        imagePath : <ImageSlickItem count = {2} smallImage0 = {lip_balm_straberry_one} smallImage1= {lip_balm_straberry_two}></ImageSlickItem>,
+        quantity : <HeadingAndText header={allProducts.quantity} text = "5gm"></HeadingAndText>,
+        flavours : <HeadingAndText header= {allProducts.availableinFlavours} text="Chocolate, Strawberry, Spearmint, Vanilla & Orange - Available in round and stick containers"></HeadingAndText>,
+        ingredients :<HeadingAndText header= {allProducts.ingredients} text = "Unrefined Beeswax and Cocoa Butter, Jojoba, Sweet Almonds, Vitamin-E, Avocado"></HeadingAndText>,
+        parent: allProducts.allKids,
         price: <HeadingAndText header = {allProducts.price} text = "Rs. 100"></HeadingAndText>
     },
     {
@@ -261,14 +294,52 @@ const allItems = [
     {
         
         title:<h3>Resurgence</h3>,
-        type: <h6><b>{allProducts.hairOil}</b></h6>,
+        type: <h6><b>{allProducts.hairOilIntensive}</b></h6>,
         desc : <p> Our hair is just as sensitive as our skin. The basic substance of hair is keratin, a strong protein. When we lose our hair as each one comes to the end, a new hair should grow in its place. This should happen instantaneously but because of our lifestyle and synthetic chemicals that we apply with shampoo or conditioners, the time between a hair getting lost and new one coming up can extend so that our hair begins to thin. “Resurgence” is an intense hair treatment oil. It consists of Argan, Grapeseed essential oils that consists of Vitamin-E, a natural anti-oxidant that nourishes dry damaged hair, repairs and rejuvenates, thereby protecting it and giving it the needed shine. Hemp oil is a great oil for scalp and helps grow hair faster, thicker and longer. Avocado oil present acts as a carrier oil stimulating the blood flow and unclog blocked follicles.</p>,
         imagePath : <ImageItem smallImageOne = {hairOne} ></ImageItem>,
-        quantity : <HeadingAndText header = {allProducts.quantity} text="10 ml"></HeadingAndText>,
-        howtouse : <HeadingAndText header = {allProducts.howToUse} text= "Apply on your hair and scalp with any career oil"></HeadingAndText>,
-        ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Argan, Moringa, Rosemary, Grapeseed, Cucumber seed, Jojoba, Hemp, Frankincense, Lemon Grass, Coconut, Avocado"></HeadingAndText>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="60 ml"></HeadingAndText>,
+        howtouse : <HeadingAndText header = {allProducts.howToUse} text= "Direct application on your hair and scalp"></HeadingAndText>,
+        ingredients :<HeadingAndText header = {allProducts.keyIngredients} text = "Argan, Moringa, Grapeseed, Jojoba, Hemp, Frankincense, Sweet Almond Oil, Vitamin-E"></HeadingAndText>,
         parent: allProducts.hairCare,
-        price: <HeadingAndText header = {allProducts.price} text = "Rs.200/-"></HeadingAndText>  
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.350/-"></HeadingAndText>  
+                    
+    },
+    {
+        
+        title:<h3>Resurgence</h3>,
+        type: <h6><b>{allProducts.hairOilAntiDandruff}</b></h6>,
+        desc : <p> The little white flakes scattered on shoulders shout out loudly that someone’s head and hair are in bad condition. But with essential oils, you can get to the root of the problem and get rid of this once and for all. Essential Oils like Rosemary, Tea Tree and oils like Jojoba, Hibiscus and Neem are effective in treating dandruff and split ends.</p>,
+        imagePath : <ImageItem smallImageOne = {hairOne} ></ImageItem>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="60 ml"></HeadingAndText>,
+        howtouse : <HeadingAndText header = {allProducts.howToUse} text= "Direct application on your hair and scalp"></HeadingAndText>,
+        ingredients :<HeadingAndText header = {allProducts.keyIngredients} text = "Argan, Tea Tree, Neem, Hibiscus, Moringa, Rosemary, Grapeseed, Avocado, Jojoba, Hemp, Frankincense"></HeadingAndText>,
+        parent: allProducts.hairCare,
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.350/-"></HeadingAndText>  
+                    
+    },
+    
+    {
+        title:<h3>Resurgence</h3>,
+        type: <h6><b>{allProducts.hairOilKids}</b></h6>,
+        desc : <p> Kids hair oil is gentle in nature and consist of Argan and Jojoba mixed with most effective natural cold pressed oils like Coconut and Virgin Olive. It helps keep small ones' hair hydrated & moisturized while it also serves to nourish & soften the scalp. </p>,
+        imagePath : <ImageItem smallImageOne = {hairOne} ></ImageItem>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="60 ml"></HeadingAndText>,
+        howtouse : <HeadingAndText header = {allProducts.howToUse} text= "Apply on your hair and scalp with any career oil"></HeadingAndText>,
+        ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Argan, Jojoba, Hemp, Sweet Almond Oil, Avocado, Virgin Olive & Coconut"></HeadingAndText>,
+        parent: allProducts.hairCare,
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.300/-"></HeadingAndText>  
+                    
+    },
+    {
+        title:<h3>Resurgence</h3>,
+        type: <h6><b>{allProducts.hairOilKids}</b></h6>,
+        desc : <p> Kids hair oil is gentle in nature and consist of of Argan and Jojoba mixed with most effective natural cold pressed oils like Coconut and Virgin Olive. It helps keep small ones' hair hydrated & moisturized while it also serves to nourish & soften the scalp. </p>,
+        imagePath : <ImageItem smallImageOne = {hairOne} ></ImageItem>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="60 ml"></HeadingAndText>,
+        howtouse : <HeadingAndText header = {allProducts.howToUse} text= "Apply on your hair and scalp with any career oil"></HeadingAndText>,
+        ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Argan, Jojoba, Hemp, Sweet Almond Oil, Avocado, Virgin Olive & Coconut"></HeadingAndText>,
+        parent: allProducts.allKids,
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.300/-"></HeadingAndText>  
                     
     },
     {
@@ -276,10 +347,10 @@ const allItems = [
         title:<h3>Loofah based</h3>,
         desc : <p> Loofahs are made from the dried fruit of a tropical plant called Loofah. Loofah is strong and suitable for hard heels. 
             Available with addition of some essential oils or fragrance that are proven to be not only beneficial on your skin but also your life. They have properties to reducing stress, anxiety, bringing calmness and soothing on skin too.</p>,
-        imagePath : <ImageSlickItem count = {2} smallImage0 = {loofahOne} 
-        smallImage1 = {loofahTwo}></ImageSlickItem>,
+        imagePath : <ImageSlickItem count = {3} smallImage0 = {loofahOne} 
+        smallImage1 = {loofahTwo} smallImage2 = {loofahThree} ></ImageSlickItem>,
         quantity : <HeadingAndText header = {allProducts.quantity} text="100gm"></HeadingAndText>,
-        flavours : <HeadingAndText header = {allProducts.availableinFlavours} text = "Ylang-Ylang, Basil, Lavender, Orange, Fruit Medley, Mango Mandarian, Rosewood, Chamomile"></HeadingAndText>,
+        flavours : <HeadingAndText header = {allProducts.availableinFlavours} text = "Ylang-Ylang, Basil, Lavender, Orange, Fruit Medley, Mango Mandarian, Rosewood, Chamomile, Cooling Mint"></HeadingAndText>,
         ingredients :<HeadingAndText header = {allProducts.ingredients} text = "It has a sweet sugary flavour through caster sugar blended with raw unbleached beeswax and Cocoa butter. The nourishing oils used are Sweet Almond, Jojoba and Vitamin-E"></HeadingAndText>,
         howtouse:<HeadingAndText header = {allProducts.howToUse} text = "After applying the scrubber, keep it on a dry surface"></HeadingAndText>,
         parent: allProducts.scrubbers,
@@ -323,12 +394,37 @@ const allItems = [
         price: <HeadingAndText header = {allProducts.price} text = "Rs.80/-"></HeadingAndText>,    
         deliveryTimeline:  <HeadingAndText header = {allProducts.delivery} text = " a day "></HeadingAndText> 
     },
+    ,
+    {  
+        title:<h3>Vanilla Chocolate Soap</h3>,
+        desc : <p>Remember when bath time used to be fun for the kids, when they enjoyed their time in bubbles, and getting clean was a joy? Somewhere along the way bath and/or shower time has become just another routine. So let’s bring back the giggles with a delicious smelling Chocolate and Vanilla. The kids will not only enjoy bathing but will have a feeling of freshness at the start of the day.</p>,
+        imagePath : <ImageSlickItem count = {3} smallImage0 = {vanillaChocThree} 
+                smallImage1 = {vanillaChocFour} smallImage2 = {vanillaChocTwo}></ImageSlickItem>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="75-80gm"></HeadingAndText>,
+        ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Coconut, Shea Butter, Glycerine, Cocoa powder, Warm Vanilla fragrance"></HeadingAndText>,
+        parent: allProducts.allKids,
+        goodFor:<HeadingAndText header = {allProducts.suitableFor} text = "For everyone, but especially for Kids as they would love the smell of chocolate in their bath"></HeadingAndText>,
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.80/-"></HeadingAndText>,    
+        deliveryTimeline:  <HeadingAndText header = {allProducts.delivery} text = " a day "></HeadingAndText> 
+    },
     {  
         title:<h3>Shea Cashmere soap</h3>,
         desc : <p>A fragrance balanced perfectly between sweet, warm and comforting. A rich buttery opening note combined with warm coconut leaves a fascinating scent. A soft moisturising soaping bar made with Shea Butter, Coconut oil base, Cashmere & Cherry blossom fragrance.</p>,
         imagePath : <ImageItem smallImageOne = {sheaCashmereOne}></ImageItem>,
         quantity : <HeadingAndText header = {allProducts.quantity} text="approx. 100gm"></HeadingAndText>,
         ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Shea Butter, Coconut oil, Cashmere & Cherry blossom fragrance"></HeadingAndText>,
+        parent: allProducts.normalSoaps,
+        goodFor:<HeadingAndText header = {allProducts.suitableFor} text = "Suitable for all kinds of skin"></HeadingAndText>,
+        price: <HeadingAndText header = {allProducts.price} text = "Rs.100/-"></HeadingAndText>,    
+        deliveryTimeline:  <HeadingAndText header = {allProducts.delivery} text = " a day "></HeadingAndText>
+    },
+    {  
+        title:<h3>Mango Mandarin soap</h3>,
+        desc : <p>A fragrance balanced with combination of Mango and Mandarin Orange. A coconut oil base soap that is soft moisturising with the presence of Shea Butter.</p>,
+        imagePath : <ImageSlickItem count = {2} smallImage0 = {mangoMandarinOne} 
+        smallImage1 = {mangoMandarinTwo}></ImageSlickItem>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="approx. 100gm"></HeadingAndText>,
+        ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Shea Butter, Coconut oil, Mango Mandarin flavour"></HeadingAndText>,
         parent: allProducts.normalSoaps,
         goodFor:<HeadingAndText header = {allProducts.suitableFor} text = "Suitable for all kinds of skin"></HeadingAndText>,
         price: <HeadingAndText header = {allProducts.price} text = "Rs.100/-"></HeadingAndText>,    
@@ -453,7 +549,7 @@ const allItems = [
     {
         
         title:<h3>Roots</h3>,
-        type: <h6><b>{allProducts.hairMask}</b></h6>,
+        type: <h6><b>{allProducts.hairMaskNormal}</b></h6>,
         desc : 
             <p>
                 A natural hair cream made out of oils, butter and other hydrating ingredients. It provides treatment for primarily hair fall and split ends along with giving your hair a shiny and bouncy look. 
@@ -463,6 +559,40 @@ const allItems = [
                     <li>Argan oil has a number of benefits when used on hair. It can act as a moisturiser for the scalp to fight dandruff and dry scalp. </li>
                     <li>Along with it is added Rosemary that stimulates hair growth, prevents dandruff. </li>
                     <li>Avacodo butter and oil both not only provide lustrous hair but also prevent premature greying.</li>
+                    <li>Moringa oil is a natural hair cleanser.  It rejuvenates your hair from deep within and the minerals and vitamins make your hair stronger and fight dandruff and split ends. It has great healing properties which makes it ideal for hair care.</li>
+                </ul>
+                
+                <p> Begin with using more frequently, weekly application and then move on to monthly application.</p>
+                <b>A regular use of hair mask is recommended for healthy hair and healthy root.</b>
+            </p>,
+        imagePath : <ImageSlickItem count = {2} smallImage0 = {roots_one} 
+        smallImage1 = {roots_two}></ImageSlickItem>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="60ml and 120 ml bottles"></HeadingAndText>,
+        parent: allProducts.hairCare,
+        howtouse:<p><b>{allProducts.howToUse}: </b> <ul>
+                    <li> Wash and towel dry your hair</li>
+                    <li>Apply good amount of mask from hair roots to tips</li>
+                    <li>Keep it like that for an hour</li>
+                    <li>Do a shampoo wash after that</li>
+            </ul></p>,
+        price: <p><b>{allProducts.price}: </b> <ul>
+            <li>60ml - 200/- and</li>
+            <li>120 ml - 400/-</li></ul></p>,
+        video:<iframe width="auto" height="100%" src="https://www.youtube.com/embed/wGjqT1T-Lk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
+    },
+    {
+        
+        title:<h3>Roots</h3>,
+        type: <h6><b>{allProducts.hairMaskOily}</b></h6>,
+        desc : 
+            <p>
+                A hair cream specifically made for an oily scalp. Consists of Aloe-Vera and other hydrating ingredients. It provides treatment primarily for hair fall and split ends along with giving your hair a shiny and bouncy look. 
+                <br/>
+                <ul>
+                    <li>Ingredients like Brahmi, Bhringraj and Hibiscus strengthens the root follicles promotes hair growth, treats dry, itchy scalp and makes hair bouncy.</li>
+                    <li>Argan oil has a number of benefits when used on hair. It can act as a moisturiser for the scalp to fight dandruff and dry scalp. </li>
+                    <li>Along with it is added Rosemary that stimulates hair growth, prevents dandruff. </li>
+                    <li>Aloe Vera give your hair the strength and sheen. Contains enzyme which stimulate hair growth. </li>
                     <li>Moringa oil is a natural hair cleanser.  It rejuvenates your hair from deep within and the minerals and vitamins make your hair stronger and fight dandruff and split ends. It has great healing properties which makes it ideal for hair care.</li>
                 </ul>
                 
