@@ -390,11 +390,12 @@ const allItems = [
     {
         
         title:<h3>Mild scrubbers</h3>,
-        desc : <p> Mild scrubbers that gently exfoliate the dead skin. These scrubbers are required for gentle body scrubbing and along with these provide skin nourishment too. </p>,
-        imagePath : <ImageItem smallImageOne = {mildScrubberOne}></ImageItem>,
+        desc : <p> These are gentle exfoliators that gently remove the dead skin cells and nourishes the layer below. These are very gentle, deeply penetrates into skin, flushes out toxins and removes dead skin cells making skin soft and supple.</p>,
+        imagePath : <ImageSlickItem count = {3} smallImage0 = {`${process.env.PUBLIC_URL}/assets/images/Soaps/ChiaSeeds.jpg`} smallImage1 = {mildScrubberOne} 
+        smallImage2 = {`${process.env.PUBLIC_URL}/assets/images/Soaps/Walnut.jpg`}></ImageSlickItem>,
         quantity : <HeadingAndText header = {allProducts.quantity} text="100gm"></HeadingAndText>,
-        flavours : <HeadingAndText header = {allProducts.availableinFlavours} text = "Oatmeal, Chia seeds, Flax seeds, Poppy seeds"></HeadingAndText>,
-        ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Coconute, Glycerine and dpeneding on the flavour the respective ingredient is added"></HeadingAndText>,
+        flavours : <HeadingAndText header = {allProducts.availableinFlavours} text = "Oatmeal, Chia seeds, Flax seeds, Poppy seeds, Walnut Shells"></HeadingAndText>,
+        ingredients :<HeadingAndText header = {allProducts.ingredients} text = "Coconut, Glycerine and dpeneding on the flavour the respective ingredient is added"></HeadingAndText>,
         howtouse:<HeadingAndText header = {allProducts.howToUse} text = "After applying the scrubber, keep it on a dry surface"></HeadingAndText>,
         parent: allProducts.scrubbers,
         price: <HeadingAndText header = {allProducts.price} text = "Rs.100/-"></HeadingAndText>   
