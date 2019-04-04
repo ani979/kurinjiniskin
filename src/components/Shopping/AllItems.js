@@ -253,6 +253,22 @@ const allItems = [
     },
     {
         
+        title:<h3>{allProducts.lipScrubsVegan}</h3>,
+        desc : <p> Natural fragrance and colour derived from shade dried rose petals powder that is made at home. Rose powder along with keeping skin soft and smooth is also rich in Vitamin-C and other anti-oxidants that strengthens skin cells and tissues. Other ingredients like Kokum butter has properties that rejuvenates damaged skin cells which makes it ideal for lip scrub. 
+            Other ingredients like Kokum butter has properties that rejuvenates damaged skin cells which makes it ideal for lip scrub. 
+            <i>Doesn’t contain any beeswax</i>
+        </p>,
+        imagePath : <ImageSlickItem count = {2} smallImage0 = {`${process.env.PUBLIC_URL}/assets/images/LipScrubs/rose_lipscrub.jpg`}
+        smallImage1 = {`${process.env.PUBLIC_URL}/assets/images/LipScrubs/rose_lipscrub_2.jpg`} ></ImageSlickItem>,
+        quantity : <HeadingAndText header = {allProducts.quantity} text="5gm"></HeadingAndText>,
+        flavours : <HeadingAndText header = {allProducts.availableinFlavours} text = "Rose - Available in round containers"></HeadingAndText>,
+        howtouse : <HeadingAndText header = {allProducts.howToUse} text = "Rub gently on the lips and after some continuous rounds of rubbing, wipe off with towel or rinse with water"></HeadingAndText>,
+        ingredients :<HeadingAndText header = {allProducts.keyIngredients} text = "Kokum and cocoa butter. Rose Essential Oil."></HeadingAndText>,
+        parent: allProducts.lipBalmParent,
+        price: <HeadingAndText header = {allProducts.price} text = "Rs. 100"></HeadingAndText>
+    },
+    {
+        
         title:<h3>Sparkle</h3>,
         type: <h6><b>{allProducts.faceSerum}</b></h6>,
         desc : <p> As the name suggests, it's a silicone free skin brightening overnight serum that absorbs quickly in the skin and gives a radiating effect over a period of time. Pores are tiny openings in the skin that release oil and sweat. When pores are clogged, it can result in blackheads or acne. This serum aims to unclog the pores. It also has Helichrysum essential oil that helps smooth both skin tone and texture, reduces the appearance of fine lines, and its emollient properties help keep skin hydrated. Helichrysum is also known to be beneficial for treating sunburns. Along with it is also added few drops of Mysore Sandalwood oil that acts as an antiseptic and anti-inflammatory agent too apart from being a brightening agent. Also added is Rosehip that tightens the pores and brightens your skin. Mixed with other essentials and carrier oils, this brightening skin serum is good for all kinds of skin.</p>,
@@ -473,7 +489,7 @@ const allItems = [
                 Due to the astringent like properties it possesses, rose mist helps clean pores and tone the skin.
                 
                 <br/>
-                <ul>
+                <ul class = "item-desc">
                     <li> Can also use it with coconut oil to remove the make-up. </li>
                     <li> Spray it on your scalp so that it penetrates in transporting nutrients. They make an excellent complement to hair oils, shampoos and conditioners. </li>
                     <li> Spray it for a better, more relaxed sleep.</li>
@@ -554,7 +570,7 @@ const allItems = [
             <p>
                 A natural hair cream made out of oils, butter and other hydrating ingredients. It provides treatment for primarily hair fall and split ends along with giving your hair a shiny and bouncy look. 
                 <br/>
-                <ul>
+                <ul class = "item-desc">
                     <li>Ingredients like Brahmi, Bhringraj and Hibiscus strengthens the root follicles promotes hair growth, treats dry, itchy scalp and makes hair bouncy.</li>
                     <li>Argan oil has a number of benefits when used on hair. It can act as a moisturiser for the scalp to fight dandruff and dry scalp. </li>
                     <li>Along with it is added Rosemary that stimulates hair growth, prevents dandruff. </li>
@@ -569,13 +585,13 @@ const allItems = [
         smallImage1 = {roots_two}></ImageSlickItem>,
         quantity : <HeadingAndText header = {allProducts.quantity} text="60ml and 120 ml bottles"></HeadingAndText>,
         parent: allProducts.hairCare,
-        howtouse:<p><b>{allProducts.howToUse}: </b> <ul>
+        howtouse:<p><b>{allProducts.howToUse}: </b> <ul class = "item-desc">
                     <li> Wash and towel dry your hair</li>
                     <li>Apply good amount of mask from hair roots to tips</li>
                     <li>Keep it like that for an hour</li>
                     <li>Do a shampoo wash after that</li>
             </ul></p>,
-        price: <p><b>{allProducts.price}: </b> <ul>
+        price: <p><b>{allProducts.price}: </b> <ul class = "item-desc">
             <li>60ml - 200/- and</li>
             <li>120 ml - 400/-</li></ul></p>,
         video:<iframe width="auto" height="100%" src="https://www.youtube.com/embed/wGjqT1T-Lk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
@@ -588,7 +604,7 @@ const allItems = [
             <p>
                 A hair cream specifically made for an oily scalp. Consists of Aloe-Vera and other hydrating ingredients. It provides treatment primarily for hair fall and split ends along with giving your hair a shiny and bouncy look. 
                 <br/>
-                <ul>
+                <ul class = "item-desc">
                     <li>Ingredients like Brahmi, Bhringraj and Hibiscus strengthens the root follicles promotes hair growth, treats dry, itchy scalp and makes hair bouncy.</li>
                     <li>Argan oil has a number of benefits when used on hair. It can act as a moisturiser for the scalp to fight dandruff and dry scalp. </li>
                     <li>Along with it is added Rosemary that stimulates hair growth, prevents dandruff. </li>
@@ -603,13 +619,13 @@ const allItems = [
         smallImage1 = {roots_two}></ImageSlickItem>,
         quantity : <HeadingAndText header = {allProducts.quantity} text="60ml and 120 ml bottles"></HeadingAndText>,
         parent: allProducts.hairCare,
-        howtouse:<p><b>{allProducts.howToUse}: </b> <ul>
+        howtouse:<p><b>{allProducts.howToUse}: </b> <ul class = "item-desc">
                     <li> Wash and towel dry your hair</li>
                     <li>Apply good amount of mask from hair roots to tips</li>
                     <li>Keep it like that for an hour</li>
                     <li>Do a shampoo wash after that</li>
             </ul></p>,
-        price: <p><b>{allProducts.price}: </b> <ul>
+        price: <p><b>{allProducts.price}: </b> <ul class = "item-desc">
             <li>60ml - 200/- and</li>
             <li>120 ml - 400/-</li></ul></p>,
         video:<iframe width="auto" height="100%" src="https://www.youtube.com/embed/wGjqT1T-Lk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>

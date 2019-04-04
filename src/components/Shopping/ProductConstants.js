@@ -12,6 +12,7 @@ const allProducts = {
     lipbalm:"Lip Balm",
     lipbalmKids:"Lip Balm For Kids",
     lipScrubs:"Lip Scrubs",
+    lipScrubsVegan:"Vegan Lip Scrubs",
     oilsAndSerums:"Oils and Serums",
     nightOil:"Night Oil",
     hairOilIntensive: "Hair Oil - Intensive Hair Care",

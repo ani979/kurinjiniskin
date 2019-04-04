@@ -3,7 +3,7 @@ import './Item.css'
 
 function Item(props) {
 if(!props.title) return(<div></div>);
-    return (<div> 
+    return (<div className="product-desc"> 
                 {/* <div className = "col-md-12"> */}
                 <div className = "col-12">
                     <div className = "col-md-6 col-sm-12 col-lg-6">
